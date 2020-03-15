@@ -55,6 +55,15 @@
     
     <item>
       <title>hugo를 사용한 정적 블로깅</title>
+      <link>/post/how-to-make-static-blog-by-using-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/how-to-make-static-blog-by-using-hugo/</guid>
+      <description>설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  OX-hugo를 이용해서 실제 데이터와 바인딩하기 주의점 파일 이름이 한글이면 제대로 출력되지 않는다.  TITLE은 한글로 하더라도 파일이름은 한글로 해서는 안된다 ㅠㅠ 젠장  </description>
+    </item>
+    
+    <item>
+      <title>hugo를 사용한 정적 블로깅</title>
       <link>/post/hugo%E1%84%85%E1%85%B3%E1%86%AF-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5-%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
