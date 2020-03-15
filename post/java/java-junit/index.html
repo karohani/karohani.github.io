@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko-Kr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>java-junit | kars</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+</head>
+<body>
+	<header class="header">
+	<a class="logo" href="/">kars</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+				<h1 class="entry__title">java-junit</h1>
+				<div class="entry__content"><ul>
+<li>
+<p><a href="index">Index</a></p>
+</li>
+<li>
+<p>Related:</p>
+</li>
+</ul>
+<h2 id="java-junit">java-junit</h2>
+<h3 id="link">link</h3>
+<ul>
+<li><a href="https://github.com/junit-team/junit4/wiki/Test-runners">github-team-junit</a></li>
+</ul>
+<h2 id="용어정리">용어정리</h2>
+<ul>
+<li>test context</li>
+<li>테스트의 정의
+<ul>
+<li>반복적으로 수행되고 동일한 결과를 얻어야 함</li>
+</ul>
+</li>
+<li>테스트케이스에서 사용하는 인스턴스</li>
+<li>파일이나 네트워크 등의 자원을 만들어서 지정</li>
+<li>데이터베이스 연동</li>
+</ul>
+<h2 id="junit-기본-단언문">JUnit 기본 단언문</h2>
+<ul>
+<li>assertEqual: 두개의 값이 같은지 비교</li>
+<li>assertSame: 두 개의 객체가 정말 동일한 객체인지 확인</li>
+<li>assertTrue: 예상 값의 참 거짓을 판별</li>
+<li>asserNull: 대상 값이 null이면 참이 됨</li>
+<li>fail</li>
+</ul>
+<h3 id="특징">특징</h3>
+<h4 id="fixture">fixture</h4>
+<ul>
+<li>@BeforeClass</li>
+<li>@AfterClass</li>
+<li>@Before</li>
+<li>@After</li>
+</ul>
+<h4 id="테스트-종류">테스트 종류</h4>
+<ul>
+<li>시간 제한 테스트
+<ul>
+<li>@Test(timeout=1000)</li>
+</ul>
+</li>
+<li>테스트 무시
+<ul>
+<li>@Ignore</li>
+</ul>
+</li>
+<li>배열지원</li>
+<li>@RunWith
+<ul>
+<li>JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정</li>
+</ul>
+</li>
+<li>@Suiteclasses(Class[])
+<ul>
+<li>여러개의 테스트 클래스를 수행하기 위해서 쓰임</li>
+<li>@RunWith(Suite.class)@SuiteClass(Class[])</li>
+</ul>
+</li>
+<li>@파라미터를 이용한 테스트</li>
+</ul>
+<h3 id="단언문-hamcrest">단언문 Hamcrest</h3>
+<ul>
+<li>assertThat(테스트 대상, matcher 구문);</li>
+<li>assertThat(&ldquo;메시지&rdquo;,테스트대상, matcher 구문);</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">assertEquals<span style="color:#f92672">(</span>100<span style="color:#f92672">,</span> accout<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">())</span>
+assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>equalTo<span style="color:#f92672">(</span>1000<span style="color:#f92672">)));</span>
+
+assertNotNull<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">());</span>
+assertThat<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>notNullValue<span style="color:#f92672">());</span>
+
+assertTrue<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">);</span>
+assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> isGreaterThan<span style="color:#f92672">(</span>0<span style="color:#f92672">));</span>
+
+assertTrue<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">().</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">));</span>
+assertThat<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">(),</span> containsString<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">));</span>
+</code></pre></div><ul>
+<li>is</li>
+<li>equalsTo</li>
+<li>greaterThan</li>
+</ul>
+<h3 id="대표적인-matchers">대표적인 Matchers<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h3>
+<h4 id="core">core</h4>
+<ul>
+<li>anything</li>
+<li>describdedAs</li>
+<li>is</li>
+</ul>
+<h4 id="object">object</h4>
+<ul>
+<li>equalTo</li>
+<li>hasToString</li>
+<li>instanceOf, isCompatibleType</li>
+<li>notNullValue, nullValue</li>
+<li>sameInstance</li>
+</ul>
+<h4 id="logical">logical</h4>
+<ul>
+<li>allOf</li>
+<li>anyOf</li>
+<li>not</li>
+</ul>
+<h4 id="beans">beans</h4>
+<ul>
+<li>hasProperty</li>
+</ul>
+<h4 id="collection">collection</h4>
+<h4 id="number">number</h4>
+<ul>
+<li>closedTo</li>
+<li>greaterThen, greaterThanOrEqualTo, lessThen, lessThenOrEqualTo</li>
+</ul>
+<h4 id="text">text</h4>
+<ul>
+<li>equalToIgnoringCase</li>
+<li>equalToIgnoringWhiteSpace</li>
+<li>containsString, endsWith, startsWith</li>
+</ul>
+<h4 id=""></h4>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.lesstif.com/pages/viewpage.action?pageId=18219426">https://www.lesstif.com/pages/viewpage.action?pageId=18219426</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+				
+			</article>
+		</div>
+	</main>
+	
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+	<div class="footer__copyright">© 2020 kars. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+</body>
+</html>
