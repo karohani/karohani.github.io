@@ -25,6 +25,19 @@
     </item>
     
     <item>
+      <title>6장 AOP</title>
+      <link>/post/java/%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B3%E1%86%AF-toby-spring-chapter-6/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
+      
+      <guid>/post/java/%E1%84%92%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B3%E1%86%AF-toby-spring-chapter-6/</guid>
+      <description>Proxy, ProxyPattern, DecoratorPattern Decorator Pattern   다른 언어와의 차이점
+  자바의 함수는 1급 객체가 아니다.
+    Example1 Input Stream 자바에서 Decorator패턴을 구현하기 위해서는 결국 Proxy의 형태로 구현할 수 밖에 없다. 자바는 함수가 1급 객체가 아니기 때문이다.
+  Figure 1: BufferedInputStream 예제
+  핵심 기능과 부가기능을 분리하는 여러가지 방법들 </description>
+    </item>
+    
+    <item>
       <title>java-junit</title>
       <link>/post/java/java-junit/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
