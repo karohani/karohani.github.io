@@ -6,10 +6,24 @@
     <description>Recent content in Posts on kars</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>개인적으로 사용하는 emacs 설정 모음</title>
+      <link>/post/emacs-configuration/emacs/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0900</pubDate>
+      
+      <guid>/post/emacs-configuration/emacs/</guid>
+      <description>Index
+  Related:
+  emacs main inbox  emacs-my-package emacs-lisp-배워보기 emacs-documentation  emacs-yasnippet Snippet collections can be stored in plain text files. They are arranged by sub-directories naming snippet tables. These mostly name Emacs major mode names. 기본적으로 Emacs major Mode의 네임으로 subdir을 만들어서 관리한다.
+Triggering Expansion   link
+  when yas-minor-mode is active 일 때 triggering key를 누르면 확장 된다.
+  Writting Snippet emacs-my-package 내가 사용하는 package를 모아서 정리</description>
+    </item>
     
     <item>
       <title>6장 AOP</title>
