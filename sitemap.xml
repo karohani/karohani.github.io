@@ -3,18 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/emacs/emacs-lisp-datatype/</loc>
+    <lastmod>2019-11-28T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/emacs/emacs-lisp-condition/</loc>
+    <lastmod>2019-11-28T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/emacs-configuration/pis-19-typeparameter/</loc>
+    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pis-19-typeparameter/</loc>
+    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2020-03-01T00:00:00+09:00</lastmod>
+    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-03-01T00:00:00+09:00</lastmod>
+    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/python/python-environment/</loc>
+    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>/post/emacs-configuration/emacs/</loc>
     <lastmod>2020-03-01T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/essay/book/</loc>
+    <lastmod>2020-02-29T00:00:00+09:00</lastmod>
   </url>
   
   <url>
