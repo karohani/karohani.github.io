@@ -44,16 +44,6 @@ In programming language theory, subtyping (also subtype polymorphism or inclusio
     </item>
     
     <item>
-      <title>19장 타입파라미터</title>
-      <link>/posts/pis-19-typeparameter/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
-      
-      <guid>/posts/pis-19-typeparameter/</guid>
-      <description>subtype이란 무엇인가? F가 G의 서브타입이라면 G가 쓰일 자리에 F가 쓰여도 된다.
-In programming language theory, subtyping (also subtype polymorphism or inclusion polymorphism) is a form of type polymorphism in which a subtype is a datatype that is related to another datatype (the supertype) by some notion of substitutability, meaning that program elements, typically subroutines or functions, written to operate on elements of the supertype can also operate on elements of the subtype.</description>
-    </item>
-    
-    <item>
       <title>python virtualenv 환경정리</title>
       <link>/post/python/python-environment/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
