@@ -1,133 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <url>
-    <loc>/post/emacs/emacs-lisp-datatype/</loc>
-    <lastmod>2019-11-28T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/emacs/emacs-lisp-datatype/</loc>
+      <lastmod>2019-11-28T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/emacs/emacs-lisp-condition/</loc>
-    <lastmod>2019-11-28T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/emacs/emacs-lisp-condition/</loc>
+      <lastmod>2019-11-28T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/emacs-configuration/pis-19-typeparameter/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/emacs-configuration/pis-19-typeparameter/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/posts/pis-19-typeparameter/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/posts/pis-19-typeparameter/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/posts/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/python/python-environment/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/python/python-environment/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-04-12T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/</loc>
+      <lastmod>2020-04-12T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/emacs-configuration/emacs/</loc>
-    <lastmod>2020-03-01T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/emacs-configuration/emacs/</loc>
+      <lastmod>2020-03-01T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/essay/book/</loc>
-    <lastmod>2020-02-29T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/essay/book/</loc>
+      <lastmod>2020-02-29T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/java/toby-spring-chapter-6/</loc>
-    <lastmod>2020-02-29T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/java/toby-spring-chapter-6/</loc>
+      <lastmod>2020-02-29T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/java/java-junit/</loc>
-    <lastmod>2020-02-29T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/java/java-junit/</loc>
+      <lastmod>2020-02-29T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</loc>
-    <lastmod>2019-11-19T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</loc>
+      <lastmod>2019-11-19T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</loc>
-    <lastmod>2019-11-19T00:00:00+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</loc>
+      <lastmod>2019-11-19T00:00:00+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/book/book/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/book/book/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/categories/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/categories/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/how-to-make-static-blog-by-using-hugo/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/how-to-make-static-blog-by-using-hugo/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/post/hugo%E1%84%85%E1%85%B3%E1%86%AF-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5-%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/post/hugo%E1%84%85%E1%85%B3%E1%86%AF-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5-%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
-  <url>
-    <loc>/tags/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
+    <url>
+      <loc>https://karohani.github.io/tags/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
   
 </urlset>
