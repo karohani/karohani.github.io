@@ -6,11 +6,7 @@
     <description>Recent content in Posts on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0900</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0900</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
@@ -106,10 +102,10 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
     
     <item>
       <title>book-IT에 몸담은 이들을 위한 지적생산기술</title>
-      <link>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</link>
+      <link>/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0900</pubDate>
       
-      <guid>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</guid>
+      <guid>/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</guid>
       <description>  Index
   Related:
   book-IT에 몸담은 이들을 위한 지적생산기술 1장 새로운 것을 배우려면 2장 동기 부여를 하려면 3장 기억력 단련하기 4장 효율적으로 읽으려면 5장 생각을 정리하려면 6장 아이디어를 떠올리려면 7장 무엇을 배울지 결정 하려면   </description>
@@ -117,10 +113,10 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
     
     <item>
       <title>book-IT에-몸담은-이들을-위한-지적생산기술</title>
-      <link>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</link>
+      <link>/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0900</pubDate>
       
-      <guid>/post/book/book-it%E1%84%8B%E1%85%A6-%E1%84%86%E1%85%A9%E1%86%B7%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%AF-%E1%84%8B%E1%85%B1%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8C%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%80%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF/</guid>
+      <guid>/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</guid>
       <description>  Index
   Related:
   book-IT에 몸담은 이들을 위한 지적생산기술 1장 새로운 것을 배우려면 2장 동기 부여를 하려면 3장 기억력 단련하기 4장 효율적으로 읽으려면 5장 생각을 정리하려면 6장 아이디어를 떠올리려면 7장 무엇을 배울지 결정 하려면   </description>
@@ -146,11 +142,22 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
     
     <item>
       <title>hugo를 사용한 정적 블로깅</title>
-      <link>/post/hugo%E1%84%85%E1%85%B3%E1%86%AF-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5-%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
+      <link>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/hugo%E1%84%85%E1%85%B3%E1%86%AF-%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%89%E1%85%A5-%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B5%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</guid>
+      <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
       <description>설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  </description>
+    </item>
+    
+    <item>
+      <title>Zettelkasten(상자방법)을 이용한 효과적인 공부방법</title>
+      <link>/post/java/201022-1143-zettelkasten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/java/201022-1143-zettelkasten/</guid>
+      <description>생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
+하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &amp;lt;201022-1143-zettelkasten.org&amp;gt;
+핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&amp;rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  </description>
     </item>
     
   </channel>
