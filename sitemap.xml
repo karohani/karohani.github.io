@@ -17,7 +17,7 @@
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/emacs-configuration/pis-19-typeparameter/</loc>
+      <loc>https://karohani.github.io/post/emacs/pis-19-typeparameter/</loc>
       <lastmod>2020-04-12T00:00:00+09:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
@@ -45,15 +45,8 @@
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/emacs-configuration/emacs/</loc>
+      <loc>https://karohani.github.io/post/emacs/emacs/</loc>
       <lastmod>2020-03-01T00:00:00+09:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/post/essay/book/</loc>
-      <lastmod>2020-02-29T00:00:00+09:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -73,33 +66,13 @@
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</loc>
-      <lastmod>2019-11-19T00:00:00+09:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/post/book/book-it%EC%97%90-%EB%AA%B8%EB%8B%B4%EC%9D%80-%EC%9D%B4%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%A7%80%EC%A0%81%EC%83%9D%EC%82%B0%EA%B8%B0%EC%88%A0/</loc>
-      <lastmod>2019-11-19T00:00:00+09:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/post/book/book/</loc>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
       <loc>https://karohani.github.io/categories/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/how-to-make-static-blog-by-using-hugo/</loc>
+      <loc>https://karohani.github.io/post/essay/how-to-make-static-blog-by-using-hugo/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -117,7 +90,7 @@
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/java/201022-1143-zettelkasten/</loc>
+      <loc>https://karohani.github.io/post/essay/201022-1143-zettelkasten/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
