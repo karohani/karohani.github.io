@@ -40,16 +40,6 @@ In programming language theory, subtyping (also subtype polymorphism or inclusio
     </item>
     
     <item>
-      <title>19장 타입파라미터</title>
-      <link>/posts/pis-19-typeparameter/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
-      
-      <guid>/posts/pis-19-typeparameter/</guid>
-      <description>subtype이란 무엇인가? F가 G의 서브타입이라면 G가 쓰일 자리에 F가 쓰여도 된다.
-In programming language theory, subtyping (also subtype polymorphism or inclusion polymorphism) is a form of type polymorphism in which a subtype is a datatype that is related to another datatype (the supertype) by some notion of substitutability, meaning that program elements, typically subroutines or functions, written to operate on elements of the supertype can also operate on elements of the subtype.</description>
-    </item>
-    
-    <item>
       <title>python virtualenv 환경정리</title>
       <link>/post/python/python-environment/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
@@ -168,6 +158,15 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
       <description>생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
 하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &amp;lt;201022-1143-zettelkasten.org&amp;gt;
 핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&amp;rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  </description>
+    </item>
+    
+    <item>
+      <title>포스팅 테스트</title>
+      <link>/post/essay/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/essay/hugo/</guid>
+      <description>이렇게 하면 포스팅이 되나?</description>
     </item>
     
   </channel>

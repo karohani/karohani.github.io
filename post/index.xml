@@ -160,5 +160,14 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
 핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&amp;rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  </description>
     </item>
     
+    <item>
+      <title>포스팅 테스트</title>
+      <link>/post/essay/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/essay/hugo/</guid>
+      <description>이렇게 하면 포스팅이 되나?</description>
+    </item>
+    
   </channel>
 </rss>
