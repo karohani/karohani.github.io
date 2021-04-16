@@ -122,10 +122,4 @@
       <priority>0.5</priority>
     </url>
   
-    <url>
-      <loc>https://karohani.github.io/post/essay/hugo/</loc>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
 </urlset>
