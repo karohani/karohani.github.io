@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>groovy | 전파고양이</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="groovy" />
+<meta property="og:description" content="문서 https://groovy-lang.org/index.html
+세미콜론 생략가능 괄호 생략가능  print(&ldquo;hello world&rdquo;) print &ldquo;hello world&rdquo;  def def hello() { &#39;hello&#39; // return type 생략 가능 } String  String name = &ldquo;ka&rdquo; String full = &ldquo;${name}&rdquo; // interpolation 가능  Access Modifier  기본 access modifier가 public이다.  Import default Import  Groovy.lang.* Groovy.utils.* java.lang.* java.util* java.net.* java.io java.math.BigInteger java.math.BigDecimal  정적 IMPORT  import static Boolean.False  namespace   정적 import와 동일한 이름의 메서드를 선언할 수 있지만, import된 클래스가 더 우선시 된다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/groovy/20210614205039-groovy/" /><meta property="article:section" content="post" />
+
+
+
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="groovy"/>
+<meta name="twitter:description" content="문서 https://groovy-lang.org/index.html
+세미콜론 생략가능 괄호 생략가능  print(&ldquo;hello world&rdquo;) print &ldquo;hello world&rdquo;  def def hello() { &#39;hello&#39; // return type 생략 가능 } String  String name = &ldquo;ka&rdquo; String full = &ldquo;${name}&rdquo; // interpolation 가능  Access Modifier  기본 access modifier가 public이다.  Import default Import  Groovy.lang.* Groovy.utils.* java.lang.* java.util* java.net.* java.io java.math.BigInteger java.math.BigDecimal  정적 IMPORT  import static Boolean.False  namespace   정적 import와 동일한 이름의 메서드를 선언할 수 있지만, import된 클래스가 더 우선시 된다."/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="manifest" href="/manifest.json">
+		
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/">전파고양이</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+<nav class="breadcrumb block" aria-label="breadcrumb">
+	<ol class="breadcrumb__list">
+		
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/">Binario</a>
+		</li>
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/post/">Posts</a>
+		</li>
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">groovy</li>
+	</ol>
+</nav>
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	</div>
+				<h1 class="entry__title">groovy</h1>
+<details class="entry__toc toc" open>
+	<summary class="toc__title"></summary>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#문서">문서</a></li>
+    <li><a href="#세미콜론-생략가능">세미콜론 생략가능</a></li>
+    <li><a href="#괄호-생략가능">괄호 생략가능</a></li>
+    <li><a href="#def">def</a></li>
+    <li><a href="#string">String</a></li>
+    <li><a href="#access-modifier">Access Modifier</a></li>
+    <li><a href="#import">Import</a>
+      <ul>
+        <li><a href="#default-import">default Import</a></li>
+      </ul>
+    </li>
+    <li><a href="#정적-import">정적 IMPORT</a></li>
+    <li><a href="#namespace">namespace</a></li>
+    <li><a href="#script-compile">Script compile</a></li>
+    <li><a href="#closure">Closure</a></li>
+    <li><a href="#gradle-task">Gradle Task</a></li>
+    <li><a href="#assert">Assert</a></li>
+    <li><a href="#list">List</a></li>
+    <li><a href="#maps">Maps</a></li>
+    <li><a href="#backlink-test">Backlink test</a></li>
+  </ul>
+</nav>
+</details>
+				<div class="entry__content"><h2 id="문서">문서</h2>
+<p><a href="https://groovy-lang.org/index.html">https://groovy-lang.org/index.html</a></p>
+<h2 id="세미콜론-생략가능">세미콜론 생략가능</h2>
+<h2 id="괄호-생략가능">괄호 생략가능</h2>
+<ul>
+<li>print(&ldquo;hello world&rdquo;)</li>
+<li>print &ldquo;hello world&rdquo;</li>
+</ul>
+<h2 id="def">def</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hello</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#39;hello&#39;</span> <span style="color:#75715e">// return type 생략 가능
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div><h2 id="string">String</h2>
+<ul>
+<li>String name = &ldquo;ka&rdquo;</li>
+<li>String full = &ldquo;${name}&rdquo; // interpolation 가능</li>
+</ul>
+<h2 id="access-modifier">Access Modifier</h2>
+<ul>
+<li>기본 access modifier가 public이다.</li>
+</ul>
+<h2 id="import">Import</h2>
+<h3 id="default-import">default Import</h3>
+<ul>
+<li>Groovy.lang.*</li>
+<li>Groovy.utils.*</li>
+<li>java.lang.*</li>
+<li>java.util*</li>
+<li>java.net.*</li>
+<li>java.io</li>
+<li>java.math.BigInteger</li>
+<li>java.math.BigDecimal</li>
+</ul>
+<h2 id="정적-import">정적 IMPORT</h2>
+<ul>
+<li>import static Boolean.False</li>
+</ul>
+<h2 id="namespace">namespace</h2>
+<ul>
+<li>
+<p>정적 import와 동일한 이름의 메서드를 선언할 수 있지만, import된 클래스가 더 우선시 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy"><span style="color:#f92672">import</span> static java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">String</span><span style="color:#f92672">.</span><span style="color:#a6e22e">format</span> <span style="color:#75715e">// 1순위
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">A</span> <span style="color:#f92672">{</span>
+   String <span style="color:#a6e22e">foramt</span><span style="color:#f92672">(</span>Integer i<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>i<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">}</span> <span style="color:#75715e">// 2순위
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div></li>
+</ul>
+<h2 id="script-compile">Script compile</h2>
+<ul>
+<li>println(&ldquo;hello&rdquo;)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">mport org<span style="color:#f92672">.</span><span style="color:#a6e22e">doehaus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">groovy</span><span style="color:#f92672">.</span><span style="color:#a6e22e">runtime</span><span style="color:#f92672">.</span><span style="color:#a6e22e">InvokerHelper</span>
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#66d9ef">extends</span> Script <span style="color:#f92672">{</span>
+    def <span style="color:#a6e22e">run</span><span style="color:#f92672">(){</span>
+        println <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;hell&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            InvokerHelper<span style="color:#f92672">.</span><span style="color:#a6e22e">runScript</span><span style="color:#f92672">(</span>Main<span style="color:#f92672">,</span> args<span style="color:#f92672">)</span>
+                <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h2 id="closure">Closure</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">// 문법 정의
+{[closureParameters -&gt;] statements}
+def listener = {e -&gt; println &#34;click on $e.source&#34;}
+Clojure callback = {println &#34;DONE&#34;}
+Closure&lt;Boolean&gt; isText = { File it -&gt; it.name.endsWith(&#34;.txt&#34;)}
+</code></pre></div><h2 id="gradle-task">Gradle Task</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  task &gt;&gt; {
+    println(&#34;&#34;)
+  }//
+  task.leftShift(Closure)
+  def hello = {println &#34;HI&#34;}
+  task helloTask {}
+  helloTask.leftShift(helloClosure)
+</code></pre></div><h2 id="assert">Assert</h2>
+<ul>
+<li>assert [&lsquo;a&rsquo;] // true</li>
+<li>assert [&lsquo;a&rsquo;:1] // true map 선언</li>
+</ul>
+<h2 id="list">List</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">def a = [1, 2, 3, 4]
+def b = [&#34;HI&#34;, &#34;2&#34;]
+</code></pre></div><h2 id="maps">Maps</h2>
+<h2 id="backlink-test">Backlink test</h2>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="전파고양이 avatar" src="/img/avatar.png" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				전파고양이
+			</div>
+			<div class="author__bio">안녕하세요</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:example@example.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/username">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/username">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2021 Binario. <span class="footer__copyright-credits"></span></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script src="/js/custom.js"></script>
+</body>
+</html>

@@ -5,24 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>Zettelkasten(상자방법)을 이용한 효과적인 공부방법 | 전파고양이</title>
+	<title>emacs 스크롤을 pixcel 단위로 변경하기 | 전파고양이</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Zettelkasten(상자방법)을 이용한 효과적인 공부방법" />
-<meta property="og:description" content="생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
-하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &lt;201022-1143-zettelkasten.org&gt;
-핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  " />
+		<meta property="og:title" content="emacs 스크롤을 pixcel 단위로 변경하기" />
+<meta property="og:description" content=" 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/essay/201022-1143-zettelkasten/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="/post/emacs-scroll-pixel/" /><meta property="article:section" content="post" />
 
 
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Zettelkasten(상자방법)을 이용한 효과적인 공부방법"/>
-<meta name="twitter:description" content="생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
-하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &lt;201022-1143-zettelkasten.org&gt;
-핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  "/>
+<meta name="twitter:title" content="emacs 스크롤을 pixcel 단위로 변경하기"/>
+<meta name="twitter:description" content=" 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. "/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="stylesheet" href="/css/custom.css">
@@ -49,43 +45,33 @@
 		<li class="breadcrumb__item">
 			<a class="breadcrumbs__link" href="/post/">Posts</a>
 		</li>
-		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">Zettelkasten(상자방법)을 이용한 효과적인 공부방법</li>
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">emacs 스크롤을 pixcel 단위로 변경하기</li>
 	</ol>
 </nav>
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">:
+		<a class="meta-categories__link" href="/categories/emacs/" rel="category">emacs</a>
+	</span>
+</span>
 	</div>
-				<h1 class="entry__title">Zettelkasten(상자방법)을 이용한 효과적인 공부방법</h1>
+				<h1 class="entry__title">emacs 스크롤을 pixcel 단위로 변경하기</h1>
 <details class="entry__toc toc" open>
 	<summary class="toc__title"></summary>
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#생각을-기록하면-이렇게-된다">생각을 기록하면 이렇게 된다</a></li>
-    <li><a href="#핵심-원리">핵심 원리</a></li>
-    <li><a href="#reference">Reference</a></li>
-  </ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </details>
-				<div class="entry__content"><h2 id="생각을-기록하면-이렇게-된다">생각을 기록하면 이렇게 된다</h2>
-<p>최고의 모드는 orgmode이다.</p>
-<p>하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다.
-그러면 역시 orgmode와 이것을 조합한게 최고인듯?
-&lt;201022-1143-zettelkasten.org&gt;</p>
-<h2 id="핵심-원리">핵심 원리</h2>
-<ul>
-<li>언제든지 찾을 수 있는 unique-id system</li>
-<li>backlink를 통한 생각의 정리와 조합</li>
-<li>카드에는 하나의 아이디어만 있어야 함 (원자성)</li>
-<li>각각의 카드를 다른 아이디어와 링크시키기</li>
+				<div class="entry__content"><ul>
+<li>아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.</li>
 </ul>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?artid=202010222100005&amp;code=910402&amp;nv=stand&amp;utm_source=naver&amp;utm_medium=newsstand&amp;utm_campaign=top&amp;C">뉴스 기사</a></li>
-<li><a href="https://dpitt.me/blog/2020/03/zettelkasten/">dpitt.me Using Emacs&rsquo;s org-mode As Your Zettelkasten</a></li>
-<li><a href="https://blog.jethro.dev/posts/zettelkasten_with_org/">Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan</a></li>
-</ul>
-</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images</span>
+(pixel-scroll-mode)
+(setq pixel-dead-time <span style="color:#ae81ff">0</span>) <span style="color:#75715e">; Never go back to the old scrolling behaviour.</span>
+(setq pixel-resolution-fine-flag <span style="color:#66d9ef">t</span>) <span style="color:#75715e">; Scroll by number of pixels instead of lines (t = frame-char-height pixels).</span>
+(setq mouse-wheel-scroll-amount <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">1</span>)) <span style="color:#75715e">; Distance in pixel-resolution to scroll each mouse wheel event.</span>
+(setq mouse-wheel-progressive-speed <span style="color:#66d9ef">nil</span>) <span style="color:#75715e">; Progressive speed is too fast for me.</span>
+</code></pre></div></div>
 				
 				<footer class="entry__footer">
 					

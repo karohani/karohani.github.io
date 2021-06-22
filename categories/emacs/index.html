@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ko-kr">
 <head>
-	<meta name="generator" content="Hugo 0.82.0" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1b1b1b">
-	<title>전파고양이</title>
+	<title>emacs | 전파고양이</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="Responsive card-based &amp; code-light Hugo theme">
-		<meta property="og:title" content="전파고양이" />
+	<meta name="description" content="">
+		<meta property="og:title" content="emacs" />
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+<meta property="og:url" content="/categories/emacs/" />
 
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="전파고양이"/>
+<meta name="twitter:title" content="emacs"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="stylesheet" href="/css/custom.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="전파고양이">
+	<link rel="alternate" type="application/rss+xml" href="/categories/emacs/index.xml" title="전파고양이">
 	<link rel="manifest" href="/manifest.json">
 		
 </head>
-<body class="body kind-home">
+<body class="body kind-term">
 	<header class="header">
 	<a class="logo" href="/">전파고양이</a>
 	
@@ -35,25 +34,40 @@
 	<div class="primary">
 	
 	<main class="main">
-			<div class="cards">
-					<div class="card card--3col">
+		
+<nav class="breadcrumb block" aria-label="breadcrumb">
+	<ol class="breadcrumb__list">
+		
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/">Binario</a>
+		</li>
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/categories/">Categories</a>
+		</li>
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">emacs</li>
+	</ol>
+</nav>
+		<div class="page block">
+			<h1 class="page__title">emacs</h1>
+			
+		</div>
+		<div class="cards">
+			
+				<div class="card card--3col">
 					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/">hugo를 사용한 정적 블로깅</a></h1>
-	<div class="entry__content">설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  </div>
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs-scroll-pixel/">emacs 스크롤을 pixcel 단위로 변경하기</a></h1>
+	<div class="entry__content"> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </div>
 	<div class="entry__meta meta mt tar">
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">:
+		<a class="meta-categories__link" href="/categories/emacs/" rel="category">emacs</a>
+	</span>
+</span>
 	</div>
 </article>
-					</div>
-					<div class="card card--3col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/123123123/">ox hugo ??</a></h1>
-	<div class="entry__content">TODO ox hugo 설치 [2021-05-24 Mon 22:51](use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) BASE dir 설정하기 #+HUGO_BASE_DIR: 폴더명 hugo base dir이 지정되면 ~/hugo/content/&lt;HUGO_SECTION&gt;/하위에 저장된다.
- </div>
-	<div class="entry__meta meta mt tar">
-	</div>
-</article>
-					</div>
-					<div class="card card--3col">
+				</div>
+			
+				<div class="card card--3col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/">ox hugo를 사용해서 블로그 포스팅 하기</a></h1>
 	<div class="entry__content">TODO ox hugo 설치 (use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) Export를 위한 Property추가 #+HUGO_BASE_DIR: 폴더명 #+HUGO_CATEGORIES: #+HUGO_SECTION: {12123} hugo base dir이 지정되면 ~/hugo/content/&lt;HUGO_SECTION&gt;/하위에 저장된다.
@@ -67,24 +81,11 @@ export하기 &ldquo;C-c C-e&rdquo; &ldquo;H&rdquo; &ldquo;h&quot;를 하면 다�
 </span>
 	</div>
 </article>
-					</div>
-					<div class="card card--3col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/essay/201022-1143-zettelkasten/">Zettelkasten(상자방법)을 이용한 효과적인 공부방법</a></h1>
-	<div class="entry__content">생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
-하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &lt;201022-1143-zettelkasten.org&gt;
-핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  </div>
-	<div class="entry__meta meta mt tar">
-	</div>
-</article>
-					</div>
-			</div>
+				</div>
+			
+		</div>
 	</main>
 	
-<div class="pagination block">
-				<a class="pagination__item pagination__item--desktop" href="/">1</a>
-				<span class="pagination__item pagination__item--active" data-total="2">2</span>
-</div>
 
 	</div>
 	<footer class="footer">

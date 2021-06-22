@@ -5,16 +5,14 @@
     <link>/posts/</link>
     <description>Recent content in Posts on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0900</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>19장 타입파라미터</title>
-      <link>/posts/pis-19-typeparameter/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
+      <title>ox hugo로 블로그 포스팅 하기</title>
+      <link>/posts/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/pis-19-typeparameter/</guid>
-      <description>subtype이란 무엇인가? F가 G의 서브타입이라면 G가 쓰일 자리에 F가 쓰여도 된다.
-In programming language theory, subtyping (also subtype polymorphism or inclusion polymorphism) is a form of type polymorphism in which a subtype is a datatype that is related to another datatype (the supertype) by some notion of substitutability, meaning that program elements, typically subroutines or functions, written to operate on elements of the supertype can also operate on elements of the subtype.</description>
+      <guid>/posts/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</guid>
+      <description>TODO ox hugo 설치 [2021-05-24 Mon 22:51](use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) BASE dir 설정하기 #+HUGO_BASE_DIR: 폴더명  </description>
     </item>
     
   </channel>
