@@ -8,22 +8,11 @@
     <language>ko-kr</language><atom:link href="/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emacs 스크롤을 pixcel 단위로 변경하기</title>
-      <link>/post/emacs-scroll-pixel/</link>
+      <link>/post/emacs/emacs-scroll-pixel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/emacs-scroll-pixel/</guid>
+      <guid>/post/emacs/emacs-scroll-pixel/</guid>
       <description> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &amp;#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </description>
-    </item>
-    
-    <item>
-      <title>ox hugo를 사용해서 블로그 포스팅 하기</title>
-      <link>/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</guid>
-      <description>TODO ox hugo 설치 (use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) Export를 위한 Property추가 #+HUGO_BASE_DIR: 폴더명 #+HUGO_CATEGORIES: #+HUGO_SECTION: {12123} hugo base dir이 지정되면 ~/hugo/content/&amp;lt;HUGO_SECTION&amp;gt;/하위에 저장된다.
-export하기 &amp;ldquo;C-c C-e&amp;rdquo; &amp;ldquo;H&amp;rdquo; &amp;ldquo;h&amp;quot;를 하면 다음과 같이 파일이 추출된다.
-   subtree to file to file subtree to file and open  </description>
     </item>
     
   </channel>

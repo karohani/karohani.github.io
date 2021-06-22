@@ -78,6 +78,18 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/categories/emacs/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://karohani.github.io/post/emacs/emacs-scroll-pixel/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/post/essay/how-to-make-static-blog-by-using-hugo/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>

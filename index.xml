@@ -104,6 +104,15 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
     </item>
     
     <item>
+      <title>emacs 스크롤을 pixcel 단위로 변경하기</title>
+      <link>/post/emacs/emacs-scroll-pixel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/emacs/emacs-scroll-pixel/</guid>
+      <description> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &amp;#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </description>
+    </item>
+    
+    <item>
       <title>hugo를 사용한 정적 블로깅</title>
       <link>/post/essay/how-to-make-static-blog-by-using-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
