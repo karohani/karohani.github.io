@@ -92,22 +92,15 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
     </item>
     
     <item>
-      <title>emacs 스크롤을 pixcel 단위로 변경하기</title>
-      <link>/post/emacs-scroll-pixel/</link>
+      <title>docker</title>
+      <link>/post/20210428010112-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/emacs-scroll-pixel/</guid>
-      <description> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &amp;#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </description>
-    </item>
-    
-    <item>
-      <title>groovy</title>
-      <link>/post/groovy/20210614205039-groovy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/groovy/20210614205039-groovy/</guid>
-      <description>문서 https://groovy-lang.org/index.html
-세미콜론 생략가능 괄호 생략가능  print(&amp;ldquo;hello world&amp;rdquo;) print &amp;ldquo;hello world&amp;rdquo;  def def hello() { &amp;#39;hello&amp;#39; // return type 생략 가능 } String  String name = &amp;ldquo;ka&amp;rdquo; String full = &amp;ldquo;${name}&amp;rdquo; // interpolation 가능  Access Modifier  기본 access modifier가 public이다.  Import default Import  Groovy.lang.* Groovy.utils.* java.lang.* java.util* java.net.* java.io java.math.BigInteger java.math.BigDecimal  정적 IMPORT  import static Boolean.False  namespace   정적 import와 동일한 이름의 메서드를 선언할 수 있지만, import된 클래스가 더 우선시 된다.</description>
+      <guid>/post/20210428010112-docker/</guid>
+      <description>chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
+오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
+chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
+  asldifjalsidjf alsiejflisaj </description>
     </item>
     
     <item>
@@ -126,27 +119,6 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
       
       <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
       <description>설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  </description>
-    </item>
-    
-    <item>
-      <title>ox hugo ??</title>
-      <link>/post/emacs/123123123/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/emacs/123123123/</guid>
-      <description>TODO ox hugo 설치 [2021-05-24 Mon 22:51](use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) BASE dir 설정하기 #+HUGO_BASE_DIR: 폴더명 hugo base dir이 지정되면 ~/hugo/content/&amp;lt;HUGO_SECTION&amp;gt;/하위에 저장된다.
- </description>
-    </item>
-    
-    <item>
-      <title>ox hugo를 사용해서 블로그 포스팅 하기</title>
-      <link>/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</guid>
-      <description>TODO ox hugo 설치 (use-package ox-hugo :ensure t ;Auto-install the package from Melpa (optional) :after ox) Export를 위한 Property추가 #+HUGO_BASE_DIR: 폴더명 #+HUGO_CATEGORIES: #+HUGO_SECTION: {12123} hugo base dir이 지정되면 ~/hugo/content/&amp;lt;HUGO_SECTION&amp;gt;/하위에 저장된다.
-export하기 &amp;ldquo;C-c C-e&amp;rdquo; &amp;ldquo;H&amp;rdquo; &amp;ldquo;h&amp;quot;를 하면 다음과 같이 파일이 추출된다.
-   subtree to file to file subtree to file and open  </description>
     </item>
     
     <item>

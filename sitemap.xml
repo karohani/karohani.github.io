@@ -66,25 +66,31 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/articles/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/categories/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://karohani.github.io/categories/emacs/</loc>
+      <loc>https://karohani.github.io/articles/20210428010112-docker/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/emacs-scroll-pixel/</loc>
+      <loc>https://karohani.github.io/post/20210428010112-docker/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/groovy/20210614205039-groovy/</loc>
+      <loc>https://karohani.github.io/posts/20210428010112-docker/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -102,13 +108,7 @@
     </url>
   
     <url>
-      <loc>https://karohani.github.io/post/emacs/123123123/</loc>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/post/20210524225133-orgmode-hugo%E1%84%85%E1%85%A9-%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3-%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-/</loc>
+      <loc>https://karohani.github.io/posts/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
