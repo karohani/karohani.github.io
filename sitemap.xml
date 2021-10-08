@@ -102,6 +102,12 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/post/mysql/mysql_troubleshooting/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/tags/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>

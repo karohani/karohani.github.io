@@ -131,6 +131,16 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
     </item>
     
     <item>
+      <title>mysql-troubleshooting</title>
+      <link>/post/mysql/mysql_troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/mysql/mysql_troubleshooting/</guid>
+      <description>MySQL to_base64 함수는 개행을 추가한다.  아래의 동작을 기본으로 하기 때문에 주의! JSON String을 암호화 하고 복호화 할 때 이슈가 발생한다.  https://dev.mysql.com/doc/refman/8.0/en/string-functions.html
+  </description>
+    </item>
+    
+    <item>
       <title>Zettelkasten(상자방법)을 이용한 효과적인 공부방법</title>
       <link>/post/essay/201022-1143-zettelkasten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
