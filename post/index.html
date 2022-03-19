@@ -14,10 +14,6 @@
 <meta property="og:url" content="/post/" />
 
 
-		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
-
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="stylesheet" href="/css/custom.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -50,56 +46,56 @@
 		</div>
 		<div class="cards">
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/emacs-lisp-datatype/">Emacs-lisp 자료형</a></h1>
 	<div class="entry__content">출력하기 print(&#34;이렇게 출력합니다&#34;) (message &#34;이렇게 출력합니다&#34;) 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.
 (message &#34;hello workd&#34;) hello workd (message &#34;hello: %d&#34; (+ 1 2)) hello: 3 메시지는 &ldquo;hello: %&ldquo;와 3을 argument로 받아 실핵된다.
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다.</div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2019-11-28T00:00:00&#43;09:00">November 28, 2019</time>
+	<time class="entry__meta-published meta-published" datetime="2019-11-28T00:00:00Z">November 28, 2019</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/emacs-lisp-condition/">Emacs-lisp 조건문</a></h1>
 	<div class="entry__content">(if COND THEN ELSE &hellip;)
 COND의 결과가 nil이 아니면 THEN 표현식을 계산후에 리턴. 아니면 &hellip;을 계산한 후에 마지막 표현식을 리턴한다.
 (message &#34;hello %s&#34; (if (= 1 2) &#34;hello&#34; &#34;world&#34;)) hello world </div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2019-11-28T00:00:00&#43;09:00">November 28, 2019</time>
+	<time class="entry__meta-published meta-published" datetime="2019-11-28T00:00:00Z">November 28, 2019</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/pis-19-typeparameter/">19장 타입파라미터</a></h1>
 	<div class="entry__content">subtype이란 무엇인가? F가 G의 서브타입이라면 G가 쓰일 자리에 F가 쓰여도 된다.
 In programming language theory, subtyping (also subtype polymorphism or inclusion polymorphism) is a form of type polymorphism in which a subtype is a datatype that is related to another datatype (the supertype) by some notion of substitutability, meaning that program elements, typically subroutines or functions, written to operate on elements of the supertype can also operate on elements of the subtype.</div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2020-04-12T00:00:00&#43;09:00">April 12, 2020</time>
+	<time class="entry__meta-published meta-published" datetime="2020-04-12T00:00:00Z">April 12, 2020</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/python/python-environment/">python virtualenv 환경정리</a></h1>
-	<div class="entry__content">pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기  virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐  $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
+	<div class="entry__content">pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기  virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐   $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
 (환경이름) $ 내가 사용하는 모듈을 저장하기 pip freeze &gt; requirements.txt
 내가 사용하는 모듈 설치하기 pip install -r requirements.txt
 virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통해서 가상환경에 진입해야 한다.
-pip install virtualenvwrapper # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.virtualenvs export VIRTUALENVWRAPPER_PYTHON=&#34;$(which python3)&#34; # Usage of python3 source /Users/veritas/.</div>
+ pip install virtualenvwrapper  # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.</div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2020-04-12T00:00:00&#43;09:00">April 12, 2020</time>
+	<time class="entry__meta-published meta-published" datetime="2020-04-12T00:00:00Z">April 12, 2020</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/emacs/">개인적으로 사용하는 emacs 설정 모음</a></h1>
 	<div class="entry__content">Index
@@ -109,26 +105,26 @@ Triggering Expansion   link
   when yas-minor-mode is active 일 때 triggering key를 누르면 확장 된다.
   Writting Snippet emacs-my-package 내가 사용하는 package를 모아서 정리</div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2020-03-01T00:00:00&#43;09:00">March 01, 2020</time>
+	<time class="entry__meta-published meta-published" datetime="2020-03-01T00:00:00Z">March 01, 2020</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/java/toby-spring-chapter-6/">6장 AOP</a></h1>
 	<div class="entry__content">Proxy, ProxyPattern, DecoratorPattern Decorator Pattern   다른 언어와의 차이점
   자바의 함수는 1급 객체가 아니다.
     Example1 Input Stream 자바에서 Decorator패턴을 구현하기 위해서는 결국 Proxy의 형태로 구현할 수 밖에 없다. 자바는 함수가 1급 객체가 아니기 때문이다.
-  Figure 1: BufferedInputStream 예제
+ Figure 1: BufferedInputStream 예제
   핵심 기능과 부가기능을 분리하는 여러가지 방법들 </div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2020-02-29T00:00:00&#43;09:00">February 29, 2020</time>
+	<time class="entry__meta-published meta-published" datetime="2020-02-29T00:00:00Z">February 29, 2020</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/java/java-junit/">java-junit</a></h1>
 	<div class="entry__content">java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
@@ -136,24 +132,24 @@ Triggering Expansion   link
   java-junit sitename test
 link  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.</div>
 	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2020-02-29T00:00:00&#43;09:00">February 29, 2020</time>
+	<time class="entry__meta-published meta-published" datetime="2020-02-29T00:00:00Z">February 29, 2020</time>
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/20210428010112-docker/">docker</a></h1>
 	<div class="entry__content">chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
 오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
 chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
-  asldifjalsidjf alsiejflisaj </div>
+ asldifjalsidjf alsiejflisaj </div>
 	<div class="entry__meta meta mt tar">
 	</div>
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/emacs/emacs-scroll-pixel/">emacs 스크롤을 pixcel 단위로 변경하기</a></h1>
 	<div class="entry__content"> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </div>
@@ -167,7 +163,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
 </article>
 				</div>
 			
-				<div class="card card--3col">
+				<div class="card card--1col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/essay/how-to-make-static-blog-by-using-hugo/">hugo를 사용한 정적 블로깅</a></h1>
 	<div class="entry__content">설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  OX-hugo를 이용해서 실제 데이터와 바인딩하기 주의점 파일 이름이 한글이면 제대로 출력되지 않는다.  TITLE은 한글로 하더라도 파일이름은 한글로 해서는 안된다 ㅠㅠ 젠장  </div>
@@ -227,7 +223,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
 			<svg class="social__icon" aria-label="Medium" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M125 173c0-4-2-9-5-11l-31-38v-6h98l75 166 67-166h93v6l-27 26c-2 1-3 4-3 7v190c0 3 1 6 3 8l27 25v6H289v-6l27-26c3-3 3-4 3-8V193l-76 192h-10l-88-192v129c-1 5 1 11 5 15l35 43v5H85v-5l35-43c4-4 6-10 5-15z"/></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2021 Binario. <span class="footer__copyright-credits"></span></div>
+	<div class="footer__copyright">© 2022 Binario. <span class="footer__copyright-credits"></span></div>
 </footer>
 <script src="/js/custom.js"></script>
 </body>

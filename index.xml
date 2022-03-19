@@ -6,11 +6,11 @@
     <description>Recent content on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0900</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
-      <pubDate>Thu, 28 Nov 2019 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/emacs/emacs-lisp-datatype/</guid>
       <description>출력하기 print(&amp;#34;이렇게 출력합니다&amp;#34;) (message &amp;#34;이렇게 출력합니다&amp;#34;) 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.
@@ -21,7 +21,7 @@
     <item>
       <title>Emacs-lisp 조건문</title>
       <link>/post/emacs/emacs-lisp-condition/</link>
-      <pubDate>Thu, 28 Nov 2019 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/emacs/emacs-lisp-condition/</guid>
       <description>(if COND THEN ELSE &amp;hellip;)
@@ -32,7 +32,7 @@ COND의 결과가 nil이 아니면 THEN 표현식을 계산후에 리턴. 아니
     <item>
       <title>19장 타입파라미터</title>
       <link>/post/emacs/pis-19-typeparameter/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/emacs/pis-19-typeparameter/</guid>
       <description>subtype이란 무엇인가? F가 G의 서브타입이라면 G가 쓰일 자리에 F가 쓰여도 된다.
@@ -42,20 +42,20 @@ In programming language theory, subtyping (also subtype polymorphism or inclusio
     <item>
       <title>python virtualenv 환경정리</title>
       <link>/post/python/python-environment/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0900</pubDate>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/python/python-environment/</guid>
-      <description>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기  virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐  $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
+      <description>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기  virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐   $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
 (환경이름) $ 내가 사용하는 모듈을 저장하기 pip freeze &amp;gt; requirements.txt
 내가 사용하는 모듈 설치하기 pip install -r requirements.txt
 virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통해서 가상환경에 진입해야 한다.
-pip install virtualenvwrapper # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.virtualenvs export VIRTUALENVWRAPPER_PYTHON=&amp;#34;$(which python3)&amp;#34; # Usage of python3 source /Users/veritas/.</description>
+ pip install virtualenvwrapper  # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.</description>
     </item>
     
     <item>
       <title>개인적으로 사용하는 emacs 설정 모음</title>
       <link>/post/emacs/emacs/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0900</pubDate>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/emacs/emacs/</guid>
       <description>Index
@@ -69,20 +69,20 @@ Triggering Expansion   link
     <item>
       <title>6장 AOP</title>
       <link>/post/java/toby-spring-chapter-6/</link>
-      <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/java/toby-spring-chapter-6/</guid>
       <description>Proxy, ProxyPattern, DecoratorPattern Decorator Pattern   다른 언어와의 차이점
   자바의 함수는 1급 객체가 아니다.
     Example1 Input Stream 자바에서 Decorator패턴을 구현하기 위해서는 결국 Proxy의 형태로 구현할 수 밖에 없다. 자바는 함수가 1급 객체가 아니기 때문이다.
-  Figure 1: BufferedInputStream 예제
+ Figure 1: BufferedInputStream 예제
   핵심 기능과 부가기능을 분리하는 여러가지 방법들 </description>
     </item>
     
     <item>
       <title>java-junit</title>
       <link>/post/java/java-junit/</link>
-      <pubDate>Sat, 29 Feb 2020 00:00:00 +0900</pubDate>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/java/java-junit/</guid>
       <description>java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
@@ -100,7 +100,7 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
       <description>chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
 오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
 chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
-  asldifjalsidjf alsiejflisaj </description>
+ asldifjalsidjf alsiejflisaj </description>
     </item>
     
     <item>
@@ -137,7 +137,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       
       <guid>/post/mysql/mysql_troubleshooting/</guid>
       <description>MySQL to_base64 함수는 개행을 추가한다.  아래의 동작을 기본으로 하기 때문에 주의! JSON String을 암호화 하고 복호화 할 때 이슈가 발생한다.  https://dev.mysql.com/doc/refman/8.0/en/string-functions.html
-  </description>
+ </description>
     </item>
     
     <item>
@@ -162,21 +162,21 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
     
     <item>
       <title>이규원 현실 세상의 TDD 후기</title>
-      <link>/post/lecture-note/20210811214554-%E1%84%92%E1%85%A7%E1%86%AB%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%A6%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4-tdd-%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3-%E1%84%8C%E1%85%AE%E1%84%83%E1%85%A9-%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%B4-%E1%84%80%E1%85%B5%E1%87%81%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BA-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%B2%E1%84%8B%E1%85%AF%E1%86%AB/</link>
+      <link>/post/lecture-note/20210811214554-%ED%98%84%EC%8B%A4%EC%84%B8%EC%83%81%EC%9D%98-tdd-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EA%B9%8A%EC%9D%80%EA%B3%B3-%EC%9D%B4%EA%B7%9C%EC%9B%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/lecture-note/20210811214554-%E1%84%92%E1%85%A7%E1%86%AB%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%A6%E1%84%89%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4-tdd-%E1%84%90%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3-%E1%84%8C%E1%85%AE%E1%84%83%E1%85%A9-%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%B4-%E1%84%80%E1%85%B5%E1%87%81%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BA-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%B2%E1%84%8B%E1%85%AF%E1%86%AB/</guid>
-      <description>엔지니어링의 깊은 곳 [2021-08-11 Wed 21:45]    추상화라는 것은 대상의 가지고 있는 것중에 일부분만 투영하는 것
+      <guid>/post/lecture-note/20210811214554-%ED%98%84%EC%8B%A4%EC%84%B8%EC%83%81%EC%9D%98-tdd-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EA%B9%8A%EC%9D%80%EA%B3%B3-%EC%9D%B4%EA%B7%9C%EC%9B%90/</guid>
+      <description>엔지니어링의 깊은 곳 [2021-08-11 Wed 21:45]   추상화라는 것은 대상의 가지고 있는 것중에 일부분만 투영하는 것
   협력과 계약
  대부분의 코드는 다른 코드와 협력 협력에 필요한 것은 어떻게가 아니라 무엇이다.  누가 담당해서 어떤 과정을 통해서 처리하는 것은 우리에게 중요한 문제가 아니다.   인터페이스  무엇을 표현한다. 협력하는 코드사이의 계약 추상화의 결과이다.      우리는 인터페이스를 대상으로 프로그래밍을 한다. 내용을 고려하지 않는다. print가 어떤 과정을 통해서 이루어지는지는 고려사항이 아니다.</description>
     </item>
     
     <item>
       <title>정리 방법</title>
-      <link>/post/life_hacking/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8/</link>
+      <link>/post/life_hacking/%EC%A0%95%EB%A6%AC_%EB%B0%A9%EB%B2%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/life_hacking/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8/</guid>
+      <guid>/post/life_hacking/%EC%A0%95%EB%A6%AC_%EB%B0%A9%EB%B2%95/</guid>
       <description>책장 정리 방법1  기계인간님의 정리 방법을 참고로 했다.     3 3 3 1      - 1 1    - 2 MRU    - 3     - 3 버릴책     어딘가에서 꺼내서 읽은 책은 MRU 제일 왼쪽에 꽂는다. MRU가 다 차면 이동한다. 다시 사용할 것 같은 책은 2로 이동한다(주로 글쓰기) 버릴 책의 공간이 전부 차면 &amp;ldquo;중고&amp;quot;로 판매하던 없앤다.</description>
     </item>
     
