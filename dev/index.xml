@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devs on 전파고양이</title>
+    <link>/dev/</link>
+    <description>Recent content in Devs on 전파고양이</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language><atom:link href="/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Application Context</title>
+      <link>/dev/spring/spring-application-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/spring/spring-application-context/</guid>
+      <description>spring application context에 대해서 이야기 합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

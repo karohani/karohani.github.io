@@ -92,6 +92,15 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
     </item>
     
     <item>
+      <title>Application Context</title>
+      <link>/dev/spring/spring-application-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dev/spring/spring-application-context/</guid>
+      <description>spring application context에 대해서 이야기 합니다.</description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>/post/20210428010112-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

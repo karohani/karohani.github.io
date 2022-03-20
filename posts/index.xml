@@ -7,15 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>docker</title>
-      <link>/posts/20210428010112-docker/</link>
+      <title>spring moc</title>
+      <link>/posts/spring_moc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/20210428010112-docker/</guid>
-      <description>chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
-오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
-chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
-  asldifjalsidjf alsiejflisaj </description>
+      <guid>/posts/spring_moc/</guid>
+      <description>Spring Container Application Context spring application context에 대해서 이야기 합니다.
+Bean Factory 다양한 설정 형식 @Configuration 컴포넌트 스캔 빈 생명주기 콜백 InitializingBean, DisposableBean @PostConstruct, @PreDestroy Bean Scope ProtoType Scope @Autowired @Component @Environment MessageSource ApplicationEventPublisher ResouceLoader spring mvc Spring 개발 Practice JPA를 이용한 Database Access 접근 방법 배치 API 활용 전략 Spring에서 Logging 설정 전략 Kotlin Spring 스프링 전략 MultiModule 설정 전략 @Trasactional 작동원리 java는 기본적으로 JDBC를 통해서 DB와의 커넥션을 관리하게 된다.</description>
     </item>
     
   </channel>
