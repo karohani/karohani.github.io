@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>전파고양이</title>
     <link>/</link>
     <description>Recent content on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
@@ -30,6 +30,17 @@ COND의 결과가 nil이 아니면 THEN 표현식을 계산후에 리턴. 아니
     </item>
     
     <item>
+      <title>Hugo</title>
+      <link>/etc/hugo/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/etc/hugo/</guid>
+      <description>Hugo DONE Hugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
+archetypes
+You can create new content files in Hugo using the hugo new command. By default, Hugo will create new content files with at least date, title (inferred from the filename), and draft = true. This saves time and promotes consistency for sites using multiple content types.</description>
+    </item>
+    
+    <item>
       <title>19장 타입파라미터</title>
       <link>/post/emacs/pis-19-typeparameter/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
@@ -45,11 +56,11 @@ In programming language theory, subtyping (also subtype polymorphism or inclusio
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/python/python-environment/</guid>
-      <description>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기  virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐   $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
+      <description>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기 virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐 $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
 (환경이름) $ 내가 사용하는 모듈을 저장하기 pip freeze &amp;gt; requirements.txt
 내가 사용하는 모듈 설치하기 pip install -r requirements.txt
 virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통해서 가상환경에 진입해야 한다.
- pip install virtualenvwrapper  # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.</description>
+pip install virtualenvwrapper # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.virtualenvs export VIRTUALENVWRAPPER_PYTHON=&amp;#34;$(which python3)&amp;#34; # Usage of python3 source /Users/veritas/.</description>
     </item>
     
     <item>
@@ -59,11 +70,12 @@ virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통�
       
       <guid>/post/emacs/emacs/</guid>
       <description>Index
-  Related:
-  emacs main inbox  emacs-my-package emacs-lisp-배워보기 emacs-documentation  emacs-yasnippet Snippet collections can be stored in plain text files. They are arranged by sub-directories naming snippet tables. These mostly name Emacs major mode names. 기본적으로 Emacs major Mode의 네임으로 subdir을 만들어서 관리한다.
-Triggering Expansion   link
-  when yas-minor-mode is active 일 때 triggering key를 누르면 확장 된다.
-  Writting Snippet emacs-my-package 내가 사용하는 package를 모아서 정리</description>
+Related:
+emacs main inbox emacs-my-package emacs-lisp-배워보기 emacs-documentation emacs-yasnippet Snippet collections can be stored in plain text files. They are arranged by sub-directories naming snippet tables. These mostly name Emacs major mode names. 기본적으로 Emacs major Mode의 네임으로 subdir을 만들어서 관리한다.
+Triggering Expansion link
+when yas-minor-mode is active 일 때 triggering key를 누르면 확장 된다.
+Writting Snippet emacs-my-package 내가 사용하는 package를 모아서 정리
+orgmode tide hydra company-mode yasnippet auto-complete hook 개념 이해하기 Code Formatting 코드 포맷을 하기 위해서 다음과 같은 것을 할 수 있을 것 같다.</description>
     </item>
     
     <item>
@@ -72,11 +84,11 @@ Triggering Expansion   link
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/java/toby-spring-chapter-6/</guid>
-      <description>Proxy, ProxyPattern, DecoratorPattern Decorator Pattern   다른 언어와의 차이점
-  자바의 함수는 1급 객체가 아니다.
-    Example1 Input Stream 자바에서 Decorator패턴을 구현하기 위해서는 결국 Proxy의 형태로 구현할 수 밖에 없다. 자바는 함수가 1급 객체가 아니기 때문이다.
- Figure 1: BufferedInputStream 예제
-  핵심 기능과 부가기능을 분리하는 여러가지 방법들 </description>
+      <description>Proxy, ProxyPattern, DecoratorPattern Decorator Pattern 다른 언어와의 차이점
+자바의 함수는 1급 객체가 아니다.
+Example1 Input Stream 자바에서 Decorator패턴을 구현하기 위해서는 결국 Proxy의 형태로 구현할 수 밖에 없다. 자바는 함수가 1급 객체가 아니기 때문이다.
+Figure 1: BufferedInputStream 예제
+핵심 기능과 부가기능을 분리하는 여러가지 방법들 </description>
     </item>
     
     <item>
@@ -85,10 +97,10 @@ Triggering Expansion   link
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/java/java-junit/</guid>
-      <description>java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
-  Related:
-  java-junit sitename test
-link  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.</description>
+      <description>java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index
+Related:
+java-junit sitename test
+link github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.</description>
     </item>
     
     <item>
@@ -109,7 +121,7 @@ link  github-team-junit  용어정리  test context 테스트의 정의  반복�
       <description>chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
 오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
 chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
- asldifjalsidjf alsiejflisaj </description>
+asldifjalsidjf alsiejflisaj </description>
     </item>
     
     <item>
@@ -118,7 +130,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/emacs/emacs-scroll-pixel/</guid>
-      <description> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &amp;#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </description>
+      <description> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다. ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &amp;#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </description>
     </item>
     
     <item>
@@ -127,7 +139,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/essay/how-to-make-static-blog-by-using-hugo/</guid>
-      <description>설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  OX-hugo를 이용해서 실제 데이터와 바인딩하기 주의점 파일 이름이 한글이면 제대로 출력되지 않는다.  TITLE은 한글로 하더라도 파일이름은 한글로 해서는 안된다 ㅠㅠ 젠장  </description>
+      <description>설치 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} theme추가 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록 google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다. OX-hugo를 이용해서 실제 데이터와 바인딩하기 주의점 파일 이름이 한글이면 제대로 출력되지 않는다. TITLE은 한글로 하더라도 파일이름은 한글로 해서는 안된다 ㅠㅠ 젠장 </description>
     </item>
     
     <item>
@@ -136,7 +148,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
-      <description>설치 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} theme추가  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public    google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록  google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다.  </description>
+      <description>설치 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} theme추가 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록 google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다. </description>
     </item>
     
     <item>
@@ -145,8 +157,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/mysql/mysql_troubleshooting/</guid>
-      <description>MySQL to_base64 함수는 개행을 추가한다.  아래의 동작을 기본으로 하기 때문에 주의! JSON String을 암호화 하고 복호화 할 때 이슈가 발생한다.  https://dev.mysql.com/doc/refman/8.0/en/string-functions.html
- </description>
+      <description>MySQL to_base64 함수는 개행을 추가한다. 아래의 동작을 기본으로 하기 때문에 주의! JSON String을 암호화 하고 복호화 할 때 이슈가 발생한다. https://dev.mysql.com/doc/refman/8.0/en/string-functions.html</description>
     </item>
     
     <item>
@@ -157,7 +168,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <guid>/post/essay/201022-1143-zettelkasten/</guid>
       <description>생각을 기록하면 이렇게 된다 최고의 모드는 orgmode이다.
 하지만 최대한 다른 모드와 기능들은 배제하고 내가 직접 작성한 것들만 사용하고 싶다. 그러면 역시 orgmode와 이것을 조합한게 최고인듯? &amp;lt;201022-1143-zettelkasten.org&amp;gt;
-핵심 원리  언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기  Reference  뉴스 기사 dpitt.me Using Emacs&amp;rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan  </description>
+핵심 원리 언제든지 찾을 수 있는 unique-id system backlink를 통한 생각의 정리와 조합 카드에는 하나의 아이디어만 있어야 함 (원자성) 각각의 카드를 다른 아이디어와 링크시키기 Reference 뉴스 기사 dpitt.me Using Emacs&amp;rsquo;s org-mode As Your Zettelkasten Org-mode Workflow Part 3: Zettelkasten with Org-mode · Jethro Kuan </description>
     </item>
     
     <item>
@@ -166,7 +177,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/etc/20210724211747-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EA%B0%96%EC%B6%94%EC%96%B4%EC%95%BC-%ED%95%A0-9%EA%B0%80%EC%A7%80-%EA%B8%B0%EC%88%A0%EC%97%90%EC%84%9C.../</guid>
-      <description>엔지니어는 실패를 막는 사람이다. [2021-07-24 Sat 21:17]https://www.youtube.com/watch?v=fHyTA-UIcqs</description>
+      <description>엔지니어는 실패를 막는 사람이다. [2021-07-24 Sat 21:17] https://www.youtube.com/watch?v=fHyTA-UIcqs</description>
     </item>
     
     <item>
@@ -175,9 +186,10 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/lecture-note/20210811214554-%ED%98%84%EC%8B%A4%EC%84%B8%EC%83%81%EC%9D%98-tdd-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EA%B9%8A%EC%9D%80%EA%B3%B3-%EC%9D%B4%EA%B7%9C%EC%9B%90/</guid>
-      <description>엔지니어링의 깊은 곳 [2021-08-11 Wed 21:45]   추상화라는 것은 대상의 가지고 있는 것중에 일부분만 투영하는 것
-  협력과 계약
- 대부분의 코드는 다른 코드와 협력 협력에 필요한 것은 어떻게가 아니라 무엇이다.  누가 담당해서 어떤 과정을 통해서 처리하는 것은 우리에게 중요한 문제가 아니다.   인터페이스  무엇을 표현한다. 협력하는 코드사이의 계약 추상화의 결과이다.      우리는 인터페이스를 대상으로 프로그래밍을 한다. 내용을 고려하지 않는다. print가 어떤 과정을 통해서 이루어지는지는 고려사항이 아니다.</description>
+      <description>엔지니어링의 깊은 곳 [2021-08-11 Wed 21:45]
+추상화라는 것은 대상의 가지고 있는 것중에 일부분만 투영하는 것
+협력과 계약
+대부분의 코드는 다른 코드와 협력 협력에 필요한 것은 어떻게가 아니라 무엇이다. 누가 담당해서 어떤 과정을 통해서 처리하는 것은 우리에게 중요한 문제가 아니다. 인터페이스 무엇을 표현한다. 협력하는 코드사이의 계약 추상화의 결과이다. 우리는 인터페이스를 대상으로 프로그래밍을 한다. 내용을 고려하지 않는다. print가 어떤 과정을 통해서 이루어지는지는 고려사항이 아니다.</description>
     </item>
     
     <item>
@@ -186,7 +198,7 @@ chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓ�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/life_hacking/%EC%A0%95%EB%A6%AC_%EB%B0%A9%EB%B2%95/</guid>
-      <description>책장 정리 방법1  기계인간님의 정리 방법을 참고로 했다.     3 3 3 1      - 1 1    - 2 MRU    - 3     - 3 버릴책     어딘가에서 꺼내서 읽은 책은 MRU 제일 왼쪽에 꽂는다. MRU가 다 차면 이동한다. 다시 사용할 것 같은 책은 2로 이동한다(주로 글쓰기) 버릴 책의 공간이 전부 차면 &amp;ldquo;중고&amp;quot;로 판매하던 없앤다.</description>
+      <description>책장 정리 방법1 기계인간님의 정리 방법을 참고로 했다. 3 3 3 1 - 1 1 - 2 MRU - 3 - 3 버릴책 어딘가에서 꺼내서 읽은 책은 MRU 제일 왼쪽에 꽂는다. MRU가 다 차면 이동한다. 다시 사용할 것 같은 책은 2로 이동한다(주로 글쓰기) 버릴 책의 공간이 전부 차면 &amp;ldquo;중고&amp;quot;로 판매하던 없앤다. 1영역은 아직 읽지 않은 책들을 넣어둔다. 다 읽은 책은 아래에서 또는 위에서 찾으면 된다. 안 읽은 책은 [1]을 찾으면 된다.</description>
     </item>
     
   </channel>

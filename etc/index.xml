@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Etcs on 전파고양이</title>
+    <link>/etc/</link>
+    <description>Recent content in Etcs on 전파고양이</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>/etc/hugo/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/etc/hugo/</guid>
+      <description>Hugo DONE Hugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.
+archetypes
+You can create new content files in Hugo using the hugo new command. By default, Hugo will create new content files with at least date, title (inferred from the filename), and draft = true. This saves time and promotes consistency for sites using multiple content types.</description>
+    </item>
+    
+  </channel>
+</rss>
