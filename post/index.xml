@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 전파고양이</title>
+    <title>Programming Note on 전파고양이</title>
     <link>/post/</link>
-    <description>Recent content in Posts on 전파고양이</description>
+    <description>Recent content in Programming Note on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
@@ -19,14 +19,31 @@
     </item>
     
     <item>
-      <title>Emacs-lisp 조건문</title>
-      <link>/post/emacs/emacs-lisp-condition/</link>
-      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      <title>Emacs Lisp 이해하기</title>
+      <link>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/emacs/emacs-lisp-condition/</guid>
-      <description>(if COND THEN ELSE &amp;hellip;)
-COND의 결과가 nil이 아니면 THEN 표현식을 계산후에 리턴. 아니면 &amp;hellip;을 계산한 후에 마지막 표현식을 리턴한다.
-(message &amp;#34;hello %s&amp;#34; (if (= 1 2) &amp;#34;hello&amp;#34; &amp;#34;world&amp;#34;)) hello world </description>
+      <guid>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</guid>
+      <description>출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &amp;lt;-&amp;gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+(message &amp;#34;하이 %d&amp;#34; (+ 2 3)) #&amp;#39;(1 2 3) (cons 1 &amp;#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &amp;#34;%s&amp;#34; (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message &amp;#34;%s&amp;#34; (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message &amp;#34;%s&amp;#34; (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &amp;#34;123123 123123 123123&amp;#34; &amp;#34; &amp;#34;) ;; (&amp;#34;123123&amp;#34; &amp;#34;123123&amp;#34; &amp;#34;123123&amp;#34; (concat &amp;#34;a&amp;#34; &amp;#34;b&amp;#34;) string &amp;lt;-&amp;gt; int join-string regex memq (memq 1 &amp;#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다.</description>
+    </item>
+    
+    <item>
+      <title>javascript의 object literal[fn:1]</title>
+      <link>/post/javascript/object_liternal/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript/object_liternal/</guid>
+      <description>literal이란 사람이 이해할 수 있는 문자 또는 약속된 기호를 사용하여 값을 생성하는 표기법이다. {}로 0개 이상의 property를 선어하면 변수 할당 시점에 객체리터럴을 해석해 객체를 할당한다. 객체 리터럴은 expression이므로 &amp;lt;;&amp;gt;가 필요하다. block과는 다르다. var person = { name: &amp;#39;LEE&amp;#39;, age: 20 } &amp;lt;name: &amp;lsquo;LEE&amp;rsquo;&amp;gt;, &amp;lt;age: 20&amp;gt;를 프로퍼티라 부른다. name은 property의 키, &amp;lsquo;LEE&amp;rsquo;는 프로퍼티의 값이다. Property key에 문자열이나 심벌이외의 값 =&amp;gt; 문자열로 변환 Access dot notation bracket notation 키가 숫자로 이루어진 문자열의 경우 따옴표를 생략해도 암시적으로 변환된다.</description>
+    </item>
+    
+    <item>
+      <title>Hugo를 사용한 정적 블로깅 방법</title>
+      <link>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
+      <description>설치 방법 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} git submodule add https://github.com/budparr/gohugo-theme-ananke.git git submodule add -b master https://github.com/karohani/karohani.github.com/ public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap에 등록 https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다. </description>
     </item>
     
     <item>
@@ -93,18 +110,6 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
     </item>
     
     <item>
-      <title>docker</title>
-      <link>/post/20210428010112-docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/20210428010112-docker/</guid>
-      <description>chap1 자동으로 backlink가 포함되서 다음과 같이 일을 정리해볼 수 있습니다. 이렇게 포함된 노트를 바탕으로 쉽게 글을 쓸 수 있구요.
-오호 요기에 바로 옮겨 쓸수도 있습니다. 다음과 같이 글을 쓸수 도 있쬬
-chap2 2021-04-28에 다음과 같은 링크를 쓸 수 있습니다. ㅇ리ㅓㅁㄴㅇ리ㅑ머니ㅑ얼ㅁㄴ디ㅑ러ㅣㅑㅓㅁ니댜러미냐더리먀너디ㅑ러미냐더리ㅑㅓㅐ
-asldifjalsidjf alsiejflisaj </description>
-    </item>
-    
-    <item>
       <title>emacs 스크롤을 pixcel 단위로 변경하기</title>
       <link>/post/emacs/emacs-scroll-pixel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,15 +125,6 @@ asldifjalsidjf alsiejflisaj </description>
       
       <guid>/post/essay/how-to-make-static-blog-by-using-hugo/</guid>
       <description>설치 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} theme추가 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록 google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다. OX-hugo를 이용해서 실제 데이터와 바인딩하기 주의점 파일 이름이 한글이면 제대로 출력되지 않는다. TITLE은 한글로 하더라도 파일이름은 한글로 해서는 안된다 ㅠㅠ 젠장 </description>
-    </item>
-    
-    <item>
-      <title>hugo를 사용한 정적 블로깅</title>
-      <link>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
-      <description>설치 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} theme추가 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke git submodule add -b master https://github.com/karohani/karohani.github.com public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap등록 google webmaster 파일을 다운 받은 뒤에 static폴더 안에 넣고 검증 버튼을 누르면 완료된다. </description>
     </item>
     
     <item>
