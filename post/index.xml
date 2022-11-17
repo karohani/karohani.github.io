@@ -19,6 +19,16 @@
     </item>
     
     <item>
+      <title>Generic Recursive Type Bound 이해하기(Item30)</title>
+      <link>/post/java/effective_item_30/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/java/effective_item_30/</guid>
+      <description>문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
+interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&amp;lt;Apple&amp;gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&amp;lt;Orange&amp;gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.</description>
+    </item>
+    
+    <item>
       <title>Emacs Lisp 이해하기</title>
       <link>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
@@ -29,7 +39,7 @@
     </item>
     
     <item>
-      <title>javascript의 object literal[fn:1]</title>
+      <title>javascript의 object literal</title>
       <link>/post/javascript/object_liternal/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       

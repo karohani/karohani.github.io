@@ -127,6 +127,18 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>emacs 스크롤을 pixcel 단위로 변경하기
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다. ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </p>
+  </div>
+  <footer class="entry-footer">karo</footer>
+  <a class="entry-link" aria-label="post link to emacs 스크롤을 pixcel 단위로 변경하기" href="/post/emacs/emacs-scroll-pixel/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>hugo를 사용한 정적 블로깅
     </h2>
   </header>

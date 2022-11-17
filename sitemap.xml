@@ -10,6 +10,20 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/post/java/effective_item_30/</loc>
+      <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://karohani.github.io/</loc>
+      <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/tags/emacs/</loc>
       <lastmod>2022-11-12T00:00:00+00:00</lastmod>
       <changefreq>daily</changefreq>
@@ -25,13 +39,6 @@
   
     <url>
       <loc>https://karohani.github.io/tags/</loc>
-      <lastmod>2022-11-12T00:00:00+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/</loc>
       <lastmod>2022-11-12T00:00:00+00:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>

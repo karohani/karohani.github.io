@@ -141,6 +141,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Generic Recursive Type Bound 이해하기(Item30)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
+interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-16 00:00:00 +0000 UTC'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <a class="entry-link" aria-label="post link to Generic Recursive Type Bound 이해하기(Item30)" href="/post/java/effective_item_30/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Emacs Lisp 이해하기
     </h2>
   </header>
@@ -154,14 +167,14 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>javascript의 object literal[fn:1]
+    <h2>javascript의 object literal
     </h2>
   </header>
   <div class="entry-content">
     <p>literal이란 사람이 이해할 수 있는 문자 또는 약속된 기호를 사용하여 값을 생성하는 표기법이다. {}로 0개 이상의 property를 선어하면 변수 할당 시점에 객체리터럴을 해석해 객체를 할당한다. 객체 리터럴은 expression이므로 &lt;;&gt;가 필요하다. block과는 다르다. var person = { name: &#39;LEE&#39;, age: 20 } &lt;name: ‘LEE’&gt;, &lt;age: 20&gt;를 프로퍼티라 부른다. name은 property의 키, ‘LEE’는 프로퍼티의 값이다. Property key에 문자열이나 심벌이외의 값 =&gt; 문자열로 변환 Access dot notation bracket notation 키가 숫자로 이루어진 문자열의 경우 따옴표를 생략해도 암시적으로 변환된다....</p>
   </div>
   <footer class="entry-footer"><span title='2022-11-10 00:00:00 +0000 UTC'>November 10, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
-  <a class="entry-link" aria-label="post link to javascript의 object literal[fn:1]" href="/post/javascript/object_liternal/"></a>
+  <a class="entry-link" aria-label="post link to javascript의 object literal" href="/post/javascript/object_liternal/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -252,18 +265,6 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
   </div>
   <footer class="entry-footer"><span title='2020-02-29 00:00:00 +0000 UTC'>February 29, 2020</span>&nbsp;·&nbsp;VERITAS</footer>
   <a class="entry-link" aria-label="post link to java-junit" href="/post/java/java-junit/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>emacs 스크롤을 pixcel 단위로 변경하기
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다. ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </p>
-  </div>
-  <footer class="entry-footer">karo</footer>
-  <a class="entry-link" aria-label="post link to emacs 스크롤을 pixcel 단위로 변경하기" href="/post/emacs/emacs-scroll-pixel/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
