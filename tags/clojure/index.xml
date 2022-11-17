@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>clojure on 전파고양이</title>
+    <link>/tags/clojure/</link>
+    <description>Recent content in clojure on 전파고양이</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>clojure :: 환경 설정</title>
+      <link>/post/clojure/clojure_dev_env/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/clojure/clojure_dev_env/</guid>
+      <description>환경 설정 brew install clojure/tools/clojure </description>
+    </item>
+    
+  </channel>
+</rss>

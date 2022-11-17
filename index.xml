@@ -6,7 +6,7 @@
     <description>Recent content on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
@@ -16,6 +16,16 @@
       <description>출력하기 print(&amp;#34;이렇게 출력합니다&amp;#34;) (message &amp;#34;이렇게 출력합니다&amp;#34;) 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.
 (message &amp;#34;hello workd&amp;#34;) hello workd (message &amp;#34;hello: %d&amp;#34; (+ 1 2)) hello: 3 메시지는 &amp;ldquo;hello: %&amp;ldquo;와 3을 argument로 받아 실핵된다.
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다.</description>
+    </item>
+    
+    <item>
+      <title>finalcut :: 자막 편집 워크 플로우</title>
+      <link>/post/etc/finalcut_%E1%84%8C%E1%85%A1%E1%84%86%E1%85%A1%E1%86%A8_%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/etc/finalcut_%E1%84%8C%E1%85%A1%E1%84%86%E1%85%A1%E1%86%A8_%E1%84%91%E1%85%A7%E1%86%AB%E1%84%8C%E1%85%B5%E1%86%B8_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8/</guid>
+      <description>이 상태에서 Ctrl + shift + c를 입력하면
+와 같이 자막 편집 창이 뜹니다. 그리고 편집하고 ESC키를 입력하면 창이 닫히면서 편집을 이어갈 수 있습니다. 이걸 끝까지 반복하면 됩니다.</description>
     </item>
     
     <item>
@@ -29,6 +39,15 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </item>
     
     <item>
+      <title>Hugo를 사용한 정적 블로깅 방법</title>
+      <link>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
+      <description>설치 방법 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} git submodule add -b master https://github.com/karohani/karohani.github.com/ public git submodule add https://github.com/budparr/gohugo-theme-ananke.git google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap에 등록 https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다. DONE Hugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.</description>
+    </item>
+    
+    <item>
       <title>Emacs Lisp 이해하기</title>
       <link>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
@@ -39,21 +58,21 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </item>
     
     <item>
+      <title>clojure :: 환경 설정</title>
+      <link>/post/clojure/clojure_dev_env/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/clojure/clojure_dev_env/</guid>
+      <description>환경 설정 brew install clojure/tools/clojure </description>
+    </item>
+    
+    <item>
       <title>javascript의 object literal</title>
       <link>/post/javascript/object_liternal/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>/post/javascript/object_liternal/</guid>
       <description>literal이란 사람이 이해할 수 있는 문자 또는 약속된 기호를 사용하여 값을 생성하는 표기법이다. {}로 0개 이상의 property를 선어하면 변수 할당 시점에 객체리터럴을 해석해 객체를 할당한다. 객체 리터럴은 expression이므로 &amp;lt;;&amp;gt;가 필요하다. block과는 다르다. var person = { name: &amp;#39;LEE&amp;#39;, age: 20 } &amp;lt;name: &amp;lsquo;LEE&amp;rsquo;&amp;gt;, &amp;lt;age: 20&amp;gt;를 프로퍼티라 부른다. name은 property의 키, &amp;lsquo;LEE&amp;rsquo;는 프로퍼티의 값이다. Property key에 문자열이나 심벌이외의 값 =&amp;gt; 문자열로 변환 Access dot notation bracket notation 키가 숫자로 이루어진 문자열의 경우 따옴표를 생략해도 암시적으로 변환된다.</description>
-    </item>
-    
-    <item>
-      <title>Hugo를 사용한 정적 블로깅 방법</title>
-      <link>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/post/hugo%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%95%EC%A0%81%EB%B8%94%EB%A1%9C%EA%B9%85%ED%95%98%EA%B8%B0/</guid>
-      <description>설치 방법 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} git submodule add https://github.com/budparr/gohugo-theme-ananke.git git submodule add -b master https://github.com/karohani/karohani.github.com/ public google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap에 등록 https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다. </description>
     </item>
     
     <item>
