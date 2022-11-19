@@ -19,6 +19,18 @@
     </item>
     
     <item>
+      <title>Racket 설치 및 emacs 개발 환경</title>
+      <link>/post/lisp/setup-racket-env/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/lisp/setup-racket-env/</guid>
+      <description>https://docs.racket-lang.org/pollen/Installation.html
+아래와 같이 환경변수를 bashprofile에 추가.
+export PATH=&amp;quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&amp;quot;
+emacs 설정 (use-package racket-mode :config (add-hook &amp;#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &amp;#34;&amp;lt;f5&amp;gt;&amp;#34;) &amp;#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &amp;#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&amp;#39;paredit-mode)) (bind-keys :map paredit-mode-map (&amp;#34;{&amp;#34; . paredit-open-curly) (&amp;#34;}&amp;#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&amp;#34;M-[&amp;#34; . paredit-wrap-square) (&amp;#34;M-{&amp;#34; . paredit-wrap-curly)))) (provide &amp;#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음</description>
+    </item>
+    
+    <item>
       <title>finalcut :: 자막 편집 워크 플로우</title>
       <link>/post/etc/finalcut_workflow_caption/</link>
       <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>

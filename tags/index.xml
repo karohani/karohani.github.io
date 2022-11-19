@@ -6,7 +6,16 @@
     <description>Recent content in Tags on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lisp</title>
+      <link>/tags/lisp/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lisp/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>finalcut</title>
       <link>/tags/finalcut/</link>
@@ -22,6 +31,15 @@
       <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/etc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>/tags/java/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/java/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs-lisp 자료형</title>
       <link>/post/emacs/emacs-lisp-datatype/</link>
@@ -16,6 +16,18 @@
       <description>출력하기 print(&amp;#34;이렇게 출력합니다&amp;#34;) (message &amp;#34;이렇게 출력합니다&amp;#34;) 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.
 (message &amp;#34;hello workd&amp;#34;) hello workd (message &amp;#34;hello: %d&amp;#34; (+ 1 2)) hello: 3 메시지는 &amp;ldquo;hello: %&amp;ldquo;와 3을 argument로 받아 실핵된다.
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다.</description>
+    </item>
+    
+    <item>
+      <title>Racket 설치 및 emacs 개발 환경</title>
+      <link>/post/lisp/setup-racket-env/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/lisp/setup-racket-env/</guid>
+      <description>https://docs.racket-lang.org/pollen/Installation.html
+아래와 같이 환경변수를 bashprofile에 추가.
+export PATH=&amp;quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&amp;quot;
+emacs 설정 (use-package racket-mode :config (add-hook &amp;#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &amp;#34;&amp;lt;f5&amp;gt;&amp;#34;) &amp;#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &amp;#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&amp;#39;paredit-mode)) (bind-keys :map paredit-mode-map (&amp;#34;{&amp;#34; . paredit-open-curly) (&amp;#34;}&amp;#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&amp;#34;M-[&amp;#34; . paredit-wrap-square) (&amp;#34;M-{&amp;#34; . paredit-wrap-curly)))) (provide &amp;#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음</description>
     </item>
     
     <item>

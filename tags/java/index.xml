@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>java on 전파고양이</title>
+    <link>/tags/java/</link>
+    <description>Recent content in java on 전파고양이</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generic Recursive Type Bound 이해하기(Item30)</title>
+      <link>/post/java/effective_item_30/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/java/effective_item_30/</guid>
+      <description>문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
+interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&amp;lt;Apple&amp;gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&amp;lt;Orange&amp;gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.</description>
+    </item>
+    
+  </channel>
+</rss>
