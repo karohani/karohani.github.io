@@ -127,6 +127,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>python virtualenv 환경정리
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기 virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐 $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
+(환경이름) $ 내가 사용하는 모듈을 저장하기 pip freeze &gt; requirements.txt
+내가 사용하는 모듈 설치하기 pip install -r requirements.txt
+virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통해서 가상환경에 진입해야 한다.
+pip install virtualenvwrapper # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.virtualenvs export VIRTUALENVWRAPPER_PYTHON=&#34;$(which python3)&#34; # Usage of python3 source /Users/veritas/....</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-12 00:00:00 +0000 UTC'>April 12, 2020</span>&nbsp;·&nbsp;VERITAS</footer>
+  <a class="entry-link" aria-label="post link to python virtualenv 환경정리" href="/post/python/python-environment/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>개인적으로 사용하는 emacs 설정 모음
     </h2>
   </header>
@@ -250,22 +266,12 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
   <footer class="entry-footer">전파고양이</footer>
   <a class="entry-link" aria-label="post link to 이규원 현실 세상의 TDD 후기" href="/post/lecture-note/20210811214554-%ED%98%84%EC%8B%A4%EC%84%B8%EC%83%81%EC%9D%98-tdd-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EA%B9%8A%EC%9D%80%EA%B3%B3-%EC%9D%B4%EA%B7%9C%EC%9B%90/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>정리 방법
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>책장 정리 방법1 기계인간님의 정리 방법을 참고로 했다. 3 3 3 1 - 1 1 - 2 MRU - 3 - 3 버릴책 어딘가에서 꺼내서 읽은 책은 MRU 제일 왼쪽에 꽂는다. MRU가 다 차면 이동한다. 다시 사용할 것 같은 책은 2로 이동한다(주로 글쓰기) 버릴 책의 공간이 전부 차면 “중고&#34;로 판매하던 없앤다. 1영역은 아직 읽지 않은 책들을 넣어둔다. 다 읽은 책은 아래에서 또는 위에서 찾으면 된다. 안 읽은 책은 [1]을 찾으면 된다....</p>
-  </div>
-  <footer class="entry-footer">전파고양이</footer>
-  <a class="entry-link" aria-label="post link to 정리 방법" href="/post/life_hacking/%EC%A0%95%EB%A6%AC_%EB%B0%A9%EB%B2%95/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="/">
       «&nbsp;&nbsp;
+    </a>
+    <a class="next" href="/page/3/">&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>

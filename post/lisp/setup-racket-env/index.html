@@ -107,8 +107,8 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
   "keywords": [
     "lisp"
   ],
-  "articleBody": "https://docs.racket-lang.org/pollen/Installation.html\n아래와 같이 환경변수를 bashprofile에 추가.\nexport PATH=\"/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH\"\nemacs 설정 (use-package racket-mode :config (add-hook 'racket-mode-hook (lambda () define-key racket-mode-map (kbd \"\") 'racket-run) ) ) (use-package paredit :ensure t :config (dolist (m '(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #'paredit-mode)) (bind-keys :map paredit-mode-map (\"{\" . paredit-open-curly) (\"}\" . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (\"M-[\" . paredit-wrap-square) (\"M-{\" . paredit-wrap-curly)))) (provide 'init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음\n(* 1 2) 그냥 실행하면 아래와 같은 이슈가 발생함.\ndefault-load-handler: expected a `module’ declaration, but found something else\n이 때는 파일 최상단에 #lang racket을 추가해주면 된다.\n#lang racket (* 1 2) ",
-  "wordCount" : "107",
+  "articleBody": "https://docs.racket-lang.org/pollen/Installation.html\n아래와 같이 환경변수를 bashprofile에 추가.\nexport PATH=\"/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH\"\nemacs 설정 (use-package racket-mode :config (add-hook 'racket-mode-hook (lambda () define-key racket-mode-map (kbd \"\") 'racket-run) ) ) (use-package paredit :ensure t :config (dolist (m '(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #'paredit-mode)) (bind-keys :map paredit-mode-map (\"{\" . paredit-open-curly) (\"}\" . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (\"M-[\" . paredit-wrap-square) (\"M-{\" . paredit-wrap-curly)))) (provide 'init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음\n(* 1 2) 그냥 실행하면 아래와 같은 이슈가 발생함.\ndefault-load-handler: expected a `module’ declaration, but found something else\n이 때는 파일 최상단에 #lang racket을 추가해주면 된다.\n#lang racket (* 1 2) 아래와 같이 F5를 눌렀을 때 정상적으로 출력된다면 Racket을 위한 준비과정은 완료 된다.\n",
+  "wordCount" : "119",
   "inLanguage": "en-us",
   "datePublished": "2022-11-18T00:00:00Z",
   "dateModified": "2022-11-18T00:00:00Z",
@@ -220,7 +220,8 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
 <p>이 때는 파일 최상단에 #lang racket을 추가해주면 된다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span>lang racket
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>)
-</span></span></code></pre></div><figure>
+</span></span></code></pre></div><p>아래와 같이 F5를 눌렀을 때 정상적으로 출력된다면 Racket을 위한 준비과정은 완료 된다.</p>
+<figure>
     <img loading="lazy" src="/ox-hugo/2022-11-19_23-38-19_screenshot.png" width="800px"/> 
 </figure>
 

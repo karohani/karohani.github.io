@@ -141,6 +141,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>ytd-dl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>macos 설치 방법
+# homebrew로 설치하기 brew install yt-dlp/taps/ytldp 아래와 같이 -F {URL} 옵션을 이용하면 다운로드 가능한 포맷을 얻을 수 있다.
+yt-dlp -F https://www.youtube.com/watch?v=kPTvTnKqXRY 만약에 내가 여기서 Mp3만 얻고 싶다면 아래와 같이 –audio-format mp3 -x {url}을 사용하면 된다.
+yt-dlp --audio-format mp3 -x https://www.youtube.com/watch\?v\=kPTvTnKqXRY </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-19 00:00:00 +0000 UTC'>November 19, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <a class="entry-link" aria-label="post link to ytd-dl" href="/post/etc/how-to-youtube-download/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Racket 설치 및 emacs 개발 환경
     </h2>
   </header>
@@ -240,22 +255,6 @@ In programming language theory, subtyping (also subtype polymorphism or inclusio
   </div>
   <footer class="entry-footer"><span title='2020-04-12 00:00:00 +0000 UTC'>April 12, 2020</span>&nbsp;·&nbsp;VERITAS</footer>
   <a class="entry-link" aria-label="post link to 19장 타입파라미터" href="/post/emacs/pis-19-typeparameter/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>python virtualenv 환경정리
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>pyenv 설치 brew install pyenv virtualenv 사용하기 가상환경 생성하기 virtualenv {환경이름} 위의 경로를 생성하면 환경이름으로 된 폴더가 만들어짐 $ virtualenv venv 활성화 시키기 source {환경이름}/bin/activate를 입력하면 shell의 모양이 다음과 같이 바뀜
-(환경이름) $ 내가 사용하는 모듈을 저장하기 pip freeze &gt; requirements.txt
-내가 사용하는 모듈 설치하기 pip install -r requirements.txt
-virtualEnvWrapper 설정하기 virutalenv만 사용하면 매번 source를 통해서 가상환경에 진입해야 한다.
-pip install virtualenvwrapper # ~/.zsrc에 아래를 등록 export WORKON_HOME=~/.virtualenvs export VIRTUALENVWRAPPER_PYTHON=&#34;$(which python3)&#34; # Usage of python3 source /Users/veritas/....</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-04-12 00:00:00 +0000 UTC'>April 12, 2020</span>&nbsp;·&nbsp;VERITAS</footer>
-  <a class="entry-link" aria-label="post link to python virtualenv 환경정리" href="/post/python/python-environment/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
