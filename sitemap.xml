@@ -11,7 +11,7 @@
   
     <url>
       <loc>https://karohani.github.io/tags/</loc>
-      <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-23T08:52:28+09:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -32,7 +32,7 @@
   
     <url>
       <loc>https://karohani.github.io/</loc>
-      <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+      <lastmod>2022-11-23T08:52:28+09:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -136,6 +136,20 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/tags/%EC%97%B0%EA%B5%AC/</loc>
+      <lastmod>2022-11-23T08:52:28+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://karohani.github.io/post/etc/note_taking_rules/</loc>
+      <lastmod>2022-11-23T08:52:28+09:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/post/emacs/pis-19-typeparameter/</loc>
       <lastmod>2020-04-12T00:00:00+00:00</lastmod>
       <changefreq>daily</changefreq>
@@ -173,6 +187,12 @@
     <url>
       <loc>https://karohani.github.io/post/</loc>
       <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://karohani.github.io/post/javascript/what-is-js-package-at/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>

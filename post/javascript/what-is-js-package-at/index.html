@@ -5,12 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Programming Note | 전파고양이</title>
+<title>@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까? | 전파고양이</title>
 <meta name="keywords" content="">
-<meta name="description" content=" ">
-<meta name="author" content="">
-<link rel="canonical" href="/post/">
+<meta name="description" content="When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다.">
+<meta name="author" content="전파고양이">
+<link rel="canonical" href="/post/javascript/what-is-js-package-at/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,7 +21,6 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/post/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,14 +57,18 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Programming Note" />
-<meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/post/" />
+</noscript><meta property="og:title" content="@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?" />
+<meta property="og:description" content="When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/javascript/what-is-js-package-at/" /><meta property="article:section" content="post" />
+
+
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Programming Note"/>
-<meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
+<meta name="twitter:title" content="@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?"/>
+<meta name="twitter:description" content="When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다."/>
 
 
 <script type="application/ld+json">
@@ -76,12 +82,51 @@
       "name": "Programming Note",
       "item": "/post/"
     }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?",
+      "item": "/post/javascript/what-is-js-package-at/"
+    }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?",
+  "name": "@angular\/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?",
+  "description": "When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.\n당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다.",
+  "keywords": [
+    
+  ],
+  "articleBody": " When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.\n당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다. Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.\n대충 인증된 organization을 말하는거구나.\nstackoverflow ",
+  "wordCount" : "100",
+  "inLanguage": "en-us",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "전파고양이"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/javascript/what-is-js-package-at/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "전파고양이",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
 }
 </script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -124,62 +169,40 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Programming Note
-  </h1>
-</header>
-<div class="post-content"><!-- raw HTML omitted -->
+<main class="main">
 
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      @angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?
+    </h1>
+    <div class="post-meta">전파고양이
 
 </div>
+  </header> 
+  <div class="post-content"><blockquote>
+<p>When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages.
+A scope allows you to create a package with the same name as a package created by another user or Org without conflict.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다.
+Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.</p>
+</blockquote>
+<p>대충 인증된 organization을 말하는거구나.</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/36293481/use-of-symbol-in-node-module-names">stackoverflow</a></li>
+</ul>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>개발자가 갖추어야 할 9가지 기술 - 박종천 넥슨 부본부장
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>엔지니어는 실패를 막는 사람이다. [2021-07-24 Sat 21:17] https://www.youtube.com/watch?v=fHyTA-UIcqs</p>
-  </div>
-  <footer class="entry-footer">전파고양이</footer>
-  <a class="entry-link" aria-label="post link to 개발자가 갖추어야 할 9가지 기술 - 박종천 넥슨 부본부장" href="/post/etc/20210724211747-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EA%B0%96%EC%B6%94%EC%96%B4%EC%95%BC-%ED%95%A0-9%EA%B0%80%EC%A7%80-%EA%B8%B0%EC%88%A0%EC%97%90%EC%84%9C.../"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>이규원 현실 세상의 TDD 후기
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>엔지니어링의 깊은 곳 [2021-08-11 Wed 21:45]
-추상화라는 것은 대상의 가지고 있는 것중에 일부분만 투영하는 것
-협력과 계약
-대부분의 코드는 다른 코드와 협력 협력에 필요한 것은 어떻게가 아니라 무엇이다. 누가 담당해서 어떤 과정을 통해서 처리하는 것은 우리에게 중요한 문제가 아니다. 인터페이스 무엇을 표현한다. 협력하는 코드사이의 계약 추상화의 결과이다. 우리는 인터페이스를 대상으로 프로그래밍을 한다. 내용을 고려하지 않는다. print가 어떤 과정을 통해서 이루어지는지는 고려사항이 아니다.</p>
   </div>
-  <footer class="entry-footer">전파고양이</footer>
-  <a class="entry-link" aria-label="post link to 이규원 현실 세상의 TDD 후기" href="/post/lecture-note/20210811214554-%ED%98%84%EC%8B%A4%EC%84%B8%EC%83%81%EC%9D%98-tdd-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9D%98-%EA%B9%8A%EC%9D%80%EA%B3%B3-%EC%9D%B4%EA%B7%9C%EC%9B%90/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>정리 방법
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>책장 정리 방법1 기계인간님의 정리 방법을 참고로 했다. 3 3 3 1 - 1 1 - 2 MRU - 3 - 3 버릴책 어딘가에서 꺼내서 읽은 책은 MRU 제일 왼쪽에 꽂는다. MRU가 다 차면 이동한다. 다시 사용할 것 같은 책은 2로 이동한다(주로 글쓰기) 버릴 책의 공간이 전부 차면 “중고&#34;로 판매하던 없앤다. 1영역은 아직 읽지 않은 책들을 넣어둔다. 다 읽은 책은 아래에서 또는 위에서 찾으면 된다. 안 읽은 책은 [1]을 찾으면 된다....</p>
-  </div>
-  <footer class="entry-footer">전파고양이</footer>
-  <a class="entry-link" aria-label="post link to 정리 방법" href="/post/life_hacking/%EC%A0%95%EB%A6%AC_%EB%B0%A9%EB%B2%95/"></a>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="/post/page/2/">
-      «&nbsp;&nbsp;
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

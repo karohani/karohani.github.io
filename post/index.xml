@@ -100,6 +100,16 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </item>
     
     <item>
+      <title>연구 체계 및 방법론</title>
+      <link>/post/etc/note_taking_rules/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/etc/note_taking_rules/</guid>
+      <description>zettelkasten 개념적인 내용들만 기록한다. 프로젝트성이나 아직까지 개념화되지 않는 내용들은 project에 작성하고 주기적으로 옮겨준다. note taking process &amp;lt;2021-07-30 Fri&amp;gt; 챕터를 읽고 이해한 내용을 손으로 우선 써본다. 떠오르는 생각들이 있으면 함께 메모해서 적어둔다. Reference Note 작성이 끝나면 다음으로는 영구노트 작성으로 넘어간다. 내가 잘 아는 내용들은 상관 없지만 모르는 내용들은 이 Reference Note를 종이로 작성하는게 더 좋다. 왜냐면 마치 설명하듯이 작성하게 되는 이점이 있으니까.
+내가 쓰는 도구들 볼펜 볼트액션 볼펜 현재는 tactile turn에서 나오는 티타늄 볼트액션 볼펜을 이용하고 있다.</description>
+    </item>
+    
+    <item>
       <title>19장 타입파라미터</title>
       <link>/post/emacs/pis-19-typeparameter/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
@@ -160,6 +170,16 @@ Figure 1: BufferedInputStream 예제
 Related:
 java-junit sitename test
 link github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.</description>
+    </item>
+    
+    <item>
+      <title>@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?</title>
+      <link>/post/javascript/what-is-js-package-at/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript/what-is-js-package-at/</guid>
+      <description>When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다.</description>
     </item>
     
     <item>
