@@ -16,5 +16,17 @@
       <description>literal이란 사람이 이해할 수 있는 문자 또는 약속된 기호를 사용하여 값을 생성하는 표기법이다. {}로 0개 이상의 property를 선어하면 변수 할당 시점에 객체리터럴을 해석해 객체를 할당한다. 객체 리터럴은 expression이므로 &amp;lt;;&amp;gt;가 필요하다. block과는 다르다. var person = { name: &amp;#39;LEE&amp;#39;, age: 20 } &amp;lt;name: &amp;lsquo;LEE&amp;rsquo;&amp;gt;, &amp;lt;age: 20&amp;gt;를 프로퍼티라 부른다. name은 property의 키, &amp;lsquo;LEE&amp;rsquo;는 프로퍼티의 값이다. Property key에 문자열이나 심벌이외의 값 =&amp;gt; 문자열로 변환 Access dot notation bracket notation 키가 숫자로 이루어진 문자열의 경우 따옴표를 생략해도 암시적으로 변환된다.</description>
     </item>
     
+    <item>
+      <title>Javascript</title>
+      <link>/post/javascript/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript/javascript/</guid>
+      <description>Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
+back var array = [1,2,3,4]; array[2] = &amp;#34;abcd&amp;#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
+끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
+var array = [1, 2, 3, 4]; array.</description>
+    </item>
+    
   </channel>
 </rss>

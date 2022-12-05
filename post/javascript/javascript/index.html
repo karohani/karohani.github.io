@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Javascript | 전파고양이</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="javascript">
 <meta name="description" content="Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
 back var array = [1,2,3,4]; array[2] = &#34;abcd&#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
 끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
@@ -105,10 +105,10 @@ var array = [1, 2, 3, 4]; array."/>
   "name": "Javascript",
   "description": "Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라\nback var array = [1,2,3,4]; array[2] = \u0026#34;abcd\u0026#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.\n끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.\nvar array = [1, 2, 3, 4]; array.",
   "keywords": [
-    
+    "javascript"
   ],
-  "articleBody": "Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라\nback var array = [1,2,3,4]; array[2] = \"abcd\" 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.\n끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.\nvar array = [1, 2, 3, 4]; array.push(10) // return 5 // array의 맨뒤에 5가 추가되서 [1,2,3,4,5] 가 된다. 끝에 있는 값 지우기 var array = [1, 2, 3, 4]; array.pop(); // 4 // \u003e array는 [1,2,3] 이 되고 리턴은 4가 된다. 앞에 추가하기 var array = [1,2,3,4]; array.unshift(10); // 새로운 길이인 5가 리턴된다. // array는 [10, 1, 2, 3, 4]가 된다. Item front\n자바스크립트의 배열에서 가장 앞에 값을 추가하라.\nback\nunshift(eliment)를 사용하면 값이 추가된다.\n앞에 있는 값 지우기 var array = [1,2,3,4]; array.shift() // return 지운값 // array는 [2,3,4]가 된다. Item front\n자바스크립트에서 배열 제일 앞에 있는 값을 지우는 함수는 무엇인가?\nback\nshift()를 사용하고 리턴은 지운값이 나오게 된다.\n배열 얇게 복사하기 slice(); 함수를 사용한다.\n항목 삭제 하기 var array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] splice를 사용한다.\nItem front\n자바스크립트 배열에서 항목을 삭제하는 방법에 대해서 말하라.\nback\nsplice함수를 쓰면 Index, count를 입력해서 배열에서 값을 삭제할 수 있다.\nvar array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] 위의 기본 함수들의 문제점 Argument로 받은 값들의 Reference를 통해서 값이 직접 수정되고 있다는 것 자체가 문제이기 때문에, 카피온 라이트의 형태로 모든 함수를 변경하는 것이 더 좋다.\n예를 들어서 shift와 같은 함수들은 다음과 같이 Copy On Write로 변경할 수 있다.\nfunction safty_shift(arr) { var copy = arr.slice(); copy.shift(); return copy; } Objects 훑어보기 var object = {a : 1, b: 2}; object[\"a\"] // 1 // Javascript token문법에 맞는다면 dot연산자를 사용해서 찾을 수 있다. https://ts39.es/ecma262/#sec-tokens object.a // 1 // 키로 값 설정하기 object.c = \"c\"; object[\"c\"] = \"c\"; // 삭제하기 del object[\"c\"]; // true or false // b객체의 모든 키 값을 a객체로 복사한다. Object.assign(a, b); // 새로운 객체를 만들고 싶다면 Object.assign({}, b); // 빈 객체에 B를 복사한다. // key목록 가져오기 Object.keys(object); // [\"a\", \"b\"] Quiz front 자바스크립트의 객체에서 키로 값 찾는 방법, 키/값 쌍 지우는 방법, 객체 복사하는 방법, 키 목록 가져오는 방법을 말하라\nback [], dot 연산자, 할당은 [] 연산자만 가능, del로 지우는 것 가능, 반환값은 true/false, 값 복사는 Object.assign(target, origin)을 사용, 키 목록은 Object.keys()를 가져오면 된다.\n@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까? :PROPERTIES: :ID: D67E112A-3596-4853-900D-686F5ED05836 :EXPORT_FILE_NAME: what-is-js-package-at.md :EXPORT_DATE: 2022-12-03 :ENDin:\nWhen you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.\n당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다. Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.\n대충 인증된 organization을 말하는거구나.\nstackoverflow ",
-  "wordCount" : "510",
+  "articleBody": "Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라\nback var array = [1,2,3,4]; array[2] = \"abcd\" 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.\n끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.\nvar array = [1, 2, 3, 4]; array.push(10) // return 5 // array의 맨뒤에 5가 추가되서 [1,2,3,4,5] 가 된다. 끝에 있는 값 지우기 var array = [1, 2, 3, 4]; array.pop(); // 4 // \u003e array는 [1,2,3] 이 되고 리턴은 4가 된다. 앞에 추가하기 var array = [1,2,3,4]; array.unshift(10); // 새로운 길이인 5가 리턴된다. // array는 [10, 1, 2, 3, 4]가 된다. Item front\n자바스크립트의 배열에서 가장 앞에 값을 추가하라.\nback\nunshift(eliment)를 사용하면 값이 추가된다.\n앞에 있는 값 지우기 var array = [1,2,3,4]; array.shift() // return 지운값 // array는 [2,3,4]가 된다. Item front\n자바스크립트에서 배열 제일 앞에 있는 값을 지우는 함수는 무엇인가?\nback\nshift()를 사용하고 리턴은 지운값이 나오게 된다.\n배열 얇게 복사하기 slice(); 함수를 사용한다.\n항목 삭제 하기 var array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] splice를 사용한다.\nItem front\n자바스크립트 배열에서 항목을 삭제하는 방법에 대해서 말하라.\nback\nsplice함수를 쓰면 Index, count를 입력해서 배열에서 값을 삭제할 수 있다.\nvar array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] 위의 기본 함수들의 문제점 Argument로 받은 값들의 Reference를 통해서 값이 직접 수정되고 있다는 것 자체가 문제이기 때문에, 카피온 라이트의 형태로 모든 함수를 변경하는 것이 더 좋다.\n예를 들어서 shift와 같은 함수들은 다음과 같이 Copy On Write로 변경할 수 있다.\nfunction safty_shift(arr) { var copy = arr.slice(); copy.shift(); return copy; } Objects 훑어보기 var object = {a : 1, b: 2}; object[\"a\"] // 1 // Javascript token문법에 맞는다면 dot연산자를 사용해서 찾을 수 있다. https://ts39.es/ecma262/#sec-tokens object.a // 1 // 키로 값 설정하기 object.c = \"c\"; object[\"c\"] = \"c\"; // 삭제하기 del object[\"c\"]; // true or false // b객체의 모든 키 값을 a객체로 복사한다. Object.assign(a, b); // 새로운 객체를 만들고 싶다면 Object.assign({}, b); // 빈 객체에 B를 복사한다. // key목록 가져오기 Object.keys(object); // [\"a\", \"b\"] Quiz front 자바스크립트의 객체에서 키로 값 찾는 방법, 키/값 쌍 지우는 방법, 객체 복사하는 방법, 키 목록 가져오는 방법을 말하라\nback [], dot 연산자, 할당은 [] 연산자만 가능, del로 지우는 것 가능, 반환값은 true/false, 값 복사는 Object.assign(target, origin)을 사용, 키 목록은 Object.keys()를 가져오면 된다.\nnpm-package @angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까? :PROPERTIES: :ID: D67E112A-3596-4853-900D-686F5ED05836 :EXPORT_FILE_NAME: what-is-js-package-at.md :EXPORT_DATE: 2022-12-03 :ENDin:\nWhen you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.\n당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다. Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.\n대충 인증된 organization을 말하는거구나.\nstackoverflow ",
+  "wordCount" : "511",
   "inLanguage": "en-us",
   "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -317,7 +317,8 @@ var array = [1, 2, 3, 4]; array."/>
 <p>자바스크립트의 객체에서 키로 값 찾는 방법, 키/값 쌍 지우는 방법, 객체 복사하는 방법, 키 목록 가져오는 방법을 말하라</p>
 <h4 id="back">back<a hidden class="anchor" aria-hidden="true" href="#back">#</a></h4>
 <p>[], dot 연산자, 할당은 [] 연산자만 가능, del로 지우는 것 가능, 반환값은 true/false, 값 복사는 Object.assign(target, origin)을 사용, 키 목록은 Object.keys()를 가져오면 된다.</p>
-<h2 id="angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?<a hidden class="anchor" aria-hidden="true" href="#angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">#</a></h2>
+<h2 id="npm-package">npm-package<a hidden class="anchor" aria-hidden="true" href="#npm-package">#</a></h2>
+<h3 id="angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?<a hidden class="anchor" aria-hidden="true" href="#angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">#</a></h3>
 <p>:PROPERTIES:
 :ID:       D67E112A-3596-4853-900D-686F5ED05836
 :EXPORT_FILE_NAME: what-is-js-package-at.md
@@ -342,6 +343,7 @@ Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/javascript/">javascript</a></li>
     </ul>
   </footer>
 </article>
