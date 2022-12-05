@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Javascript | 전파고양이</title>
+<meta name="keywords" content="">
+<meta name="description" content="Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
+back var array = [1,2,3,4]; array[2] = &#34;abcd&#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
+끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
+var array = [1, 2, 3, 4]; array.">
+<meta name="author" content="전파고양이">
+<link rel="canonical" href="/post/javascript/javascript/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Javascript" />
+<meta property="og:description" content="Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
+back var array = [1,2,3,4]; array[2] = &#34;abcd&#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
+끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
+var array = [1, 2, 3, 4]; array." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/javascript/javascript/" /><meta property="article:section" content="post" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Javascript"/>
+<meta name="twitter:description" content="Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
+back var array = [1,2,3,4]; array[2] = &#34;abcd&#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
+끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
+var array = [1, 2, 3, 4]; array."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Programming Note",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Javascript",
+      "item": "/post/javascript/javascript/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Javascript",
+  "name": "Javascript",
+  "description": "Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라\nback var array = [1,2,3,4]; array[2] = \u0026#34;abcd\u0026#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.\n끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.\nvar array = [1, 2, 3, 4]; array.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라\nback var array = [1,2,3,4]; array[2] = \"abcd\" 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.\n끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.\nvar array = [1, 2, 3, 4]; array.push(10) // return 5 // array의 맨뒤에 5가 추가되서 [1,2,3,4,5] 가 된다. 끝에 있는 값 지우기 var array = [1, 2, 3, 4]; array.pop(); // 4 // \u003e array는 [1,2,3] 이 되고 리턴은 4가 된다. 앞에 추가하기 var array = [1,2,3,4]; array.unshift(10); // 새로운 길이인 5가 리턴된다. // array는 [10, 1, 2, 3, 4]가 된다. Item front\n자바스크립트의 배열에서 가장 앞에 값을 추가하라.\nback\nunshift(eliment)를 사용하면 값이 추가된다.\n앞에 있는 값 지우기 var array = [1,2,3,4]; array.shift() // return 지운값 // array는 [2,3,4]가 된다. Item front\n자바스크립트에서 배열 제일 앞에 있는 값을 지우는 함수는 무엇인가?\nback\nshift()를 사용하고 리턴은 지운값이 나오게 된다.\n배열 얇게 복사하기 slice(); 함수를 사용한다.\n항목 삭제 하기 var array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] splice를 사용한다.\nItem front\n자바스크립트 배열에서 항목을 삭제하는 방법에 대해서 말하라.\nback\nsplice함수를 쓰면 Index, count를 입력해서 배열에서 값을 삭제할 수 있다.\nvar array = [1,2,3,4,5,6]; array.splice(2,3); // [3,4,5] array // [1,2,6] 위의 기본 함수들의 문제점 Argument로 받은 값들의 Reference를 통해서 값이 직접 수정되고 있다는 것 자체가 문제이기 때문에, 카피온 라이트의 형태로 모든 함수를 변경하는 것이 더 좋다.\n예를 들어서 shift와 같은 함수들은 다음과 같이 Copy On Write로 변경할 수 있다.\nfunction safty_shift(arr) { var copy = arr.slice(); copy.shift(); return copy; } Objects 훑어보기 var object = {a : 1, b: 2}; object[\"a\"] // 1 // Javascript token문법에 맞는다면 dot연산자를 사용해서 찾을 수 있다. https://ts39.es/ecma262/#sec-tokens object.a // 1 // 키로 값 설정하기 object.c = \"c\"; object[\"c\"] = \"c\"; // 삭제하기 del object[\"c\"]; // true or false // b객체의 모든 키 값을 a객체로 복사한다. Object.assign(a, b); // 새로운 객체를 만들고 싶다면 Object.assign({}, b); // 빈 객체에 B를 복사한다. // key목록 가져오기 Object.keys(object); // [\"a\", \"b\"] Quiz front 자바스크립트의 객체에서 키로 값 찾는 방법, 키/값 쌍 지우는 방법, 객체 복사하는 방법, 키 목록 가져오는 방법을 말하라\nback [], dot 연산자, 할당은 [] 연산자만 가능, del로 지우는 것 가능, 반환값은 true/false, 값 복사는 Object.assign(target, origin)을 사용, 키 목록은 Object.keys()를 가져오면 된다.\n@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까? :PROPERTIES: :ID: D67E112A-3596-4853-900D-686F5ED05836 :EXPORT_FILE_NAME: what-is-js-package-at.md :EXPORT_DATE: 2022-12-03 :ENDin:\nWhen you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.\n당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다. Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.\n대충 인증된 organization을 말하는거구나.\nstackoverflow ",
+  "wordCount" : "510",
+  "inLanguage": "en-us",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "전파고양이"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/javascript/javascript/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "전파고양이",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="전파고양이 (Alt + H)">전파고양이</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Javascript
+    </h1>
+    <div class="post-meta">전파고양이
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="index">Index<a hidden class="anchor" aria-hidden="true" href="#index">#</a></h2>
+<h2 id="자바스크립트-이해하기">자바스크립트 이해하기<a hidden class="anchor" aria-hidden="true" href="#자바스크립트-이해하기">#</a></h2>
+<h2 id="자바스크립트의-closure-성질-이해하기">자바스크립트의 Closure 성질 이해하기<a hidden class="anchor" aria-hidden="true" href="#자바스크립트의-closure-성질-이해하기">#</a></h2>
+<h2 id="closure는-왜-생기는-거지">Closure는 왜 생기는 거지?<a hidden class="anchor" aria-hidden="true" href="#closure는-왜-생기는-거지">#</a></h2>
+<h2 id="자바스크립트-배열-이해하기">자바스크립트 배열 이해하기<a hidden class="anchor" aria-hidden="true" href="#자바스크립트-배열-이해하기">#</a></h2>
+<h3 id="index로-값-가져오기">index로 값 가져오기<a hidden class="anchor" aria-hidden="true" href="#index로-값-가져오기">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">2</span>] <span style="color:#75715e">// return 3
+</span></span></span></code></pre></div><h3 id="값-할당하는-방법">값 할당하는 방법<a hidden class="anchor" aria-hidden="true" href="#값-할당하는-방법">#</a></h3>
+<h4 id="front">front<a hidden class="anchor" aria-hidden="true" href="#front">#</a></h4>
+<p>자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라</p>
+<h4 id="back">back<a hidden class="anchor" aria-hidden="true" href="#back">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcd&#34;</span>
+</span></span></code></pre></div><h3 id="길이">길이<a hidden class="anchor" aria-hidden="true" href="#길이">#</a></h3>
+<p>array.length를 통해서 배열의 길이를 얻을 수 있다.</p>
+<h3 id="끝에-추가하기">끝에 추가하기<a hidden class="anchor" aria-hidden="true" href="#끝에-추가하기">#</a></h3>
+<p>array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">push</span>(<span style="color:#ae81ff">10</span>) <span style="color:#75715e">// return 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// array의 맨뒤에 5가 추가되서 [1,2,3,4,5] 가 된다.
+</span></span></span></code></pre></div><h3 id="끝에-있는-값-지우기">끝에 있는 값 지우기<a hidden class="anchor" aria-hidden="true" href="#끝에-있는-값-지우기">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">pop</span>();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// &gt; array는 [1,2,3] 이 되고 리턴은 4가 된다.
+</span></span></span></code></pre></div><h3 id="앞에-추가하기">앞에 추가하기<a hidden class="anchor" aria-hidden="true" href="#앞에-추가하기">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">unshift</span>(<span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 새로운 길이인 5가 리턴된다.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// array는 [10, 1, 2, 3, 4]가 된다.
+</span></span></span></code></pre></div><h4 id="item">Item<a hidden class="anchor" aria-hidden="true" href="#item">#</a></h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>front</p>
+<p>자바스크립트의 배열에서 가장 앞에 값을 추가하라.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>back</p>
+<p>unshift(eliment)를 사용하면 값이 추가된다.</p>
+</li>
+</ul>
+<h3 id="앞에-있는-값-지우기">앞에 있는 값 지우기<a hidden class="anchor" aria-hidden="true" href="#앞에-있는-값-지우기">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">shift</span>() <span style="color:#75715e">// return 지운값
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// array는 [2,3,4]가 된다.
+</span></span></span></code></pre></div><h4 id="item">Item<a hidden class="anchor" aria-hidden="true" href="#item">#</a></h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>front</p>
+<p>자바스크립트에서 배열 제일 앞에 있는 값을 지우는 함수는 무엇인가?</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>back</p>
+<p>shift()를 사용하고 리턴은 지운값이 나오게 된다.</p>
+</li>
+</ul>
+<h3 id="배열-얇게-복사하기">배열 얇게 복사하기<a hidden class="anchor" aria-hidden="true" href="#배열-얇게-복사하기">#</a></h3>
+<p>slice(); 함수를 사용한다.</p>
+<h3 id="항목-삭제-하기">항목 삭제 하기<a hidden class="anchor" aria-hidden="true" href="#항목-삭제-하기">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>); <span style="color:#75715e">// [3,4,5]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">array</span> <span style="color:#75715e">// [1,2,6]
+</span></span></span></code></pre></div><p>splice를 사용한다.</p>
+<h4 id="item">Item<a hidden class="anchor" aria-hidden="true" href="#item">#</a></h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>front</p>
+<p>자바스크립트 배열에서 항목을 삭제하는 방법에 대해서 말하라.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>back</p>
+<p>splice함수를 쓰면 Index, count를 입력해서 배열에서 값을 삭제할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">array</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>); <span style="color:#75715e">// [3,4,5]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">array</span> <span style="color:#75715e">// [1,2,6]
+</span></span></span></code></pre></div></li>
+</ul>
+<h3 id="위의-기본-함수들의-문제점">위의 기본 함수들의 문제점<a hidden class="anchor" aria-hidden="true" href="#위의-기본-함수들의-문제점">#</a></h3>
+<p>Argument로 받은 값들의 Reference를 통해서 값이 직접 수정되고 있다는 것 자체가 문제이기 때문에, 카피온 라이트의 형태로 모든 함수를 변경하는 것이 더 좋다.</p>
+<p>예를 들어서 shift와 같은 함수들은 다음과 같이 Copy On Write로 변경할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">safty_shift</span>(<span style="color:#a6e22e">arr</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">slice</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">shift</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">copy</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="objects-훑어보기">Objects 훑어보기<a hidden class="anchor" aria-hidden="true" href="#objects-훑어보기">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">object</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">a</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">object</span>[<span style="color:#e6db74">&#34;a&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Javascript token문법에 맞는다면 dot연산자를 사용해서 찾을 수 있다. https://ts39.es/ecma262/#sec-tokens
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">a</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 키로 값 설정하기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">object</span>[<span style="color:#e6db74">&#34;c&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 삭제하기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">del</span> <span style="color:#a6e22e">object</span>[<span style="color:#e6db74">&#34;c&#34;</span>]; <span style="color:#75715e">// true or false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// b객체의 모든 키 값을 a객체로 복사한다.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Object.<span style="color:#a6e22e">assign</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 새로운 객체를 만들고 싶다면
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">b</span>); <span style="color:#75715e">// 빈 객체에 B를 복사한다.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// key목록 가져오기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">object</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// [&#34;a&#34;, &#34;b&#34;]
+</span></span></span></code></pre></div><h3 id="quiz">Quiz<a hidden class="anchor" aria-hidden="true" href="#quiz">#</a></h3>
+<h4 id="front">front<a hidden class="anchor" aria-hidden="true" href="#front">#</a></h4>
+<p>자바스크립트의 객체에서 키로 값 찾는 방법, 키/값 쌍 지우는 방법, 객체 복사하는 방법, 키 목록 가져오는 방법을 말하라</p>
+<h4 id="back">back<a hidden class="anchor" aria-hidden="true" href="#back">#</a></h4>
+<p>[], dot 연산자, 할당은 [] 연산자만 가능, del로 지우는 것 가능, 반환값은 true/false, 값 복사는 Object.assign(target, origin)을 사용, 키 목록은 Object.keys()를 가져오면 된다.</p>
+<h2 id="angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">@angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?<a hidden class="anchor" aria-hidden="true" href="#angular-cli와-같은-at-----이-포함된-package-이름은-왜-그럴까">#</a></h2>
+<p>:PROPERTIES:
+:ID:       D67E112A-3596-4853-900D-686F5ED05836
+:EXPORT_FILE_NAME: what-is-js-package-at.md
+:EXPORT_DATE: 2022-12-03
+:ENDin:</p>
+<blockquote>
+<p>When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages.
+A scope allows you to create a package with the same name as a package created by another user or Org without conflict.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<blockquote>
+<p>당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다. 이 scope를 패키지의 네임스페이스로 활용할 수 있다.
+Scope를 사용하면 충돌 없이 다른 사용자 또는 조직에서 만든 패키지와 동일한 이름의 패키지를 만들 수 있다.</p>
+</blockquote>
+<p>대충 인증된 organization을 말하는거구나.</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/36293481/use-of-symbol-in-node-module-names">stackoverflow</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">전파고양이</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

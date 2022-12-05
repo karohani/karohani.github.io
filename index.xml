@@ -201,6 +201,18 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
     </item>
     
     <item>
+      <title>Javascript</title>
+      <link>/post/javascript/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/javascript/javascript/</guid>
+      <description>Index 자바스크립트 이해하기 자바스크립트의 Closure 성질 이해하기 Closure는 왜 생기는 거지? 자바스크립트 배열 이해하기 index로 값 가져오기 var array = [1, 2, 3, 4]; array[2] // return 3 값 할당하는 방법 front 자바스크립트에서 배열에 값을 추가적으로 할당하거나 변경하라
+back var array = [1,2,3,4]; array[2] = &amp;#34;abcd&amp;#34; 길이 array.length를 통해서 배열의 길이를 얻을 수 있다.
+끝에 추가하기 array.push(10을 통해서 값을 획득할 수 있다. 반환값은 추가된 마지막 배열의 위치 index이다.
+var array = [1, 2, 3, 4]; array.</description>
+    </item>
+    
+    <item>
       <title>mysql-troubleshooting</title>
       <link>/post/mysql/mysql_troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
