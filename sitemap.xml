@@ -10,6 +10,20 @@
     </url>
   
     <url>
+      <loc>https://karohani.github.io/post/javascript/what-is-js-package-at/</loc>
+      <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
+      <loc>https://karohani.github.io/</loc>
+      <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.5</priority>
+    </url>
+  
+    <url>
       <loc>https://karohani.github.io/tags/</loc>
       <lastmod>2022-11-23T08:52:28+09:00</lastmod>
       <changefreq>daily</changefreq>
@@ -26,13 +40,6 @@
     <url>
       <loc>https://karohani.github.io/tags/%EC%9C%A0%ED%8B%B8/</loc>
       <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/</loc>
-      <lastmod>2022-11-23T08:52:28+09:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
@@ -187,12 +194,6 @@
     <url>
       <loc>https://karohani.github.io/post/</loc>
       <lastmod>2017-03-23T00:00:00+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.5</priority>
-    </url>
-  
-    <url>
-      <loc>https://karohani.github.io/post/javascript/what-is-js-package-at/</loc>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
     </url>
