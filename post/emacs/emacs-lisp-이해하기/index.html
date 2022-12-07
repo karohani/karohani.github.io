@@ -7,11 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Emacs Lisp 이해하기 | 전파고양이</title>
 <meta name="keywords" content="emacs">
-<meta name="description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+<meta name="description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm
 (message &#34;하이 %d&#34; (&#43; 2 3)) #&#39;(1 2 3) (cons 1 &#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &#34;%s&#34; (&#43; a b)) ) (let (a b) (setq a 2) (setq b 3) (message &#34;%s&#34; (&#43; a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (&#43; a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (&#43; a b))) (message &#34;%s&#34; (&#43; a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &#34;123123 123123 123123&#34; &#34; &#34;) ;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34; (concat &#34;a&#34; &#34;b&#34;) string &lt;-&gt; int join-string regex memq (memq 1 &#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다.">
 <meta name="author" content="전파고양이">
-<link rel="canonical" href="/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<link rel="canonical" href="/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/favicon.ico">
@@ -58,16 +58,16 @@
 
     </style>
 </noscript><meta property="og:title" content="Emacs Lisp 이해하기" />
-<meta property="og:description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+<meta property="og:description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm
 (message &#34;하이 %d&#34; (&#43; 2 3)) #&#39;(1 2 3) (cons 1 &#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &#34;%s&#34; (&#43; a b)) ) (let (a b) (setq a 2) (setq b 3) (message &#34;%s&#34; (&#43; a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (&#43; a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (&#43; a b))) (message &#34;%s&#34; (&#43; a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &#34;123123 123123 123123&#34; &#34; &#34;) ;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34; (concat &#34;a&#34; &#34;b&#34;) string &lt;-&gt; int join-string regex memq (memq 1 &#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-11-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-12T00:00:00+00:00" />
+<meta property="og:url" content="/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-12T00:00:00+09:00" />
+<meta property="article:modified_time" content="2022-11-12T00:00:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Emacs Lisp 이해하기"/>
-<meta name="twitter:description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+<meta name="twitter:description" content="출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm
 (message &#34;하이 %d&#34; (&#43; 2 3)) #&#39;(1 2 3) (cons 1 &#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &#34;%s&#34; (&#43; a b)) ) (let (a b) (setq a 2) (setq b 3) (message &#34;%s&#34; (&#43; a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (&#43; a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (&#43; a b))) (message &#34;%s&#34; (&#43; a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &#34;123123 123123 123123&#34; &#34; &#34;) ;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34; (concat &#34;a&#34; &#34;b&#34;) string &lt;-&gt; int join-string regex memq (memq 1 &#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다."/>
 
 
@@ -86,7 +86,7 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Emacs Lisp 이해하기",
-      "item": "/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/"
+      "item": "/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"
     }
   ]
 }
@@ -97,22 +97,22 @@
   "@type": "BlogPosting",
   "headline": "Emacs Lisp 이해하기",
   "name": "Emacs Lisp 이해하기",
-  "description": "출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string \u0026lt;-\u0026gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm\n(message \u0026#34;하이 %d\u0026#34; (+ 2 3)) #\u0026#39;(1 2 3) (cons 1 \u0026#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message \u0026#34;%s\u0026#34; (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message \u0026#34;%s\u0026#34; (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message \u0026#34;%s\u0026#34; (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string \u0026#34;123123 123123 123123\u0026#34; \u0026#34; \u0026#34;) ;; (\u0026#34;123123\u0026#34; \u0026#34;123123\u0026#34; \u0026#34;123123\u0026#34; (concat \u0026#34;a\u0026#34; \u0026#34;b\u0026#34;) string \u0026lt;-\u0026gt; int join-string regex memq (memq 1 \u0026#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다.",
+  "description": "출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string \u0026lt;-\u0026gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm\n(message \u0026#34;하이 %d\u0026#34; (+ 2 3)) #\u0026#39;(1 2 3) (cons 1 \u0026#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message \u0026#34;%s\u0026#34; (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message \u0026#34;%s\u0026#34; (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message \u0026#34;%s\u0026#34; (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string \u0026#34;123123 123123 123123\u0026#34; \u0026#34; \u0026#34;) ;; (\u0026#34;123123\u0026#34; \u0026#34;123123\u0026#34; \u0026#34;123123\u0026#34; (concat \u0026#34;a\u0026#34; \u0026#34;b\u0026#34;) string \u0026lt;-\u0026gt; int join-string regex memq (memq 1 \u0026#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다.",
   "keywords": [
     "emacs"
   ],
-  "articleBody": " 출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string \u003c-\u003e int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm\n(message \"하이 %d\" (+ 2 3)) #'(1 2 3) (cons 1 '(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message \"%s\" (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message \"%s\" (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message \"%s\" (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string \"123123 123123 123123\" \" \") ;; (\"123123\" \"123123\" \"123123\" (concat \"a\" \"b\") string \u003c-\u003e int join-string regex memq (memq 1 '(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다. 반환되는 값은 LIST의 tail이고 그것의 car는 ELT이다.\nprogn org-add-link-type (require 'org) (org-add-link-type \"evernote\" nil '(lambda (path desc frmt) (format \"%s\" path desc))) sort-lines sort.el에서 임포트 되는 함수입니다. Emacs Lisp Functions buffer winner-mode perspective.el mode (current-buffer) display-buffer 어떤 버퍼를 어떤 창에서 실행 시키고 싶을 때 사용할 수 있는 함수이다. display-buffer–maybe-pop-up-frame-or-window (display-buffer \"scratch\" '(display-buffer--maybe-same-window . ())) ; 만약 현재 buffer에 아래와 같은 이름의 버퍼가 있다면 새롭게 실행된다. (display-buffer \"javascript.org\" '(display-buffer--maybe-pop-up-frame-or-window . ())) display-buffer–maybe-pop-up-frame is a compiled Lisp function in ‘window.el’. 이 함수는 window.el에서 컴파일 된 함수이다.\n(display-buffer–maybe-pop-up-frame BUFFER ALIST)\nTry displaying BUFFER based on ‘pop-up-frames’. If ‘pop-up-frames’ is non-nil (and not ‘graphic-only’ on a text-only terminal), try with ‘display-buffer-pop-up-frame’.\nALIST is an association list of action symbols and values. See Info node ‘(elisp) Buffer Display Action Alists’ for details of such alists.\ndisplay-buffer-at-buttom 현재의 버퍼를 그대로 아래에 하나 더 만들어 준다. (display-buffer (current-buffer) '(display-buffer-at-bottom . () )) display-buffer-no-window Overriding the default placement actions (setq display-buffer-base-action '((display-buffer-reuse-window display-buffer-reuse-mode-window display-buffer-same-window display-buffer-in-previous-window) )) display-buffer-alist 현재\nemacs-lisp으로 이것저것 ; 항상 아래에 *Messages* Buffer를 생성한다. (display-buffer \"*Messages*\" '(display-buffer-in-side-window . ( (side . bottom) (slot . 1) (window-height . 5) ) ) ) (display-buffer \".scratch.org\" '(display-buffer-in-side-window . ( (side . bottom) (window-height . 5) (slot . -0) ) ) ) {{c1::dfasdfasdlfij}} 이건 어때용?\n",
+  "articleBody": " 출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string  int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm\n(message \"하이 %d\" (+ 2 3)) #'(1 2 3) (cons 1 '(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message \"%s\" (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message \"%s\" (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message \"%s\" (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string \"123123 123123 123123\" \" \") ;; (\"123123\" \"123123\" \"123123\" (concat \"a\" \"b\") string  int join-string regex memq (memq 1 '(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다. 반환되는 값은 LIST의 tail이고 그것의 car는 ELT이다.\nprogn org-add-link-type (require 'org) (org-add-link-type \"evernote\" nil '(lambda (path desc frmt) (format \"%s\" path desc))) sort-lines  sort.el에서 임포트 되는 함수입니다.  Emacs Lisp Functions buffer  winner-mode perspective.el mode (current-buffer)   display-buffer  어떤 버퍼를 어떤 창에서 실행 시키고 싶을 때 사용할 수 있는 함수이다. display-buffer–maybe-pop-up-frame-or-window  (display-buffer \"scratch\" '(display-buffer--maybe-same-window . ())) ;  만약 현재 buffer에 아래와 같은 이름의 버퍼가 있다면 새롭게 실행된다.  (display-buffer \"javascript.org\" '(display-buffer--maybe-pop-up-frame-or-window . ())) display-buffer–maybe-pop-up-frame is a compiled Lisp function in ‘window.el’. 이 함수는 window.el에서 컴파일 된 함수이다.\n(display-buffer–maybe-pop-up-frame BUFFER ALIST)\nTry displaying BUFFER based on ‘pop-up-frames’. If ‘pop-up-frames’ is non-nil (and not ‘graphic-only’ on a text-only terminal), try with ‘display-buffer-pop-up-frame’.\nALIST is an association list of action symbols and values. See Info node ‘(elisp) Buffer Display Action Alists’ for details of such alists.\ndisplay-buffer-at-buttom  현재의 버퍼를 그대로 아래에 하나 더 만들어 준다.  (display-buffer (current-buffer) '(display-buffer-at-bottom . () )) display-buffer-no-window Overriding the default placement actions   (setq display-buffer-base-action '((display-buffer-reuse-window display-buffer-reuse-mode-window display-buffer-same-window display-buffer-in-previous-window) )) display-buffer-alist 현재\nemacs-lisp으로 이것저것 ; 항상 아래에 *Messages* Buffer를 생성한다. (display-buffer \"*Messages*\" '(display-buffer-in-side-window . ( (side . bottom) (slot . 1) (window-height . 5) ) ) ) (display-buffer \".scratch.org\" '(display-buffer-in-side-window . ( (side . bottom) (window-height . 5) (slot . -0) ) ) ) {{c1::dfasdfasdlfij}} 이건 어때용?\n",
   "wordCount" : "374",
   "inLanguage": "en-us",
-  "datePublished": "2022-11-12T00:00:00Z",
-  "dateModified": "2022-11-12T00:00:00Z",
+  "datePublished": "2022-11-12T00:00:00+09:00",
+  "dateModified": "2022-11-12T00:00:00+09:00",
   "author":[{
     "@type": "Person",
     "name": "전파고양이"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/"
+    "@id": "/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"
   },
   "publisher": {
     "@type": "Organization",
@@ -177,7 +177,7 @@
     <h1 class="post-title">
       Emacs Lisp 이해하기
     </h1>
-    <div class="post-meta"><span title='2022-11-12 00:00:00 +0000 UTC'>November 12, 2022</span>&nbsp;·&nbsp;전파고양이
+    <div class="post-meta"><span title='2022-11-12 00:00:00 +0900 KST'>November 12, 2022</span>&nbsp;·&nbsp;전파고양이
 
 </div>
   </header> 
@@ -212,40 +212,40 @@
 <!-- raw HTML omitted -->
 <h2 id="출력해보기">출력해보기<a hidden class="anchor" aria-hidden="true" href="#출력해보기">#</a></h2>
 <p>M-x ielm</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;하이 %d&#34;</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#a6e22e">#&#39;</span>(<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>))
-</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (1 2 3 4)</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(let ((a <span style="color:#ae81ff">2</span>) (b <span style="color:#ae81ff">3</span>))
-</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b))
-</span></span><span style="display:flex;"><span>  )
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>(let (a b)
-</span></span><span style="display:flex;"><span>  (setq a <span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>  (setq b <span style="color:#ae81ff">3</span>)
-</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b))
-</span></span><span style="display:flex;"><span>  )
-</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (message a) // let은 local variable</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가</span>
-</span></span><span style="display:flex;"><span>(let* ((a <span style="color:#ae81ff">2</span>) (b <span style="color:#ae81ff">2</span>) (c (<span style="color:#a6e22e">+</span> a b)))
-</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b c))
-</span></span><span style="display:flex;"><span>  )
-</span></span></code></pre></div><h2 id="string-다루는-방법에-대해서-설명하라-2가지-함수">String 다루는 방법에 대해서 설명하라, 2가지 함수<a hidden class="anchor" aria-hidden="true" href="#string-다루는-방법에-대해서-설명하라-2가지-함수">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(split-string <span style="color:#e6db74">&#34;123123 123123 123123&#34;</span> <span style="color:#e6db74">&#34; &#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#75715e">;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;b&#34;</span>)
-</span></span></code></pre></div><h2 id="string-int">string &lt;-&gt; int<a hidden class="anchor" aria-hidden="true" href="#string-int">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;하이 %d&#34;</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#a6e22e">#&#39;</span>(<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>))
+<span style="color:#75715e">;; (1 2 3 4)</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(let ((a <span style="color:#ae81ff">2</span>) (b <span style="color:#ae81ff">3</span>))
+  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b))
+  )
+
+(let (a b)
+  (setq a <span style="color:#ae81ff">2</span>)
+  (setq b <span style="color:#ae81ff">3</span>)
+  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b))
+  )
+<span style="color:#75715e">;; (message a) // let은 local variable</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가</span>
+(let* ((a <span style="color:#ae81ff">2</span>) (b <span style="color:#ae81ff">2</span>) (c (<span style="color:#a6e22e">+</span> a b)))
+  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;%s&#34;</span> (<span style="color:#a6e22e">+</span> a b c))
+  )
+</code></pre></div><h2 id="string-다루는-방법에-대해서-설명하라-2가지-함수">String 다루는 방법에 대해서 설명하라, 2가지 함수<a hidden class="anchor" aria-hidden="true" href="#string-다루는-방법에-대해서-설명하라-2가지-함수">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(split-string <span style="color:#e6db74">&#34;123123 123123 123123&#34;</span> <span style="color:#e6db74">&#34; &#34;</span>)
+<span style="color:#75715e">;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;b&#34;</span>)
+</code></pre></div><h2 id="string-int">string &lt;-&gt; int<a hidden class="anchor" aria-hidden="true" href="#string-int">#</a></h2>
 <h2 id="join-string">join-string<a hidden class="anchor" aria-hidden="true" href="#join-string">#</a></h2>
 <h2 id="regex">regex<a hidden class="anchor" aria-hidden="true" href="#regex">#</a></h2>
 <h2 id="memq">memq<a hidden class="anchor" aria-hidden="true" href="#memq">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">memq</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>))
-</span></span></code></pre></div><p>(memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다. 반환되는 값은 LIST의 tail이고 그것의 car는 ELT이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">memq</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>))
+</code></pre></div><p>(memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다. 반환되는 값은 LIST의 tail이고 그것의 car는 ELT이다.</p>
 <h2 id="progn">progn<a hidden class="anchor" aria-hidden="true" href="#progn">#</a></h2>
 <h2 id="org-add-link-type">org-add-link-type<a hidden class="anchor" aria-hidden="true" href="#org-add-link-type">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(require <span style="color:#e6db74">&#39;org</span>)
-</span></span><span style="display:flex;"><span>(org-add-link-type <span style="color:#e6db74">&#34;evernote&#34;</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&#39;</span>(lambda (path desc frmt)
-</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;&lt;a href=\&#34;evernote:%s\&#34;&gt;%s&lt;/a&gt;&#34;</span> path desc)))
-</span></span></code></pre></div><h2 id="sort-lines">sort-lines<a hidden class="anchor" aria-hidden="true" href="#sort-lines">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(require <span style="color:#e6db74">&#39;org</span>)
+(org-add-link-type <span style="color:#e6db74">&#34;evernote&#34;</span> <span style="color:#66d9ef">nil</span> <span style="color:#f92672">&#39;</span>(lambda (path desc frmt)
+      (<span style="color:#a6e22e">format</span> <span style="color:#e6db74">&#34;&lt;a href=\&#34;evernote:%s\&#34;&gt;%s&lt;/a&gt;&#34;</span> path desc)))
+</code></pre></div><h2 id="sort-lines">sort-lines<a hidden class="anchor" aria-hidden="true" href="#sort-lines">#</a></h2>
 <ul>
 <li>sort.el에서 임포트 되는 함수입니다.</li>
 </ul>
@@ -254,8 +254,8 @@
 <ul>
 <li>winner-mode</li>
 <li>perspective.el mode
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">current-buffer</span>)
-</span></span></code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">current-buffer</span>)
+</code></pre></div></li>
 </ul>
 <h4 id="display-buffer">display-buffer<a hidden class="anchor" aria-hidden="true" href="#display-buffer">#</a></h4>
 <ul>
@@ -263,15 +263,15 @@
 <li>display-buffer&ndash;maybe-pop-up-frame-or-window</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(display-buffer <span style="color:#e6db74">&#34;scratch&#34;</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&#39;</span>(display-buffer--maybe-same-window <span style="color:#f92672">.</span> ())) <span style="color:#75715e">;</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(display-buffer <span style="color:#e6db74">&#34;scratch&#34;</span>
+   <span style="color:#f92672">&#39;</span>(display-buffer--maybe-same-window <span style="color:#f92672">.</span> ())) <span style="color:#75715e">;</span>
+</code></pre></div><ul>
 <li>만약 현재 buffer에 아래와 같은 이름의 버퍼가 있다면 새롭게 실행된다.</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(display-buffer <span style="color:#e6db74">&#34;javascript.org&#34;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#39;</span>(display-buffer--maybe-pop-up-frame-or-window <span style="color:#f92672">.</span> ()))
-</span></span></code></pre></div><p>display-buffer&ndash;maybe-pop-up-frame is a compiled Lisp function in
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(display-buffer <span style="color:#e6db74">&#34;javascript.org&#34;</span>
+      <span style="color:#f92672">&#39;</span>(display-buffer--maybe-pop-up-frame-or-window <span style="color:#f92672">.</span> ()))
+</code></pre></div><p>display-buffer&ndash;maybe-pop-up-frame is a compiled Lisp function in
 ‘window.el’. 이 함수는 window.el에서 컴파일 된 함수이다.</p>
 <p>(display-buffer&ndash;maybe-pop-up-frame BUFFER ALIST)</p>
 <p>Try displaying BUFFER based on ‘pop-up-frames’.
@@ -285,38 +285,38 @@ such alists.</p>
 <li>현재의 버퍼를 그대로 아래에 하나 더 만들어 준다.</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(display-buffer (<span style="color:#a6e22e">current-buffer</span>) <span style="color:#f92672">&#39;</span>(display-buffer-at-bottom <span style="color:#f92672">.</span> () ))
-</span></span></code></pre></div><h4 id="display-buffer-no-window">display-buffer-no-window<a hidden class="anchor" aria-hidden="true" href="#display-buffer-no-window">#</a></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(display-buffer (<span style="color:#a6e22e">current-buffer</span>) <span style="color:#f92672">&#39;</span>(display-buffer-at-bottom <span style="color:#f92672">.</span> () ))
+</code></pre></div><h4 id="display-buffer-no-window">display-buffer-no-window<a hidden class="anchor" aria-hidden="true" href="#display-buffer-no-window">#</a></h4>
 <h4 id="overriding-the-default-placement-actions">Overriding the default placement actions<a hidden class="anchor" aria-hidden="true" href="#overriding-the-default-placement-actions">#</a></h4>
 <figure>
     <img loading="lazy" src="/ox-hugo/2021-10-09_07-33-43_screenshot.png" width="800px"/> 
 </figure>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(setq display-buffer-base-action
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#39;</span>((display-buffer-reuse-window
-</span></span><span style="display:flex;"><span>   display-buffer-reuse-mode-window
-</span></span><span style="display:flex;"><span>   display-buffer-same-window
-</span></span><span style="display:flex;"><span>   display-buffer-in-previous-window)
-</span></span><span style="display:flex;"><span>  ))
-</span></span></code></pre></div><h4 id="display-buffer-alist">display-buffer-alist<a hidden class="anchor" aria-hidden="true" href="#display-buffer-alist">#</a></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq display-buffer-base-action
+      <span style="color:#f92672">&#39;</span>((display-buffer-reuse-window
+   display-buffer-reuse-mode-window
+   display-buffer-same-window
+   display-buffer-in-previous-window)
+  ))
+</code></pre></div><h4 id="display-buffer-alist">display-buffer-alist<a hidden class="anchor" aria-hidden="true" href="#display-buffer-alist">#</a></h4>
 <p>현재</p>
 <h4 id="emacs-lisp으로-이것저것">emacs-lisp으로 이것저것<a hidden class="anchor" aria-hidden="true" href="#emacs-lisp으로-이것저것">#</a></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#75715e">; 항상 아래에 *Messages* Buffer를 생성한다.</span>
-</span></span><span style="display:flex;"><span>(display-buffer <span style="color:#e6db74">&#34;*Messages*&#34;</span> <span style="color:#f92672">&#39;</span>(display-buffer-in-side-window <span style="color:#f92672">.</span> (
-</span></span><span style="display:flex;"><span>                              (side <span style="color:#f92672">.</span> bottom)
-</span></span><span style="display:flex;"><span>                              (slot <span style="color:#f92672">.</span> <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>                              (window-height <span style="color:#f92672">.</span> <span style="color:#ae81ff">5</span>)
-</span></span><span style="display:flex;"><span>                              )
-</span></span><span style="display:flex;"><span>                               )
-</span></span><span style="display:flex;"><span>      )
-</span></span><span style="display:flex;"><span>(display-buffer <span style="color:#e6db74">&#34;.scratch.org&#34;</span> <span style="color:#f92672">&#39;</span>(display-buffer-in-side-window <span style="color:#f92672">.</span> (
-</span></span><span style="display:flex;"><span>                                (side <span style="color:#f92672">.</span> bottom)
-</span></span><span style="display:flex;"><span>                                (window-height <span style="color:#f92672">.</span> <span style="color:#ae81ff">5</span>)
-</span></span><span style="display:flex;"><span>                                (slot <span style="color:#f92672">.</span> <span style="color:#ae81ff">-0</span>)
-</span></span><span style="display:flex;"><span>                                )
-</span></span><span style="display:flex;"><span>                                 )
-</span></span><span style="display:flex;"><span>      )
-</span></span></code></pre></div><h4 id="c1-dfasdfasdlfij">{{c1::dfasdfasdlfij}}<a hidden class="anchor" aria-hidden="true" href="#c1-dfasdfasdlfij">#</a></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#75715e">; 항상 아래에 *Messages* Buffer를 생성한다.</span>
+(display-buffer <span style="color:#e6db74">&#34;*Messages*&#34;</span> <span style="color:#f92672">&#39;</span>(display-buffer-in-side-window <span style="color:#f92672">.</span> (
+                              (side <span style="color:#f92672">.</span> bottom)
+                              (slot <span style="color:#f92672">.</span> <span style="color:#ae81ff">1</span>)
+                              (window-height <span style="color:#f92672">.</span> <span style="color:#ae81ff">5</span>)
+                              )
+                               )
+      )
+(display-buffer <span style="color:#e6db74">&#34;.scratch.org&#34;</span> <span style="color:#f92672">&#39;</span>(display-buffer-in-side-window <span style="color:#f92672">.</span> (
+                                (side <span style="color:#f92672">.</span> bottom)
+                                (window-height <span style="color:#f92672">.</span> <span style="color:#ae81ff">5</span>)
+                                (slot <span style="color:#f92672">.</span> <span style="color:#ae81ff">-0</span>)
+                                )
+                                 )
+      )
+</code></pre></div><h4 id="c1-dfasdfasdlfij">{{c1::dfasdfasdlfij}}<a hidden class="anchor" aria-hidden="true" href="#c1-dfasdfasdlfij">#</a></h4>
 <p>이건 어때용?</p>
 
 

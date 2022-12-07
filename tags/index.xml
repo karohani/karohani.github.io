@@ -6,29 +6,38 @@
     <description>Recent content in Tags on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>유틸</title>
-      <link>/tags/%EC%9C%A0%ED%8B%B8/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%EC%9C%A0%ED%8B%B8/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>lisp</title>
       <link>/tags/lisp/</link>
-      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/lisp/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>SICP</title>
+      <link>/tags/sicp/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>/tags/sicp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>유틸</title>
+      <link>/tags/%EC%9C%A0%ED%8B%B8/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0900</pubDate>
+      
+      <guid>/tags/%EC%9C%A0%ED%8B%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>finalcut</title>
       <link>/tags/finalcut/</link>
-      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/finalcut/</guid>
       <description></description>
@@ -37,7 +46,7 @@
     <item>
       <title>etc</title>
       <link>/tags/etc/</link>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/etc/</guid>
       <description></description>
@@ -46,7 +55,7 @@
     <item>
       <title>java</title>
       <link>/tags/java/</link>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/java/</guid>
       <description></description>
@@ -55,7 +64,7 @@
     <item>
       <title>emacs</title>
       <link>/tags/emacs/</link>
-      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/emacs/</guid>
       <description></description>
@@ -64,7 +73,7 @@
     <item>
       <title>clojure</title>
       <link>/tags/clojure/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/clojure/</guid>
       <description></description>
@@ -73,7 +82,7 @@
     <item>
       <title>javascript</title>
       <link>/tags/javascript/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/javascript/</guid>
       <description></description>
@@ -82,7 +91,7 @@
     <item>
       <title>연구</title>
       <link>/tags/%EC%97%B0%EA%B5%AC/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/tags/%EC%97%B0%EA%B5%AC/</guid>
       <description></description>

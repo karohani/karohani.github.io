@@ -6,14 +6,14 @@
     <description>Recent content in emacs on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0900</lastBuildDate><atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs Lisp 이해하기</title>
-      <link>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</link>
-      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      <link>/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0900</pubDate>
       
-      <guid>/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/</guid>
-      <description>출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &amp;lt;-&amp;gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+      <guid>/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/</guid>
+      <description>출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &amp;lt;-&amp;gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm
 (message &amp;#34;하이 %d&amp;#34; (+ 2 3)) #&amp;#39;(1 2 3) (cons 1 &amp;#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &amp;#34;%s&amp;#34; (+ a b)) ) (let (a b) (setq a 2) (setq b 3) (message &amp;#34;%s&amp;#34; (+ a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (+ a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (+ a b))) (message &amp;#34;%s&amp;#34; (+ a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &amp;#34;123123 123123 123123&amp;#34; &amp;#34; &amp;#34;) ;; (&amp;#34;123123&amp;#34; &amp;#34;123123&amp;#34; &amp;#34;123123&amp;#34; (concat &amp;#34;a&amp;#34; &amp;#34;b&amp;#34;) string &amp;lt;-&amp;gt; int join-string regex memq (memq 1 &amp;#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다.</description>
     </item>
     

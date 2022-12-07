@@ -6,14 +6,14 @@
     <description>Recent content in etc on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0900</lastBuildDate><atom:link href="/tags/etc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo :: 정적 블로깅 방법</title>
       <link>/post/hugo_use_static_blog/</link>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/post/hugo_use_static_blog/</guid>
-      <description>설치 방법 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} git submodule add -b master https://github.com/karohani/karohani.github.com/ public git submodule add https://github.com/budparr/gohugo-theme-ananke.git google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap에 등록 https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다. DONE Hugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.</description>
+      <description>설치 방법 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} git submodule add -b master https://github.com/karohani/karohani.github.com/ public git submodule add https://github.com/budparr/gohugo-theme-ananke.git  google에서 사이트가 검색 되도록 하기  Google Search Console에 SiteMap에 등록  https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다.    DONEHugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs.</description>
     </item>
     
   </channel>

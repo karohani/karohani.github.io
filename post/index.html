@@ -7,10 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Programming Note | 전파고양이</title>
 <meta name="keywords" content="">
-<meta name="description" content=" ">
+<meta name="description" content="Programming Note - 전파고양이">
 <meta name="author" content="">
 <link rel="canonical" href="/post/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -145,8 +145,22 @@
 (message &#34;hello workd&#34;) hello workd (message &#34;hello: %d&#34; (&#43; 1 2)) hello: 3 메시지는 “hello: %“와 3을 argument로 받아 실핵된다.
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message &#43; 를 심벌이라고 부른다....</p>
   </div>
-  <footer class="entry-footer"><span title='2019-11-28 00:00:00 +0000 UTC'>November 28, 2019</span>&nbsp;·&nbsp;VERITAS</footer>
+  <footer class="entry-footer"><span title='2019-11-28 00:00:00 +0900 KST'>November 28, 2019</span>&nbsp;·&nbsp;VERITAS</footer>
   <a class="entry-link" aria-label="post link to Emacs-lisp 자료형" href="/post/emacs/emacs-lisp-datatype/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>SICP :: 설치방법(MacOs)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; ....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-07 00:00:00 +0900 KST'>December 07, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <a class="entry-link" aria-label="post link to SICP :: 설치방법(MacOs)" href="/post/lisp/sicp-install/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -156,9 +170,9 @@
   </header>
   <div class="entry-content">
     <p>When you sign up for an npm user account or create an Org, you are granted a scope that matches your user or Org name. You can use this scope as a namespace for related packages. A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
-당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다....</p>
+  당신이 NPM user 계정을 만들거나, org를 만들면 사용자 또는 org이름과 일치된 scope가 제공된다....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-12-04 00:00:00 +0000 UTC'>December 04, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-12-04 00:00:00 +0900 KST'>December 04, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to @angular/cli와 같은 At(@)이 포함된 package 이름은 왜 그럴까?" href="/post/javascript/what-is-js-package-at/"></a>
 </article>
 
@@ -173,7 +187,7 @@
 yt-dlp -F https://www.youtube.com/watch?v=kPTvTnKqXRY 만약에 내가 여기서 Mp3만 얻고 싶다면 아래와 같이 –audio-format mp3 -x {url}을 사용하면 된다.
 yt-dlp --audio-format mp3 -x https://www.youtube.com/watch\?v\=kPTvTnKqXRY </p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-19 00:00:00 +0000 UTC'>November 19, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-11-19 00:00:00 +0900 KST'>November 19, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to ytd-dl" href="/post/etc/how-to-youtube-download/"></a>
 </article>
 
@@ -188,7 +202,7 @@ yt-dlp --audio-format mp3 -x https://www.youtube.com/watch\?v\=kPTvTnKqXRY </p>
 export PATH=&#34;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&#34;
 emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; . paredit-wrap-square) (&#34;M-{&#34; . paredit-wrap-curly)))) (provide &#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-18 00:00:00 +0000 UTC'>November 18, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-11-18 00:00:00 +0900 KST'>November 18, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to Racket 설치 및 emacs 개발 환경" href="/post/lisp/setup-racket-env/"></a>
 </article>
 
@@ -198,10 +212,10 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
     </h2>
   </header>
   <div class="entry-content">
-    <p>finalcut :: 영상에 자막 넣기 caption file &gt; import &gt; caption 자막 편집하기 이 상태에서 Ctrl &#43; shift &#43; c를 입력하면
-와 같이 자막 편집 창이 뜹니다. 그리고 편집하고 ESC키를 입력하면 창이 닫히면서 편집을 이어갈 수 있습니다. 이걸 끝까지 반복하면 됩니다.</p>
+    <p>finalcut :: 영상에 자막 넣기 caption    file &gt; import &gt; caption  자막 편집하기   이 상태에서 Ctrl &#43; shift &#43; c를 입력하면
+  와 같이 자막 편집 창이 뜹니다. 그리고 편집하고 ESC키를 입력하면 창이 닫히면서 편집을 이어갈 수 있습니다. 이걸 끝까지 반복하면 됩니다.</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-17 00:00:00 +0000 UTC'>November 17, 2022</span>&nbsp;·&nbsp;karo</footer>
+  <footer class="entry-footer"><span title='2022-11-17 00:00:00 +0900 KST'>November 17, 2022</span>&nbsp;·&nbsp;karo</footer>
   <a class="entry-link" aria-label="post link to finalcut :: 자막 편집 워크 플로우" href="/post/etc/finalcut_workflow_caption/"></a>
 </article>
 
@@ -212,9 +226,9 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
   </header>
   <div class="entry-content">
     <p>문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
-interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size....</p>
+interface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-16 00:00:00 +0000 UTC'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-11-16 00:00:00 +0900 KST'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to Generic Recursive Type Bound 이해하기(Item30)" href="/post/java/effective_item_30/"></a>
 </article>
 
@@ -224,9 +238,9 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </h2>
   </header>
   <div class="entry-content">
-    <p>설치 방법 brew install hugo 디렉토리 구조 만들기 hugo new site {blog_name} git submodule add -b master https://github.com/karohani/karohani.github.com/ public git submodule add https://github.com/budparr/gohugo-theme-ananke.git google에서 사이트가 검색 되도록 하기 Google Search Console에 SiteMap에 등록 https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다. DONE Hugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs....</p>
+    <p>설치 방법 brew install hugo 디렉토리 구조 만들기  hugo new site {blog_name} git submodule add -b master https://github.com/karohani/karohani.github.com/ public git submodule add https://github.com/budparr/gohugo-theme-ananke.git  google에서 사이트가 검색 되도록 하기  Google Search Console에 SiteMap에 등록  https://www.google.com/webmasters 파일을 다운 받은 뒤에 static 폴더 안에 넣고 검증 버튼을 누르면 완료된다.    DONEHugo Directory 구조 설명 The following is a high-level overview of each of the directories with links to each of their respective sections within the Hugo docs....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-16 00:00:00 +0000 UTC'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-11-16 00:00:00 +0900 KST'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to Hugo :: 정적 블로깅 방법" href="/post/hugo_use_static_blog/"></a>
 </article>
 
@@ -236,11 +250,11 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </h2>
   </header>
   <div class="entry-content">
-    <p>출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions buffer display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}} 출력해보기 M-x ielm
+    <p>출력해보기 String 다루는 방법에 대해서 설명하라, 2가지 함수 string &lt;-&gt; int join-string regex memq progn org-add-link-type sort-lines Emacs Lisp Functions  buffer  display-buffer display-buffer-at-buttom display-buffer-no-window Overriding the default placement actions display-buffer-alist emacs-lisp으로 이것저것 {{c1::dfasdfasdlfij}}      출력해보기 M-x ielm
 (message &#34;하이 %d&#34; (&#43; 2 3)) #&#39;(1 2 3) (cons 1 &#39;(2 3 4)) ;; (1 2 3 4) (let ((a 2) (b 3)) (message &#34;%s&#34; (&#43; a b)) ) (let (a b) (setq a 2) (setq b 3) (message &#34;%s&#34; (&#43; a b)) ) ;; (message a) // let은 local variable ;; (let ((a 2) (b 3) (c (&#43; a b)))) // error 심볼은 각각 평가 되므로 초기화 단계에서 서로 참조 불가 (let* ((a 2) (b 2) (c (&#43; a b))) (message &#34;%s&#34; (&#43; a b c)) ) String 다루는 방법에 대해서 설명하라, 2가지 함수 (split-string &#34;123123 123123 123123&#34; &#34; &#34;) ;; (&#34;123123&#34; &#34;123123&#34; &#34;123123&#34; (concat &#34;a&#34; &#34;b&#34;) string &lt;-&gt; int join-string regex memq (memq 1 &#39;(7 1 2 3)) (memq ELT LIST)로 정의 되어 있고, ELT가 LIST의 엘리먼트라면 non-nil을 반환한다....</p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-12 00:00:00 +0000 UTC'>November 12, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
-  <a class="entry-link" aria-label="post link to Emacs Lisp 이해하기" href="/post/emacs/emacs-lisp-%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5/"></a>
+  <footer class="entry-footer"><span title='2022-11-12 00:00:00 +0900 KST'>November 12, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <a class="entry-link" aria-label="post link to Emacs Lisp 이해하기" href="/post/emacs/emacs-lisp-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -251,20 +265,8 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
   <div class="entry-content">
     <p>환경 설정 brew install clojure/tools/clojure </p>
   </div>
-  <footer class="entry-footer"><span title='2022-11-10 00:00:00 +0000 UTC'>November 10, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <footer class="entry-footer"><span title='2022-11-10 00:00:00 +0900 KST'>November 10, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
   <a class="entry-link" aria-label="post link to clojure :: 환경 설정" href="/post/clojure/clojure_dev_env/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>javascript의 object literal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>literal이란 사람이 이해할 수 있는 문자 또는 약속된 기호를 사용하여 값을 생성하는 표기법이다. {}로 0개 이상의 property를 선어하면 변수 할당 시점에 객체리터럴을 해석해 객체를 할당한다. 객체 리터럴은 expression이므로 &lt;;&gt;가 필요하다. block과는 다르다. var person = { name: &#39;LEE&#39;, age: 20 } &lt;name: ‘LEE’&gt;, &lt;age: 20&gt;를 프로퍼티라 부른다. name은 property의 키, ‘LEE’는 프로퍼티의 값이다. Property key에 문자열이나 심벌이외의 값 =&gt; 문자열로 변환 Access dot notation bracket notation 키가 숫자로 이루어진 문자열의 경우 따옴표를 생략해도 암시적으로 변환된다....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-11-10 00:00:00 +0000 UTC'>November 10, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
-  <a class="entry-link" aria-label="post link to javascript의 object literal" href="/post/javascript/object_liternal/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

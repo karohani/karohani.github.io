@@ -8,10 +8,10 @@
 <title>Generic Recursive Type Bound 이해하기(Item30) | 전파고양이</title>
 <meta name="keywords" content="java">
 <meta name="description" content="문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
-interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.">
+interface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.">
 <meta name="author" content="전파고양이">
 <link rel="canonical" href="/post/java/effective_item_30/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/favicon.ico">
@@ -59,16 +59,16 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     </style>
 </noscript><meta property="og:title" content="Generic Recursive Type Bound 이해하기(Item30)" />
 <meta property="og:description" content="문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
-interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size." />
+interface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/java/effective_item_30/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-11-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-16T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-11-16T00:00:00+09:00" />
+<meta property="article:modified_time" content="2022-11-16T00:00:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Generic Recursive Type Bound 이해하기(Item30)"/>
 <meta name="twitter:description" content="문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자
-interface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size."/>
+interface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, Comparable&lt;Apple&gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, Comparable&lt;Orange&gt; { private final Integer size; public Orange(Integer size) { this."/>
 
 
 <script type="application/ld+json">
@@ -97,15 +97,15 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
   "@type": "BlogPosting",
   "headline": "Generic Recursive Type Bound 이해하기(Item30)",
   "name": "Generic Recursive Type Bound 이해하기(Item30)",
-  "description": "문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자\ninterface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable\u0026lt;Apple\u0026gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable\u0026lt;Orange\u0026gt; { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.",
+  "description": "문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자\ninterface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, Comparable\u0026lt;Apple\u0026gt; { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, Comparable\u0026lt;Orange\u0026gt; { private final Integer size; public Orange(Integer size) { this.",
   "keywords": [
     "java"
   ],
-  "articleBody": "문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자\ninterface Fruite { Integer getSize(); } // apple.java class Apple implements Fruit, Comparable\u003cApple\u003e { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java class Orange implements Fruit, Comparable\u003cOrange\u003e { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.compareTo(other.size); } } //main.java class Main { public static void main(String[] args) { Apple apple1 = new Apple(3); Apple apple2 = new Apple(4); apple1.compareTo(apple2); Orange orange1 = new Orange(3); Orange orange2 = new Orange(4); orange1.compareTo(orange2); apple1.compareTo(orange1); // Error: different types } } 일단 우선 위의 예제에서는 compareTo라는 함수가 중복된다. 이렇게 되면 Fruit를 상속받는 모든 클래스가 이 compareTo를 Implement하는 문제가 생긴다. 이걸 수정하기 위해서 다음과 같이 해보자\nCommon 클래스로 중복 옮기기 class Fruit implements Comparable\u003cFruit\u003e { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(Fruit other) { return size.compareTo(other.getSize()); } } class Apple extends Fruit { public Apple(Integer size) { super(size); } } class Orange extends Fruit { public Orange(Integer size) { super(size); } } CompareTo를 Common class로 추출해서 위와 같이 작성하면 쉽게 구현체를 만들 수 있다. 이 코드가 자바라서 class를 사용했지만 java8에서는 default Method가 지원되서 interface를 이용해도 가능하다.\n이 때 문제점은 두개의 서로 다른 타입을 비교 했을 때 에러가나지 않는다는 점이다. 우리는 서로 다른 타입을 비교하면 에러가 나기를 원한다.\napple1.compareTo(orange1); // No error 이 때 사용되는 것이 바로 타입 파라미터이다.\nclass Fruit\u003cT\u003e implements Comparable\u003cT\u003e { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(T other) { return size.compareTo(other.getSize()); // Error: getSize() not available. } } 그런데 Fruit에 타입 파라미터를 추가하니 T의 메서드인 getSize()는 컴파일러가 알 수 없다. 왜냐면 우리의 클래스 Fruit클래스의 타입파라미터 T는 어떠한 Bound도 없기 때문이다. 그래서 T는 어떠한 클래스도 될 수 있으며, 모든 클래스가 getSize()를 가질 수도 없다.\n이때 도입되는 것이 Recursive Type Bound이다.\nclass Fruit\u003cT extends Fruit\u003cT\u003e\u003e implements Comparable\u003cT\u003e { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(T other) { return size.compareTo(other.getSize()); // Now getSize() is available. } } class Apple extends Fruit\u003cApple\u003e { public Apple(Integer size) { super(size); } } class Orange extends Fruit\u003cOrange\u003e { public Orange(Integer size) { super(size); } } 우선 컴파일러에게 이 T가 Fruit를 상속 받은 T라는 것을 말해주자. 다른 말로 Upper bound가 “T extends Fruit“라는 뜻이 된다.\n이것은 오로지 Fruit의 SubType만이 Type Argument로 사용될 수 있음을 뜻한다.\n모든 문제가 해결 되었을까?\n아니다. 이 패턴에는 함정이 하나 있다. 컴파일러는 다른 서브타입에 대한 Type argument를 막지 못한다. 예를 들어보자.\nclass Orange extends Fruit\u003cOrange\u003e {} class Apple extends Fruit\u003cOrange\u003e {} // no compile error 이 문제를 스칼라에서는 self:E라는 것을 통해서 풀어본다고 하는데 어떻게 하는지 나중에 살펴보자\n",
+  "articleBody": "문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자\ninterface Fruite { Integer getSize(); } // apple.java  class Apple implements Fruit, ComparableApple { private final Integer size; public Apple(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Apple other) { return size.compareTo(other.size); } } // orange.java  class Orange implements Fruit, ComparableOrange { private final Integer size; public Orange(Integer size) { this.size = size; } @Override public Integer getSize() { return size; } @Override public int compareTo(Orange other) { return size.compareTo(other.size); } } //main.java  class Main { public static void main(String[] args) { Apple apple1 = new Apple(3); Apple apple2 = new Apple(4); apple1.compareTo(apple2); Orange orange1 = new Orange(3); Orange orange2 = new Orange(4); orange1.compareTo(orange2); apple1.compareTo(orange1); // Error: different types  } } 일단 우선 위의 예제에서는 compareTo라는 함수가 중복된다. 이렇게 되면 Fruit를 상속받는 모든 클래스가 이 compareTo를 Implement하는 문제가 생긴다. 이걸 수정하기 위해서 다음과 같이 해보자\n Common 클래스로 중복 옮기기 class Fruit implements ComparableFruit { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(Fruit other) { return size.compareTo(other.getSize()); } }   class Apple extends Fruit { public Apple(Integer size) { super(size); } } class Orange extends Fruit { public Orange(Integer size) { super(size); } } CompareTo를 Common class로 추출해서 위와 같이 작성하면 쉽게 구현체를 만들 수 있다. 이 코드가 자바라서 class를 사용했지만 java8에서는 default Method가 지원되서 interface를 이용해도 가능하다.\n이 때 문제점은 두개의 서로 다른 타입을 비교 했을 때 에러가나지 않는다는 점이다. 우리는 서로 다른 타입을 비교하면 에러가 나기를 원한다.\napple1.compareTo(orange1); // No error 이 때 사용되는 것이 바로 타입 파라미터이다.\nclass FruitT implements ComparableT { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(T other) { return size.compareTo(other.getSize()); // Error: getSize() not available.  } } 그런데 Fruit에 타입 파라미터를 추가하니 T의 메서드인 getSize()는 컴파일러가 알 수 없다. 왜냐면 우리의 클래스 Fruit클래스의 타입파라미터 T는 어떠한 Bound도 없기 때문이다. 그래서 T는 어떠한 클래스도 될 수 있으며, 모든 클래스가 getSize()를 가질 수도 없다.\n이때 도입되는 것이 Recursive Type Bound이다.\nclass FruitT extends FruitT implements ComparableT { private final Integer size; public Fruit(Integer size) { this.size = size; } public Integer getSize() { return size; } @Override public int compareTo(T other) { return size.compareTo(other.getSize()); // Now getSize() is available.  } } class Apple extends FruitApple { public Apple(Integer size) { super(size); } } class Orange extends FruitOrange { public Orange(Integer size) { super(size); } } 우선 컴파일러에게 이 T가 Fruit를 상속 받은 T라는 것을 말해주자. 다른 말로 Upper bound가 “T extends Fruit“라는 뜻이 된다.\n이것은 오로지 Fruit의 SubType만이 Type Argument로 사용될 수 있음을 뜻한다.\n모든 문제가 해결 되었을까?\n아니다. 이 패턴에는 함정이 하나 있다. 컴파일러는 다른 서브타입에 대한 Type argument를 막지 못한다. 예를 들어보자.\nclass Orange extends FruitOrange {} class Apple extends FruitOrange {} // no compile error 이 문제를 스칼라에서는 self:E라는 것을 통해서 풀어본다고 하는데 어떻게 하는지 나중에 살펴보자\n",
   "wordCount" : "492",
   "inLanguage": "en-us",
-  "datePublished": "2022-11-16T00:00:00Z",
-  "dateModified": "2022-11-16T00:00:00Z",
+  "datePublished": "2022-11-16T00:00:00+09:00",
+  "dateModified": "2022-11-16T00:00:00+09:00",
   "author":[{
     "@type": "Person",
     "name": "전파고양이"
@@ -177,145 +177,145 @@ interface Fruite { Integer getSize(); } // apple.java class Apple implements Fru
     <h1 class="post-title">
       Generic Recursive Type Bound 이해하기(Item30)
     </h1>
-    <div class="post-meta"><span title='2022-11-16 00:00:00 +0000 UTC'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이
+    <div class="post-meta"><span title='2022-11-16 00:00:00 +0900 KST'>November 16, 2022</span>&nbsp;·&nbsp;전파고양이
 
 </div>
   </header> 
   <div class="post-content"><p>문제 상황을 이해하기 위해서 다음과 같은 문제를 풀어 보자</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Fruite</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>        <span style="color:#75715e">// apple.java
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">implements</span> Fruit<span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>Apple<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Apple other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// orange.java
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">implements</span> Fruit<span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Orange other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//main.java
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        Apple apple1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Apple<span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        Apple apple2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Apple<span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        apple1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>apple2<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        Orange orange1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Orange<span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        Orange orange2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Orange<span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        orange1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>orange2<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        apple1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>orange1<span style="color:#f92672">);</span>  <span style="color:#75715e">// Error: different types
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>일단 우선 위의 예제에서는 compareTo라는 함수가 중복된다. 이렇게 되면 Fruit를 상속받는 모든 클래스가 이 compareTo를 Implement하는 문제가 생긴다. 이걸 수정하기 위해서 다음과 같이 해보자</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Fruite</span> <span style="color:#f92672">{</span>
+    Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">        <span style="color:#75715e">// apple.java
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">implements</span> Fruit<span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>Apple<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Apple other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">// orange.java
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">implements</span> Fruit<span style="color:#f92672">,</span> Comparable<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+      <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
+
+      <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+
+      <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+
+      <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Orange other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">);</span>
+      <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+
+  <span style="color:#75715e">//main.java
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Apple apple1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Apple<span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        Apple apple2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Apple<span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+        apple1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>apple2<span style="color:#f92672">);</span>
+
+        Orange orange1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Orange<span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        Orange orange2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Orange<span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+        orange1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>orange2<span style="color:#f92672">);</span>
+
+        apple1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>orange1<span style="color:#f92672">);</span>  <span style="color:#75715e">// Error: different types
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>일단 우선 위의 예제에서는 compareTo라는 함수가 중복된다. 이렇게 되면 Fruit를 상속받는 모든 클래스가 이 compareTo를 Implement하는 문제가 생긴다. 이걸 수정하기 위해서 다음과 같이 해보자</p>
 <ul>
 <li>Common 클래스로 중복 옮기기
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>Fruit<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Fruit other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>Fruit<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>Fruit other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>CompareTo를 Common class로 추출해서 위와 같이 작성하면 쉽게 구현체를 만들 수 있다. 이 코드가 자바라서 class를 사용했지만 java8에서는 default Method가 지원되서 interface를 이용해도 가능하다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>CompareTo를 Common class로 추출해서 위와 같이 작성하면 쉽게 구현체를 만들 수 있다. 이 코드가 자바라서 class를 사용했지만 java8에서는 default Method가 지원되서 interface를 이용해도 가능하다.</p>
 <p>이 때 문제점은 두개의 서로 다른 타입을 비교 했을 때 에러가나지 않는다는 점이다. 우리는 서로 다른 타입을 비교하면 에러가 나기를 원한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>apple1.compareTo(orange1);    // No error
-</span></span></code></pre></div><p>이 때 사용되는 것이 바로 타입 파라미터이다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>T other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>     <span style="color:#75715e">// Error: getSize() not available.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>그런데 Fruit에 타입 파라미터를 추가하니 T의 메서드인 getSize()는 컴파일러가 알 수 없다. 왜냐면 우리의 클래스 Fruit클래스의 타입파라미터 T는 어떠한 Bound도 없기 때문이다. 그래서 T는 어떠한 클래스도 될 수 있으며, 모든 클래스가 getSize()를 가질 수도 없다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">apple1.compareTo(orange1);    // No error
+</code></pre></div><p>이 때 사용되는 것이 바로 타입 파라미터이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>T other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>     <span style="color:#75715e">// Error: getSize() not available.
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>그런데 Fruit에 타입 파라미터를 추가하니 T의 메서드인 getSize()는 컴파일러가 알 수 없다. 왜냐면 우리의 클래스 Fruit클래스의 타입파라미터 T는 어떠한 Bound도 없기 때문이다. 그래서 T는 어떠한 클래스도 될 수 있으며, 모든 클래스가 getSize()를 가질 수도 없다.</p>
 <p>이때 도입되는 것이 Recursive Type Bound이다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&gt;</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>T other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>     <span style="color:#75715e">// Now getSize() is available.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Apple<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>우선 컴파일러에게 이 T가 Fruit를 상속 받은 T라는 것을 말해주자. 다른 말로 Upper bound가 &ldquo;T extends Fruit&lt;T&gt;&ldquo;라는 뜻이 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">&lt;</span>T <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&gt;</span> <span style="color:#66d9ef">implements</span> Comparable<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Integer size<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Fruit</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">size</span> <span style="color:#f92672">=</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getSize</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>T other<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> size<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>other<span style="color:#f92672">.</span><span style="color:#a6e22e">getSize</span><span style="color:#f92672">());</span>     <span style="color:#75715e">// Now getSize() is available.
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Apple<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Apple</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Orange</span><span style="color:#f92672">(</span>Integer size<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>size<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>우선 컴파일러에게 이 T가 Fruit를 상속 받은 T라는 것을 말해주자. 다른 말로 Upper bound가 &ldquo;T extends Fruit&lt;T&gt;&ldquo;라는 뜻이 된다.</p>
 <p>이것은 오로지 Fruit의 SubType만이 Type Argument로 사용될 수 있음을 뜻한다.</p>
 <p>모든 문제가 해결 되었을까?</p>
 <p>아니다. 이 패턴에는 함정이 하나 있다. 컴파일러는 다른 서브타입에 대한 Type argument를 막지 못한다. 예를 들어보자.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{}</span> <span style="color:#75715e">// no compile error
-</span></span></span></code></pre></div><p>이 문제를 스칼라에서는 self:E라는 것을 통해서 풀어본다고 하는데 어떻게 하는지 나중에 살펴보자</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Orange</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{}</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Apple</span> <span style="color:#66d9ef">extends</span> Fruit<span style="color:#f92672">&lt;</span>Orange<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{}</span> <span style="color:#75715e">// no compile error
+</span></code></pre></div><p>이 문제를 스칼라에서는 self:E라는 것을 통해서 풀어본다고 하는데 어떻게 하는지 나중에 살펴보자</p>
 
 
   </div>

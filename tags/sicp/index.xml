@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SICP on 전파고양이</title>
+    <link>/tags/sicp/</link>
+    <description>Recent content in SICP on 전파고양이</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="/tags/sicp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SICP :: 설치방법(MacOs)</title>
+      <link>/post/lisp/sicp-install/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>/post/lisp/sicp-install/</guid>
+      <description>우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &amp;#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &amp;#34;&amp;lt;f5&amp;gt;&amp;#34;) &amp;#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &amp;#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&amp;#39;paredit-mode)) (bind-keys :map paredit-mode-map (&amp;#34;{&amp;#34; . paredit-open-curly) (&amp;#34;}&amp;#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&amp;#34;M-[&amp;#34; .</description>
+    </item>
+    
+  </channel>
+</rss>

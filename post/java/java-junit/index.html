@@ -7,13 +7,13 @@
 <meta name="robots" content="index, follow">
 <title>java-junit | 전파고양이</title>
 <meta name="keywords" content="">
-<meta name="description" content="java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index
-Related:
-java-junit sitename test
-link github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.">
+<meta name="description" content="java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
+  Related:
+  java-junit sitename test
+link  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.">
 <meta name="author" content="VERITAS">
 <link rel="canonical" href="/post/java/java-junit/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/favicon.ico">
@@ -60,21 +60,21 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
 
     </style>
 </noscript><meta property="og:title" content="java-junit" />
-<meta property="og:description" content="java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index
-Related:
-java-junit sitename test
-link github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite." />
+<meta property="og:description" content="java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
+  Related:
+  java-junit sitename test
+link  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/java/java-junit/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-02-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-02-29T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-02-29T00:00:00+09:00" />
+<meta property="article:modified_time" content="2020-02-29T00:00:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="java-junit"/>
-<meta name="twitter:description" content="java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index
-Related:
-java-junit sitename test
-link github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite."/>
+<meta name="twitter:description" content="java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index
+  Related:
+  java-junit sitename test
+link  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite."/>
 
 
 <script type="application/ld+json">
@@ -103,15 +103,15 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
   "@type": "BlogPosting",
   "headline": "java-junit",
   "name": "java-junit",
-  "description": "java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index\nRelated:\njava-junit sitename test\nlink github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.",
+  "description": "java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index\n  Related:\n  java-junit sitename test\nlink  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.",
   "keywords": [
     
   ],
-  "articleBody": " java-junit link 용어정리 JUnit 기본 단언문 특징 단언문 Hamcrest 대표적인 Matchers Index\nRelated:\njava-junit sitename test\nlink github-team-junit 용어정리 test context 테스트의 정의 반복적으로 수행되고 동일한 결과를 얻어야 함 테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동 JUnit 기본 단언문 assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail 특징 fixture @BeforeClass @AfterClass @Before @After 테스트 종류 시간 제한 테스트 @Test(timeout=1000) 테스트 무시 @Ignore 배열지원 @RunWith JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정 @Suiteclasses(Class[]) 여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.class)@SuiteClass(Class[]) @파라미터를 이용한 테스트 단언문 Hamcrest assertThat(테스트 대상, matcher 구문); assertThat(“메시지”,테스트대상, matcher 구문); assertEquals(100, accout.getBalance()) assertThat(account.getBalance(), is(equalTo(1000))); assertNotNull(resource.newConnection()); assertThat(resource.newConnection(), is(notNullValue()); assertTrue(account.getBalance() \u003e 0); assertThat(account.getBalance(), isGreaterThan(0)); assertTrue(user.getLoginName().indexOf(\"Guest\") \u003e -1)); assertThat(user.getLoginName(), containsString(\"Guest\")); is equalsTo greaterThan 대표적인 Matchers1 core anything describdedAs is object equalTo hasToString instanceOf, isCompatibleType notNullValue, nullValue sameInstance logical allOf anyOf not beans hasProperty collection number closedTo greaterThen, greaterThanOrEqualTo, lessThen, lessThenOrEqualTo text equalToIgnoringCase equalToIgnoringWhiteSpace containsString, endsWith, startsWith https://www.lesstif.com/pages/viewpage.action?pageId=18219426 ↩︎\n",
-  "wordCount" : "167",
+  "articleBody": " java-junit  link   용어정리 JUnit 기본 단언문  특징 단언문 Hamcrest 대표적인 Matchers      Index\n  Related:\n  java-junit sitename test\nlink  github-team-junit  용어정리  test context 테스트의 정의  반복적으로 수행되고 동일한 결과를 얻어야 함   테스트케이스에서 사용하는 인스턴스 파일이나 네트워크 등의 자원을 만들어서 지정 데이터베이스 연동  JUnit 기본 단언문  assertEqual: 두개의 값이 같은지 비교 assertSame: 두 개의 객체가 정말 동일한 객체인지 확인 assertTrue: 예상 값의 참 거짓을 판별 asserNull: 대상 값이 null이면 참이 됨 fail  특징 fixture  @BeforeClass @AfterClass @Before @After  테스트 종류  시간 제한 테스트  @Test(timeout=1000)   테스트 무시  @Ignore   배열지원 @RunWith  JUnit Test 클래스를 실행하기 위해서 Runner명시적으로 지정   @Suiteclasses(Class[])  여러개의 테스트 클래스를 수행하기 위해서 쓰임 @RunWith(Suite.class)@SuiteClass(Class[])   @파라미터를 이용한 테스트  단언문 Hamcrest  assertThat(테스트 대상, matcher 구문); assertThat(“메시지”,테스트대상, matcher 구문);  assertEquals(100, accout.getBalance()) assertThat(account.getBalance(), is(equalTo(1000))); assertNotNull(resource.newConnection()); assertThat(resource.newConnection(), is(notNullValue()); assertTrue(account.getBalance()  0); assertThat(account.getBalance(), isGreaterThan(0)); assertTrue(user.getLoginName().indexOf(\"Guest\")  -1)); assertThat(user.getLoginName(), containsString(\"Guest\"));  is equalsTo greaterThan  대표적인 Matchers1 core  anything describdedAs is  object  equalTo hasToString instanceOf, isCompatibleType notNullValue, nullValue sameInstance  logical  allOf anyOf not  beans  hasProperty  collection number  closedTo greaterThen, greaterThanOrEqualTo, lessThen, lessThenOrEqualTo  text  equalToIgnoringCase equalToIgnoringWhiteSpace containsString, endsWith, startsWith       https://www.lesstif.com/pages/viewpage.action?pageId=18219426 ↩︎\n   ",
+  "wordCount" : "168",
   "inLanguage": "en-us",
-  "datePublished": "2020-02-29T00:00:00Z",
-  "dateModified": "2020-02-29T00:00:00Z",
+  "datePublished": "2020-02-29T00:00:00+09:00",
+  "dateModified": "2020-02-29T00:00:00+09:00",
   "author":[{
     "@type": "Person",
     "name": "VERITAS"
@@ -183,7 +183,7 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
     <h1 class="post-title">
       java-junit
     </h1>
-    <div class="post-meta"><span title='2020-02-29 00:00:00 +0000 UTC'>February 29, 2020</span>&nbsp;·&nbsp;VERITAS
+    <div class="post-meta"><span title='2020-02-29 00:00:00 +0900 KST'>February 29, 2020</span>&nbsp;·&nbsp;VERITAS
 
 </div>
   </header> 
@@ -279,18 +279,18 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
 <li>assertThat(&ldquo;메시지&rdquo;,테스트대상, matcher 구문);</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>assertEquals<span style="color:#f92672">(</span>100<span style="color:#f92672">,</span> accout<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">())</span>
-</span></span><span style="display:flex;"><span>assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>equalTo<span style="color:#f92672">(</span>1000<span style="color:#f92672">)));</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>assertNotNull<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>assertThat<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>notNullValue<span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>assertTrue<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> isGreaterThan<span style="color:#f92672">(</span>0<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>assertTrue<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">().</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span>assertThat<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">(),</span> containsString<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">));</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">assertEquals<span style="color:#f92672">(</span>100<span style="color:#f92672">,</span> accout<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">())</span>
+assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>equalTo<span style="color:#f92672">(</span>1000<span style="color:#f92672">)));</span>
+
+assertNotNull<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">());</span>
+assertThat<span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">newConnection</span><span style="color:#f92672">(),</span> is<span style="color:#f92672">(</span>notNullValue<span style="color:#f92672">());</span>
+
+assertTrue<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">);</span>
+assertThat<span style="color:#f92672">(</span>account<span style="color:#f92672">.</span><span style="color:#a6e22e">getBalance</span><span style="color:#f92672">(),</span> isGreaterThan<span style="color:#f92672">(</span>0<span style="color:#f92672">));</span>
+
+assertTrue<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">().</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">));</span>
+assertThat<span style="color:#f92672">(</span>user<span style="color:#f92672">.</span><span style="color:#a6e22e">getLoginName</span><span style="color:#f92672">(),</span> containsString<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Guest&#34;</span><span style="color:#f92672">));</span>
+</code></pre></div><ul>
 <li>is</li>
 <li>equalsTo</li>
 <li>greaterThan</li>
@@ -337,14 +337,14 @@ link github-team-junit 용어정리 test context 테스트의 정의 반복적�
     <img loading="lazy" src="/ox-hugo/32e7d4bc-7df4-4f18-9ef2-93c7cb577b5c.png"/> 
 </figure>
 
-<div class="footnotes" role="doc-endnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1">
-<p><a href="https://www.lesstif.com/pages/viewpage.action?pageId=18219426">https://www.lesstif.com/pages/viewpage.action?pageId=18219426</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.lesstif.com/pages/viewpage.action?pageId=18219426">https://www.lesstif.com/pages/viewpage.action?pageId=18219426</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</div>
+</section>
 
 
   </div>

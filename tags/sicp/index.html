@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>emacs | 전파고양이</title>
+<title>SICP | 전파고양이</title>
 <meta name="keywords" content="">
 <meta name="description" content="Responsive card-based &amp; code-light Hugo theme">
 <meta name="author" content="">
-<link rel="canonical" href="/categories/emacs/">
+<link rel="canonical" href="/tags/sicp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/categories/emacs/index.xml">
+<link rel="alternate" type="application/rss+xml" href="/tags/sicp/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,13 +55,13 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="emacs" />
+</noscript><meta property="og:title" content="SICP" />
 <meta property="og:description" content="Responsive card-based &amp; code-light Hugo theme" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/categories/emacs/" />
+<meta property="og:url" content="/tags/sicp/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="emacs"/>
+<meta name="twitter:title" content="SICP"/>
 <meta name="twitter:description" content="Responsive card-based &amp; code-light Hugo theme"/>
 
 </head>
@@ -112,20 +112,22 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    emacs
+    SICP
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>emacs 스크롤을 pixcel 단위로 변경하기
+    <h2>SICP :: 설치방법(MacOs)
     </h2>
   </header>
   <div class="entry-content">
-    <p> 아래와 같이 설정해주면 inline 이미지에서 스크롤시 점프하지 않는다.  ;; https://emacs.stackexchange.com/questions/10354/smooth-mouse-scroll-for-inline-images (pixel-scroll-mode) (setq pixel-dead-time 0) ; Never go back to the old scrolling behaviour. (setq pixel-resolution-fine-flag t) ; Scroll by number of pixels instead of lines (t = frame-char-height pixels). (setq mouse-wheel-scroll-amount &#39;(1)) ; Distance in pixel-resolution to scroll each mouse wheel event. (setq mouse-wheel-progressive-speed nil) ; Progressive speed is too fast for me. </p>
+    <p>우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; ....</p>
   </div>
-  <footer class="entry-footer">karo</footer>
-  <a class="entry-link" aria-label="post link to emacs 스크롤을 pixcel 단위로 변경하기" href="/post/emacs/emacs-scroll-pixel/"></a>
+  <footer class="entry-footer"><span title='2022-12-07 00:00:00 +0900 KST'>December 07, 2022</span>&nbsp;·&nbsp;전파고양이</footer>
+  <a class="entry-link" aria-label="post link to SICP :: 설치방법(MacOs)" href="/post/lisp/sicp-install/"></a>
 </article>
     </main>
     

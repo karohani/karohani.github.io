@@ -6,11 +6,11 @@
     <description>Recent content in clojure on 전파고양이</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0900</lastBuildDate><atom:link href="/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>clojure :: 환경 설정</title>
       <link>/post/clojure/clojure_dev_env/</link>
-      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0900</pubDate>
       
       <guid>/post/clojure/clojure_dev_env/</guid>
       <description>환경 설정 brew install clojure/tools/clojure </description>

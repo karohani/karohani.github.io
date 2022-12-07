@@ -5,14 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Racket 설치 및 emacs 개발 환경 | 전파고양이</title>
-<meta name="keywords" content="lisp">
-<meta name="description" content="https://docs.racket-lang.org/pollen/Installation.html
-아래와 같이 환경변수를 bashprofile에 추가.
-export PATH=&quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&quot;
-emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; . paredit-wrap-square) (&#34;M-{&#34; . paredit-wrap-curly)))) (provide &#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음">
+<title>SICP :: 설치방법(MacOs) | 전파고양이</title>
+<meta name="keywords" content="lisp, SICP">
+<meta name="description" content="우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; .">
 <meta name="author" content="전파고양이">
-<link rel="canonical" href="/post/lisp/setup-racket-env/">
+<link rel="canonical" href="/post/lisp/sicp-install/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
@@ -59,22 +58,20 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
         }
 
     </style>
-</noscript><meta property="og:title" content="Racket 설치 및 emacs 개발 환경" />
-<meta property="og:description" content="https://docs.racket-lang.org/pollen/Installation.html
-아래와 같이 환경변수를 bashprofile에 추가.
-export PATH=&quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&quot;
-emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; . paredit-wrap-square) (&#34;M-{&#34; . paredit-wrap-curly)))) (provide &#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음" />
+</noscript><meta property="og:title" content="SICP :: 설치방법(MacOs)" />
+<meta property="og:description" content="우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/lisp/setup-racket-env/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-11-18T00:00:00+09:00" />
-<meta property="article:modified_time" content="2022-11-18T00:00:00+09:00" />
+<meta property="og:url" content="/post/lisp/sicp-install/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-12-07T00:00:00+09:00" />
+<meta property="article:modified_time" content="2022-12-07T00:00:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Racket 설치 및 emacs 개발 환경"/>
-<meta name="twitter:description" content="https://docs.racket-lang.org/pollen/Installation.html
-아래와 같이 환경변수를 bashprofile에 추가.
-export PATH=&quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&quot;
-emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; . paredit-wrap-square) (&#34;M-{&#34; . paredit-wrap-curly)))) (provide &#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음"/>
+<meta name="twitter:title" content="SICP :: 설치방법(MacOs)"/>
+<meta name="twitter:description" content="우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.
+brew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.
+(use-package racket-mode :config (add-hook &#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd &#34;&lt;f5&gt;&#34;) &#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m &#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #&#39;paredit-mode)) (bind-keys :map paredit-mode-map (&#34;{&#34; . paredit-open-curly) (&#34;}&#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (&#34;M-[&#34; ."/>
 
 
 <script type="application/ld+json">
@@ -91,8 +88,8 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "Racket 설치 및 emacs 개발 환경",
-      "item": "/post/lisp/setup-racket-env/"
+      "name": "SICP :: 설치방법(MacOs)",
+      "item": "/post/lisp/sicp-install/"
     }
   ]
 }
@@ -101,24 +98,24 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Racket 설치 및 emacs 개발 환경",
-  "name": "Racket 설치 및 emacs 개발 환경",
-  "description": "https://docs.racket-lang.org/pollen/Installation.html\n아래와 같이 환경변수를 bashprofile에 추가.\nexport PATH=\u0026quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH\u0026quot;\nemacs 설정 (use-package racket-mode :config (add-hook \u0026#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd \u0026#34;\u0026lt;f5\u0026gt;\u0026#34;) \u0026#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m \u0026#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #\u0026#39;paredit-mode)) (bind-keys :map paredit-mode-map (\u0026#34;{\u0026#34; . paredit-open-curly) (\u0026#34;}\u0026#34; . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (\u0026#34;M-[\u0026#34; . paredit-wrap-square) (\u0026#34;M-{\u0026#34; . paredit-wrap-curly)))) (provide \u0026#39;init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음",
+  "headline": "SICP :: 설치방법(MacOs)",
+  "name": "SICP :: 설치방법(MacOs)",
+  "description": "우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.\nbrew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.\n(use-package racket-mode :config (add-hook \u0026#39;racket-mode-hook (lambda () define-key racket-mode-map (kbd \u0026#34;\u0026lt;f5\u0026gt;\u0026#34;) \u0026#39;racket-run) ) ) (use-package paredit :ensure t :config (dolist (m \u0026#39;(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #\u0026#39;paredit-mode)) (bind-keys :map paredit-mode-map (\u0026#34;{\u0026#34; . paredit-open-curly) (\u0026#34;}\u0026#34; . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (\u0026#34;M-[\u0026#34; .",
   "keywords": [
-    "lisp"
+    "lisp", "SICP"
   ],
-  "articleBody": "https://docs.racket-lang.org/pollen/Installation.html\n아래와 같이 환경변수를 bashprofile에 추가.\nexport PATH=\"/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH\"\nemacs 설정 (use-package racket-mode :config (add-hook 'racket-mode-hook (lambda () define-key racket-mode-map (kbd \"\") 'racket-run) ) ) (use-package paredit :ensure t :config (dolist (m '(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #'paredit-mode)) (bind-keys :map paredit-mode-map (\"{\" . paredit-open-curly) (\"}\" . paredit-close-curly)) (unless terminal-frame (bind-keys :map paredit-mode-map (\"M-[\" . paredit-wrap-square) (\"M-{\" . paredit-wrap-curly)))) (provide 'init-racket) racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음\n(* 1 2) 그냥 실행하면 아래와 같은 이슈가 발생함.\ndefault-load-handler: expected a `module' declaration, but found something else\n이 때는 파일 최상단에 #lang racket을 추가해주면 된다.\n#lang racket (* 1 2) 아래와 같이 F5를 눌렀을 때 정상적으로 출력된다면 Racket을 위한 준비과정은 완료 된다.\n  ",
-  "wordCount" : "119",
+  "articleBody": "우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.\nbrew install --cask racket raco pkg install sicp racket-mode 설정 emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.\n(use-package racket-mode :config (add-hook 'racket-mode-hook (lambda () define-key racket-mode-map (kbd \"\") 'racket-run) ) ) (use-package paredit :ensure t :config (dolist (m '(emacs-lisp-mode-hook racket-mode-hook racket-repl-mode-hook)) (add-hook m #'paredit-mode)) (bind-keys :map paredit-mode-map (\"{\" . paredit-open-curly) (\"}\" . paredit-close-curly) ) (unless terminal-frame (bind-keys :map paredit-mode-map (\"M-[\" . paredit-wrap-square) (\"M-{\" . paredit-wrap-curly)))) ob-racket 설정 (use-package ob-racket :straight (:host github :repo \"karohani/ob-racket\" :branch \"master\") :after org :pin manual :config :init (cl-pushnew '(racket . t) load-language-alist) ) (define (fact-iter product counter max-count) (if ( counter max-count) product (fact-iter (* counter product) (+ counter 1) max-count))) (fact-iter 1 1 4)",
+  "wordCount" : "120",
   "inLanguage": "en-us",
-  "datePublished": "2022-11-18T00:00:00+09:00",
-  "dateModified": "2022-11-18T00:00:00+09:00",
+  "datePublished": "2022-12-07T00:00:00+09:00",
+  "dateModified": "2022-12-07T00:00:00+09:00",
   "author":[{
     "@type": "Person",
     "name": "전파고양이"
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/lisp/setup-racket-env/"
+    "@id": "/post/lisp/sicp-install/"
   },
   "publisher": {
     "@type": "Organization",
@@ -181,16 +178,17 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
   <header class="post-header">
     
     <h1 class="post-title">
-      Racket 설치 및 emacs 개발 환경
+      SICP :: 설치방법(MacOs)
     </h1>
-    <div class="post-meta"><span title='2022-11-18 00:00:00 +0900 KST'>November 18, 2022</span>&nbsp;·&nbsp;전파고양이
+    <div class="post-meta"><span title='2022-12-07 00:00:00 +0900 KST'>December 07, 2022</span>&nbsp;·&nbsp;전파고양이
 
 </div>
   </header> 
-  <div class="post-content"><p><a href="https://docs.racket-lang.org/pollen/Installation.html">https://docs.racket-lang.org/pollen/Installation.html</a></p>
-<p>아래와 같이 환경변수를 bashprofile에 추가.</p>
-<p>export PATH=&quot;/Applications/Racket v{설치한 라켓의 버전}/bin:$PATH&quot;</p>
-<h2 id="emacs-설정">emacs 설정<a hidden class="anchor" aria-hidden="true" href="#emacs-설정">#</a></h2>
+  <div class="post-content"><p>우선 brew로 Racket을 설정하고 racket에서 제공하는 SCHEME BatteryPack을 설치한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install --cask racket
+raco pkg install sicp
+</code></pre></div><h2 id="racket-mode-설정">racket-mode 설정<a hidden class="anchor" aria-hidden="true" href="#racket-mode-설정">#</a></h2>
+<p>emacs에서 문제를 풀기위해서 Paredit과 racket-mode를 설치하고 ob-racket을 설치한다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">
 (use-package racket-mode
   :config
@@ -206,32 +204,36 @@ emacs 설정 (use-package racket-mode :config (add-hook &#39;racket-mode-hook (l
     (add-hook m <span style="color:#a6e22e">#&#39;</span>paredit-mode))
   (bind-keys :map paredit-mode-map
     (<span style="color:#e6db74">&#34;{&#34;</span>   <span style="color:#f92672">.</span> paredit-open-curly)
-    (<span style="color:#e6db74">&#34;}&#34;</span>   <span style="color:#f92672">.</span> paredit-close-curly))
+    (<span style="color:#e6db74">&#34;}&#34;</span>   <span style="color:#f92672">.</span> paredit-close-curly)
+    )
   (unless terminal-frame
     (bind-keys :map paredit-mode-map
       (<span style="color:#e6db74">&#34;M-[&#34;</span> <span style="color:#f92672">.</span> paredit-wrap-square)
       (<span style="color:#e6db74">&#34;M-{&#34;</span> <span style="color:#f92672">.</span> paredit-wrap-curly))))
+</code></pre></div><h2 id="ob-racket-설정">ob-racket 설정<a hidden class="anchor" aria-hidden="true" href="#ob-racket-설정">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package ob-racket
+  :straight (:host github :repo <span style="color:#e6db74">&#34;karohani/ob-racket&#34;</span> :branch <span style="color:#e6db74">&#34;master&#34;</span>)
+  :after org
+  :pin manual
+  :config
+  :init (cl-pushnew <span style="color:#f92672">&#39;</span>(racket <span style="color:#f92672">.</span> <span style="color:#66d9ef">t</span>) load-language-alist)
+  )
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-racket" data-lang="racket">(<span style="color:#66d9ef">define</span> (fact-iter product counter max-count)
+  (<span style="color:#66d9ef">if</span> (&gt; counter max-count)
+      product
+      (fact-iter (* counter product)
+                 (+ counter <span style="color:#ae81ff">1</span>)
+                 max-count)))
 
-(provide <span style="color:#e6db74">&#39;init-racket</span>)
-</code></pre></div><p>racket file을 생성하고 아래와 같이 작성한 뒤에 F5를 눌렀을 때 잘 되면 문제 없음</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>)
-</code></pre></div><p>그냥 실행하면 아래와 같은 이슈가 발생함.</p>
-<p>default-load-handler: expected a `module' declaration, but found something else</p>
-<p>이 때는 파일 최상단에 #lang racket을 추가해주면 된다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#960050;background-color:#1e0010">#</span>lang racket
-(<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>)
-</code></pre></div><p>아래와 같이 F5를 눌렀을 때 정상적으로 출력된다면 Racket을 위한 준비과정은 완료 된다.</p>
-<figure>
-    <img loading="lazy" src="/ox-hugo/2022-11-19_23-38-19_screenshot.png" width="800px"/> 
-</figure>
-
-
+(fact-iter <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">4</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="/tags/lisp/">lisp</a></li>
+      <li><a href="/tags/sicp/">SICP</a></li>
     </ul>
   </footer>
 </article>

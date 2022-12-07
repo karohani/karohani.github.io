@@ -12,7 +12,7 @@
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message &#43; 를 심벌이라고 부른다.">
 <meta name="author" content="VERITAS">
 <link rel="canonical" href="/post/emacs/emacs-lisp-datatype/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.96771a12b249af1ff464eabdaa85d1a5268a4379a9f2da62cfd409656ff0233b.css" integrity="sha256-lncaErJJrx/0ZOq9qoXRpSaKQ3mp8tpiz9QJZW/wIzs=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/favicon.ico">
@@ -64,8 +64,8 @@
 심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message &#43; 를 심벌이라고 부른다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/emacs/emacs-lisp-datatype/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-11-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-11-28T00:00:00+00:00" />
+<meta property="article:published_time" content="2019-11-28T00:00:00+09:00" />
+<meta property="article:modified_time" content="2019-11-28T00:00:00+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Emacs-lisp 자료형"/>
@@ -104,11 +104,11 @@
   "keywords": [
     
   ],
-  "articleBody": "출력하기 print(\"이렇게 출력합니다\") (message \"이렇게 출력합니다\") 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.\n(message \"hello workd\") hello workd (message \"hello: %d\" (+ 1 2)) hello: 3 메시지는 “hello: %“와 3을 argument로 받아 실핵된다.\n심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다. 이들은 쓰여진 위치에 따라 할당된 함수나 값으로 계산된다.\n(message \"withd %d\" fill-column) withd 70 심벌은 리스트 형태의 표현식에 첫 번째 원소의 위치로 쓰였을 때 함수로 계산된다. 그 외의는 전부 값으로 계산된다.\n'(message \"width %d\" fill-column) ; (message \"width %d\" fill-column) message width %d fill-column 위와 ‘가 붙으면 리스트 그 자체가 리턴된다. ‘를 리스트의 형태의 표현식에 적용한다는 것은 각 원소에 ‘를 적용하고 그 심벌들을 다시 리스트로 만드는 것을 의미한다.\n리스트 cons (cons 1 2) (1 . 2) cdr (car (cons 1 2)) 1 car (cdr (cons 1 (cons 3 4))) (3 . 4) cons 구조에 대한 설명 위와 같은 cons의 구조는 linked list와 동일한 구조의 형태를 가지게 된다. cons의 오른쪽 박스가 다른 cons의 구조를 가리키게 되면서 여러개의 cons를 묶을 수 있게 된다.\n(cons 1 (cons 2 (cons 3 nil ))) 1 2 3 ()는 nil을 표현한다. 이것을 특별히 nil로 동일하게 나타낸다.\n(cons 1 (cons 2 nil)) (list 1 2 3) 1 2 3 ",
+  "articleBody": "출력하기 print(\"이렇게 출력합니다\") (message \"이렇게 출력합니다\") 이렇게 출력합니다 emacslisp-배워보기 표현식 이해하기 리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.\n(message \"hello workd\") hello workd (message \"hello: %d\" (+ 1 2)) hello: 3 메시지는 “hello: %“와 3을 argument로 받아 실핵된다.\n심벌 이해하기 자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다. 이들은 쓰여진 위치에 따라 할당된 함수나 값으로 계산된다.\n(message \"withd %d\" fill-column) withd 70 심벌은 리스트 형태의 표현식에 첫 번째 원소의 위치로 쓰였을 때 함수로 계산된다. 그 외의는 전부 값으로 계산된다.\n'(message \"width %d\" fill-column) ; (message \"width %d\" fill-column)           message width %d fill-column    위와 ‘가 붙으면 리스트 그 자체가 리턴된다. ‘를 리스트의 형태의 표현식에 적용한다는 것은 각 원소에 ‘를 적용하고 그 심벌들을 다시 리스트로 만드는 것을 의미한다.\n리스트 cons (cons 1 2) (1 . 2) cdr (car (cons 1 2)) 1 car (cdr (cons 1 (cons 3 4))) (3 . 4) cons 구조에 대한 설명 위와 같은 cons의 구조는 linked list와 동일한 구조의 형태를 가지게 된다. cons의 오른쪽 박스가 다른 cons의 구조를 가리키게 되면서 여러개의 cons를 묶을 수 있게 된다.\n(cons 1 (cons 2 (cons 3 nil )))           1 2 3    ()는 nil을 표현한다. 이것을 특별히 nil로 동일하게 나타낸다.\n(cons 1 (cons 2 nil)) (list 1 2 3)           1 2 3    ",
   "wordCount" : "224",
   "inLanguage": "en-us",
-  "datePublished": "2019-11-28T00:00:00Z",
-  "dateModified": "2019-11-28T00:00:00Z",
+  "datePublished": "2019-11-28T00:00:00+09:00",
+  "dateModified": "2019-11-28T00:00:00+09:00",
   "author":[{
     "@type": "Person",
     "name": "VERITAS"
@@ -180,29 +180,29 @@
     <h1 class="post-title">
       Emacs-lisp 자료형
     </h1>
-    <div class="post-meta"><span title='2019-11-28 00:00:00 +0000 UTC'>November 28, 2019</span>&nbsp;·&nbsp;VERITAS
+    <div class="post-meta"><span title='2019-11-28 00:00:00 +0900 KST'>November 28, 2019</span>&nbsp;·&nbsp;VERITAS
 
 </div>
   </header> 
   <div class="post-content"><h2 id="출력하기">출력하기<a hidden class="anchor" aria-hidden="true" href="#출력하기">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;이렇게 출력합니다&#34;</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;이렇게 출력합니다&#34;</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>이렇게 출력합니다
-</span></span></code></pre></div><h2 id="emacslisp-배워보기">emacslisp-배워보기<a hidden class="anchor" aria-hidden="true" href="#emacslisp-배워보기">#</a></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;이렇게 출력합니다&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;이렇게 출력합니다&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">이렇게 출력합니다
+</code></pre></div><h2 id="emacslisp-배워보기">emacslisp-배워보기<a hidden class="anchor" aria-hidden="true" href="#emacslisp-배워보기">#</a></h2>
 <h2 id="표현식-이해하기">표현식 이해하기<a hidden class="anchor" aria-hidden="true" href="#표현식-이해하기">#</a></h2>
 <p>리스트 형태의 표현식이 계산될 때 좌에서 우로 계산 되며 첫번째 원소는 함수의 정의로 나머지 원소는 인자들로 계산된 후 함수를 호출하게 된다. 호출된 함수가 리턴하는 값을 그 표현식의 값(value)라고 부른다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;hello workd&#34;</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello workd
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;hello: %d&#34;</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello: 3
-</span></span></code></pre></div><p>메시지는 &ldquo;hello: %&ldquo;와 3을 argument로 받아 실핵된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;hello workd&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">hello workd
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;hello: %d&#34;</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">hello: 3
+</code></pre></div><p>메시지는 &ldquo;hello: %&ldquo;와 3을 argument로 받아 실핵된다.</p>
 <h2 id="심벌-이해하기">심벌 이해하기<a hidden class="anchor" aria-hidden="true" href="#심벌-이해하기">#</a></h2>
 <p>자신의 그대로 값으로 계산되지 않은 message + 를 심벌이라고 부른다. 이들은 쓰여진 위치에 따라 할당된 함수나 값으로 계산된다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;withd %d&#34;</span> fill-column)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>withd 70
-</span></span></code></pre></div><p>심벌은 리스트 형태의 표현식에 첫 번째 원소의 위치로 쓰였을 때 함수로 계산된다. 그 외의는 전부 값으로 계산된다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;width %d&#34;</span> fill-column) <span style="color:#75715e">; (message &#34;width %d&#34; fill-column)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;withd %d&#34;</span> fill-column)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">withd 70
+</code></pre></div><p>심벌은 리스트 형태의 표현식에 첫 번째 원소의 위치로 쓰였을 때 함수로 계산된다. 그 외의는 전부 값으로 계산된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="color:#f92672">&#39;</span>(<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;width %d&#34;</span> fill-column) <span style="color:#75715e">; (message &#34;width %d&#34; fill-column)</span>
+</code></pre></div><table>
 <thead>
 <tr>
 <th></th>
@@ -221,18 +221,18 @@
 <p>위와 &lsquo;가 붙으면 리스트 그 자체가 리턴된다. &lsquo;를 리스트의 형태의 표현식에 적용한다는 것은 각 원소에 &lsquo;를 적용하고 그 심벌들을 다시 리스트로 만드는 것을 의미한다.</p>
 <h2 id="리스트">리스트<a hidden class="anchor" aria-hidden="true" href="#리스트">#</a></h2>
 <h2 id="cons">cons<a hidden class="anchor" aria-hidden="true" href="#cons">#</a></h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>(1 . 2)
-</span></span></code></pre></div><h3 id="cdr">cdr<a hidden class="anchor" aria-hidden="true" href="#cdr">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">car</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>1
-</span></span></code></pre></div><h3 id="car">car<a hidden class="anchor" aria-hidden="true" href="#car">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">cdr</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>(3 . 4)
-</span></span></code></pre></div><h3 id="cons-구조에-대한-설명">cons 구조에 대한 설명<a hidden class="anchor" aria-hidden="true" href="#cons-구조에-대한-설명">#</a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(1 . 2)
+</code></pre></div><h3 id="cdr">cdr<a hidden class="anchor" aria-hidden="true" href="#cdr">#</a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">car</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1
+</code></pre></div><h3 id="car">car<a hidden class="anchor" aria-hidden="true" href="#car">#</a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">cdr</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(3 . 4)
+</code></pre></div><h3 id="cons-구조에-대한-설명">cons 구조에 대한 설명<a hidden class="anchor" aria-hidden="true" href="#cons-구조에-대한-설명">#</a></h3>
 <p>위와 같은 cons의 구조는 linked list와 동일한 구조의 형태를 가지게 된다. cons의 오른쪽 박스가 다른 cons의 구조를 가리키게 되면서 여러개의 cons를 묶을 수 있게 된다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">2</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">3</span> <span style="color:#66d9ef">nil</span> )))
-</span></span></code></pre></div><table>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">2</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">3</span> <span style="color:#66d9ef">nil</span> )))
+</code></pre></div><table>
 <thead>
 <tr>
 <th></th>
@@ -249,9 +249,9 @@
 </tbody>
 </table>
 <p>()는 nil을 표현한다. 이것을 특별히 nil로 동일하게 나타낸다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">nil</span>))
-</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">list</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">1</span> (<span style="color:#a6e22e">cons</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">nil</span>))
+(<span style="color:#a6e22e">list</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>)
+</code></pre></div><table>
 <thead>
 <tr>
 <th></th>
